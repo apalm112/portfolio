@@ -6,3 +6,7 @@ main {
   margin: auto;
   width: 75%;
 }
+
+footer p {
+  padding: 4em;
+}
