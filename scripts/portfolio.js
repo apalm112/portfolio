@@ -1,4 +1,4 @@
-var projects = [];
+var projects = [];  // i don't think i need this array here
 
 function Project (repos) {
   // constructor function for github repos to be displayed
