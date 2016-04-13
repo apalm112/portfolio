@@ -7,3 +7,7 @@ portfolioView.handleMainNav = function() {
   });
   $('.main-nav .tab:first').click();
 };
+
+$(function() {
+  portfolioView.handleMainNav();
+});
