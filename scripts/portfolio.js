@@ -22,3 +22,7 @@ Project.prototype.toHtml = function () {
 
   return $newArticle;
 };
+
+projects.forEach(function(){
+  $('#repos').append(toHtml);
+});
