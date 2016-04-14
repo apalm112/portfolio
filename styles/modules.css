@@ -3,13 +3,13 @@
   padding: 0 0 .2em .1em;
 }
 
-/*.icon-menu {
+.icon-menu {
   display: block;
-  transform: scale(4);
+  transform: scale(1.4);
   position: absolute;
-  right: 35px;
-  top: 35px;
-}*/
+  right: 0px;
+  top: 0px;
+}
 
 .main-nav {
   padding: .1em;
