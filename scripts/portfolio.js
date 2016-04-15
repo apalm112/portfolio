@@ -8,23 +8,8 @@ function Project (repos) {
 }
 
 Project.prototype.toHtml = function () {
-/*  var $newProject = $('article.template').clone();
-
-  $newProject.attr('data-title', this.title);
-  $newProject.attr('data-updatedOn', this.updatedOn);
-
-
-  $newArticle.find('time[pubdate]').attr('title', this.updatedOn);
-  $newArticle.find('section.article-body').html(this.body);
-  $newArticle.find('header h2').text(this.title);
-
-  $newArticle.removeClass('template');
-
-  return $newArticle;*/
-
   var $source = $('#project-template').html();
   var template = Handlebars.compile($source);
-
   return template(this);
 };
 
@@ -33,5 +18,5 @@ projects.forEach(function(proj) {
 });
 
 githubRepos.forEach(function(a) {
-  $('#project-placeholder').append(a.toHtml);
+  $('#project-placeholder').append(a.toHtml());
 });
