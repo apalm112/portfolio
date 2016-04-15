@@ -1,4 +1,4 @@
-var githubRepos = [];  // i don't think i need this array here
+var githubRepos = [];
 
 function Project (repos) {
   // constructor function for github repos to be displayed
@@ -33,5 +33,5 @@ projects.forEach(function(proj) {
 });
 
 githubRepos.forEach(function(a) {
-  $('.project-placeholder').append(a.toHtml);
+  $('#project-placeholder').append(a.toHtml);
 });

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="eng">
   <head>
     <meta charset="UTF-8">
     <title>Portfolio</title>
@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="styles/layout.css">
     <link rel="stylesheet" href="styles/modules.css">
     <script id="project-template" type="text/x-handlebars-template">
-      <article class="clearfix" data-title="{{title}}" data-updatedOn="{{updatedOn}}">
+      <article class="clearfix" data-title="{{title}}" data-course="{{course}}">
         <section>
           <h1>{{title}}</h1>
           <p>{{updatedOn}}</p>
@@ -22,7 +22,6 @@
   <body>
     <main>
       <header class="site-header clearfix">
-
         <section class="heading-group-h1">
           <h1>Adam Palmer Portfolio</h1>
         </section>
@@ -39,7 +38,7 @@
           </ul>
         </nav>
       </header>
-      <div class="project-placeholder">
+      <div id="project-placeholder">
       </div>
       <div class="image">
         <img src="styles/imgs/class-03.png" class="code-png">
