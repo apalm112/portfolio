@@ -32,6 +32,17 @@ portfolioView.create = function() {
     updatedOn: $('#project-updatedOn:checked').length ? new Date() : null
   });
 
+  $('#project-preview').append(formProject.toHtml());
+
+  $('pre code').each(function(index, block){
+    hljs.highlightBlock(block);
+  });
+
+  $('#export-field').show();
+  $('#project-json').val(JSON.stringify(fformProject) + ',');
+};
 
 
+projectView.initIndexPage = function() {
+  projectView.handleMainNav();
 };
