@@ -9,7 +9,6 @@
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/layout.css">
     <link rel="stylesheet" href="styles/modules.css">
-
     <script id="project-template" type="text/x-handlebars-template">
       <article class="clearfix">
         <section class="byline">
@@ -19,20 +18,6 @@
         </section>
       </article>
     </script>
-
-    <script id="about-template" type="text/x-handlebars-template">
-      <article class="clearfix">
-        <section class="byline">
-          <h2>My Coding Interests</h2>
-          <ul>
-            <li>Coding</li>
-            <li>Learning to Code</li>
-            <li>Pair Programming</li>
-          </ul>
-        </section>
-      </article>
-    </script>
-
   </head>
   <body>
     <main>
@@ -44,27 +29,15 @@
           <div class="icon-menu"><img src="vendor/hamburger-icon.png">
           </div>
           <ul class="nav-list">
-
             <li class="tab" data-content="home"><a href="#" class="icon-home">Home</a></li>
-
             <li class="tab"><a href="https://twitter.com/apalm112" target="_blank" class="icon-twitter3">Twitter</a></li>
-
             <li class="tab"><a href="https://github.com/apalm112" target="_blank" class="icon-github">Github</a></li>
-
             <li class="tab" data-content="projects"><a href="#" class="">Projects</a></li>
-
             <li class="tab"><a href="https://www.linkedin.com/profile/preview?locale=en_US&trk=prof-0-sb-preview-primary-button" target="_blank" class="icon-linkedin">LinkedIn</a></li>
-
             <li class="tab" data-content="about"><a href="#" class="icon-address-book">About</a></li>
-
           </ul>
         </nav>
       </header>
-
-      <!--Atom Img-->
-      <div class="image">
-        <img src="styles/imgs/class-03.png" class="code-png">
-      </div>
 
       <!--Projects Handlebar-->
       <section id="projects" class="tab-content">
@@ -72,11 +45,24 @@
         </div>
       </section>
 
-      <!--  About Handlebar-->
-      <section id="about" class="tab-content">
-        <div id="about-placeholder">
+      <!--  About Section-->
+        <div id="about" class="tab-content">
+          <article class="clearfix">
+            <section class="byline">
+              <h2>My Coding Interests</h2>
+              <ul>
+                <li>Coding</li>
+                <li>Learning to Code</li>
+                <li>Pair Programming</li>
+              </ul>
+            </section>
+          </article>
         </div>
-      </section>
+
+        <!--Atom Img-->
+        <div class="image">
+          <img src="styles/imgs/class-03.png" class="code-png">
+        </div>
 
     </main>
     <footer>
