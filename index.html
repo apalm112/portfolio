@@ -11,11 +11,24 @@
     <link rel="stylesheet" href="styles/modules.css">
 
     <script id="project-template" type="text/x-handlebars-template">
-      <article>
+      <article class="clearfix">
         <section class="byline">
           <h2>Repo Name: {{title}}</h2>
           <p>Updated On: {{updatedOn}}</p>
           <p>Course: {{course}}</p>
+        </section>
+      </article>
+    </script>
+
+    <script id="about-template" type="text/x-handlebars-template">
+      <article class="clearfix">
+        <section class="byline">
+          <h2>My Coding Interests</h2>
+          <ul>
+            <li>Coding</li>
+            <li>Learning to Code</li>
+            <li>Pair Programming</li>
+          </ul>
         </section>
       </article>
     </script>
@@ -54,21 +67,17 @@
       </div>
 
       <!--Projects Handlebar-->
-      <section id="repos">
+      <section id="projects" class="tab-content">
         <div id="project-placeholder">
         </div>
-
-      <!--  About Section-->
-      <section id="about" class="tab-content">
-        <section>
-          <h2>My Coding Interests</h2>
-          <ul>
-            <li>Coding</li>
-            <li>Learning to Code</li>
-            <li>Pair Programming</li>
-          </ul>
-        </section>
       </section>
+
+      <!--  About Handlebar-->
+      <section id="about" class="tab-content">
+        <div id="about-placeholder">
+        </div>
+      </section>
+
     </main>
     <footer>
     </footer>
