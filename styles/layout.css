@@ -9,6 +9,13 @@
   clear: both;
 }
 
+@media only screen and (min-width: 900px) {
+  .heading-group-h1 {
+    padding: .1em .1em .1em .2em;
+    float: none;
+  }
+}
+
 /* does what? */
 /*@media only screen and (min-width: 640px) {
   .heading-group-h1 {

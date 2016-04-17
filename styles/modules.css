@@ -37,7 +37,7 @@
 }
 
 /* Changes the main-nav to hamburger menu on window resize. */
-@media (min-width: 840px) {
+@media (min-width: 895px) {
   .icon-menu {
     display: none;
   }
@@ -51,9 +51,9 @@
 }
 
 /* Keeps the main-nav ul on one line at window resize of 990px */
-@media (max-width: 1000px) {
+@media (max-width: 990px) {
   .main-nav li {
-    padding: 0.1em 0.1em;
+    padding: 10px 10px;
   }
 }
 
