@@ -4,19 +4,18 @@
 }
 
 .icon-menu {
-  /*display: block;
+  display: block;
   transform: scale(1.4);
   position: absolute;
   right: 0px;
-  top: 0px;      style for hamburger.png */
+  top: 0px;
   font-size: 3em;
   float: right;
 }
 
 .main-nav {
   padding: .1em;
-/*  position: relative;*/
-}
+  position: relative;}
 
 .main-nav ul {
   display: none;
@@ -46,7 +45,6 @@
   }
   .main-nav ul {
     display: block;
-    border-bottom: none;
   }
   .main-nav li {
     display: inline-block;
@@ -62,13 +60,13 @@
   }
 }
 
-/* these don't do anything?
-@media (max-width: 840px) {
+/* these don't do anything? */
+/*@media (max-width: 840px) {
   .main-nav li {
     padding: 0.1em 0.1em;
   }
-}*/
-/*
+}
+
 @media (max-width: 640px) {
   .main-nav li {
     padding: inherit;
