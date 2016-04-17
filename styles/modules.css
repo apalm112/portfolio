@@ -4,16 +4,18 @@
 }
 
 .icon-menu {
-  display: block;
+  /*display: block;
   transform: scale(1.4);
   position: absolute;
   right: 0px;
-  top: 0px;
+  top: 0px;      style for hamburger.png */
+  font-size: 3em;
+  float: right;
 }
 
 .main-nav {
   padding: .1em;
-  position: relative;
+/*  position: relative;*/
 }
 
 .main-nav ul {
@@ -30,6 +32,7 @@
 .main-nav li {
   font-size: 1.5em;
   padding: .5em .2em;
+  border-bottom: 1px solid #ccc;
 }
 
 .template {
@@ -43,10 +46,12 @@
   }
   .main-nav ul {
     display: block;
+    border-bottom: none;
   }
   .main-nav li {
     display: inline-block;
     padding: 0.5em 0.5em;
+    border-bottom: none;
   }
 }
 
