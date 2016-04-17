@@ -49,20 +49,22 @@
   }
 }
 
+/* Keeps the main-nav ul on one line at window resize of 990px */
 @media (max-width: 1000px) {
   .main-nav li {
     padding: 0.1em 0.1em;
   }
 }
 
+/* these don't do anything?
 @media (max-width: 840px) {
   .main-nav li {
     padding: 0.1em 0.1em;
   }
-}
-
+}*/
+/*
 @media (max-width: 640px) {
   .main-nav li {
     padding: inherit;
   }
-}
+}*/

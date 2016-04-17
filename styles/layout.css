@@ -10,14 +10,14 @@
 
 @media only screen and (min-width: 640px) {
   .heading-group-h1 {
-  /*  padding:  .1em .1em .1em 2em;*/
+    padding:  .1em .1em .1em 2em;
     float: none;
   }
 }
 
-@media only screen and (max-width: 1200px) {
+/*@media only screen and (min-width: 838px) {
   .nav-list {
     display: block;
     padding: ;
   }
-}
+}*/
