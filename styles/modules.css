@@ -9,12 +9,13 @@
   position: absolute;
   right: 0px;
   top: 0px;
+  font-size: 3em;
+  float: right;
 }
 
 .main-nav {
   padding: .1em;
-  position: relative;
-}
+  position: relative;}
 
 .main-nav ul {
   display: none;
@@ -30,14 +31,15 @@
 .main-nav li {
   font-size: 1.5em;
   padding: .5em .2em;
-  border-bottom: 1px solid #777;
+  border-bottom: 1px solid #ccc;
 }
 
 .template {
   display: none;
 }
 
-@media (min-width: 640px) {
+/* Changes the main-nav to hamburger menu on window resize. */
+@media (min-width: 895px) {
   .icon-menu {
     display: none;
   }
@@ -46,6 +48,27 @@
   }
   .main-nav li {
     display: inline-block;
-    padding: 0.5em 1.5em;
+    padding: 0.5em 0.5em;
+    border-bottom: none;
   }
 }
+
+/* Keeps the main-nav ul on one line at window resize of 990px */
+@media (max-width: 990px) {
+  .main-nav li {
+    padding: 10px 10px;
+  }
+}
+
+/* these don't do anything? */
+/*@media (max-width: 840px) {
+  .main-nav li {
+    padding: 0.1em 0.1em;
+  }
+}
+
+@media (max-width: 640px) {
+  .main-nav li {
+    padding: inherit;
+  }
+}*/
