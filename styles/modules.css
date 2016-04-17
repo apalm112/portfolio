@@ -36,7 +36,8 @@
   display: none;
 }
 
-@media (min-width: 640px) {
+/* Changes the main-nav to hamburger menu on window resize. */
+@media (min-width: 840px) {
   .icon-menu {
     display: none;
   }
