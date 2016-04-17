@@ -1,3 +1,4 @@
+//View object to hold functions for dynamic updates & project related event handlers.
 var portfolioView = {};
 
 portfolioView.handleMainNav = function() {
