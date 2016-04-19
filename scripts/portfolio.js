@@ -27,17 +27,18 @@ Project.loadAll = function(dataPassedIn) {
 
 Project.fetchAll = function() {
   $.ajax({
-    type: 'GET',
+    type: 'HEAD',
     url: 'data/projects.json',
     success: function (data, message, xhr) {
       var eTag = xhr.getResponseHeader('eTag');
       if (eTag === localStorage.eTag) {
         Project.loadAll(JSON.parse(localStorage.projects));
         portfolioView.initIndexPage();
+        console.log('da eTag iz equal 2 lowcal stowahg!');
       } else {
         $.getJSON('data/projects.json', function(data) {
           Project.loadAll(data);
-          localStorage.projects.json = JSON.stringify(data);
+          localStorage.projects = JSON.stringify(data);
           localStorage.eTag = eTag;
           portfolioView.initIndexPage();
         });
