@@ -14,7 +14,7 @@ $(function() {
 });
 
 portfolioView.initIndexPage = function() {
-  Portfolio.all.forEach(function(proj) {
+  Project.all.forEach(function(proj) {
     $('#projects').append(proj.toHtml());
   });
 };

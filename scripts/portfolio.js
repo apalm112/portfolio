@@ -33,6 +33,7 @@ Project.fetchAll = function() {
       var eTag = xhr.getResponseHeader('eTag');
       if (eTag === localStorage.eTag) {
         Project.loadAll(JSON.parse(localStorage.projects));
+        console.log('before initIndexPage call');
         portfolioView.initIndexPage();
         console.log('da eTag iz equal 2 lowcal stowahg!');
       } else {
@@ -43,6 +44,7 @@ Project.fetchAll = function() {
           portfolioView.initIndexPage();
         });
       }
+      console.log(eTag);
     }
   }
   );
