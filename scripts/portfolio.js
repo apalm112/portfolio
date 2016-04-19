@@ -5,7 +5,7 @@ function Project (repos) {
   this.course = repos.course;
 }
 
-Project.all = []
+Project.all = [];
 
 Project.prototype.toHtml = function () {
   var $source = $('#project-template').html();
@@ -28,9 +28,17 @@ Project.fetchAll = function() {
     success: function (data, message, xhr) {
       var eTag = xhr.getResponseHeader('eTag');
       if (eTag === localStorage.eTag) {
-        Project.
-      };
-
+        Project.loadAll(JSON.parse(localStorage.projects));
+        portfolioView.initIndexPage();
+      } else {
+        $.getJSON('data/projects.json', function(data) {
+          Project.loadAll(data);
+          localStorage.projects.json = JSON.stringify(data);
+          localStorage.eTag = eTag;
+          portfolioView.initIndexPage();
+        });
+      }
     }
-  });
+  }
+  );
 };
