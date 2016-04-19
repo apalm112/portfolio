@@ -13,5 +13,5 @@ var projects = [
     title: 'Portfolio',
     updatedOn: '4-13-2016',
     course: 'Code 301'
-  },  
+  },
 ];
