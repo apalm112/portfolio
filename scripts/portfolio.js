@@ -20,9 +20,10 @@ Project.loadAll = function(dataPassedIn) {
   });
 };
 
-Project.forEach(function(a) {
+/* below function not needed? */
+/*Project.forEach(function(a) {
   $('#project-placeholder').append(a.toHtml());
-});
+});*/
 
 Project.fetchAll = function() {
   $.ajax({
