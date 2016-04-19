@@ -13,17 +13,20 @@ Project.prototype.toHtml = function () {
   return template(this);
 };
 
-projects.forEach(function(proj) {
-  githubRepos.push(new Project(proj));
-});
+Project.loadAll = function(dataPassedIn) {
 
-githubRepos.forEach(function(a) {
+  dataPassedIn.forEach(function(proj) {
+    Project.all.push(new Project(proj));
+  });
+};
+
+Project.forEach(function(a) {
   $('#project-placeholder').append(a.toHtml());
 });
 
 Project.fetchAll = function() {
   $.ajax({
-    type: 'HEAD',
+    type: 'GET',
     url: 'data/projects.json',
     success: function (data, message, xhr) {
       var eTag = xhr.getResponseHeader('eTag');
