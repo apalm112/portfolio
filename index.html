@@ -18,6 +18,14 @@
         </section>
       </article>
     </script>
+
+    <!--Handlebars for .map() repo-count-->
+    <script id="repo-template" type="text/x-handelbars-template">
+      <li class="clearfix">Number of Github repositories: <strong>{{count}}</strong>
+      </li>
+    </script>
+
+
   </head>
   <body>
     <main>
@@ -42,6 +50,13 @@
         <div id="project-placeholder">
         </div>
       </section>
+
+        <!--Template for .map()-->
+      <section class="repo-count">
+        <dt class="repo"></dt> <dd class="count"></dd>
+        <ul></ul>
+      </section>
+
         <div id="about" class="tab-content">
           <article class="clearfix">
             <section class="byline">

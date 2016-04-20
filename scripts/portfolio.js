@@ -34,9 +34,7 @@
         var eTag = xhr.getResponseHeader('eTag');
         if (eTag === localStorage.eTag) {
           Project.loadAll(JSON.parse(localStorage.projects));
-          console.log('before initIndexPage call');
           portfolioView.initIndexPage();
-          console.log('da eTag iz equal 2 lowcal stowahg!');
         } else {
           $.getJSON('data/projects.json', function(data) {
             Project.loadAll(data);
@@ -45,11 +43,27 @@
             callback();
           });
         }
-        console.log(eTag);
+        console.log(eTag);  // can remove this line
       }
     }
     );
   };
+
+  Project.countRepos = function(callback) {
+    return Project.all.map(function(title) {
+      console.log(title);
+      return Project.title;
+    })
+    .reduce(function(title, cur) {
+      console.log(title);
+      if (title.indexOf(cur) === -1) {
+        title.push(cur);
+      }
+      return title;
+
+    }, []);
+  };
+
 
   module.Project = Project;
 } (window));

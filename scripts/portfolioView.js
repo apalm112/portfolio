@@ -18,6 +18,15 @@
     Project.all.forEach(function(proj) {
       $('#projects').append(proj.toHtml());
     });
+
+    var template = Handlebars.compile($('#repo-template').text());
+
+    Project.countRepos().forEach(function(repo) {
+      $('.repo-count').append(template(repo));
+    });
+
+    $('#repo-template .repo').text(Project.all.title);
+    $('#repo-template .count').text(Project.countRepos());
   };
 
   module.portfolioView = portfolioView;
