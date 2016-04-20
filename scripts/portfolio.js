@@ -26,7 +26,7 @@
     $('#project-placeholder').append(a.toHtml());
   });*/
 
-  Project.fetchAll = function() {
+  Project.fetchAll = function(callback) {
     $.ajax({
       type: 'HEAD',
       url: 'data/projects.json',
@@ -42,7 +42,7 @@
             Project.loadAll(data);
             localStorage.projects = JSON.stringify(data);
             localStorage.eTag = eTag;
-            portfolioView.initIndexPage();
+            callback();
           });
         }
         console.log(eTag);
