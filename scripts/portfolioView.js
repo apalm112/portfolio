@@ -19,13 +19,16 @@
       $('#projects').append(proj.toHtml());
     });
 
+    // appends li Number of Repos
     var template = Handlebars.compile($('#repo-template').text());
+  //  $('.repo-count').append(template());
 
-
-    $('.repo-count').append(template());
-
-    $('#repo-template .repo').text(Project.all.title);
+    // project objects show up in console
     $('#repo-template .count').text(Project.countRepos());
+
+
+    //$('#repo-template .repo').text(Project.all.title);
+
   };
 
   module.portfolioView = portfolioView;

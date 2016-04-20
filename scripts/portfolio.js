@@ -52,12 +52,11 @@
   Project.countRepos = function(callback) {
     return Project.all.map(function(title) {
       console.log(title);
-      return Project.title;
+      return title;
     });
-    /*return Project.all.reduce(function(title, cur) {
-      console.log(title);
-      if (title.indexOf(cur) === -1) {
-        title.push(cur);
+  /*  return Project.all.reduce(function(title, cur) {
+      if (title[cur] = cur + cur) {
+      //  title.push(cur);
       }
       return title;
     }, []);*/
