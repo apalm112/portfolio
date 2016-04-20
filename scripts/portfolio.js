@@ -43,7 +43,7 @@
             callback();
           });
         }
-        console.log(eTag);  // can remove this line
+      //  console.log(eTag);  // can remove this line
       }
     }
     );
@@ -53,15 +53,14 @@
     return Project.all.map(function(title) {
       console.log(title);
       return Project.title;
-    })
-    .reduce(function(title, cur) {
+    });
+    /*return Project.all.reduce(function(title, cur) {
       console.log(title);
       if (title.indexOf(cur) === -1) {
         title.push(cur);
       }
       return title;
-
-    }, []);
+    }, []);*/
   };
 
 

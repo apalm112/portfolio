@@ -21,9 +21,8 @@
 
     var template = Handlebars.compile($('#repo-template').text());
 
-    Project.countRepos().forEach(function(repo) {
-      $('.repo-count').append(template(repo));
-    });
+
+    $('.repo-count').append(template());
 
     $('#repo-template .repo').text(Project.all.title);
     $('#repo-template .count').text(Project.countRepos());
