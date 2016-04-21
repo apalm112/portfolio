@@ -1,9 +1,17 @@
 (function(module) {
   function Project (repos) {
     // constructor function for github repos to be displayed
-    this.title = repos.title;
+    Object.keys(repos).forEach(function(arr, curr, idx) {
+      this[arr] = repos[arr];
+    }, this);
+
+    /*   Object.keys(opts).forEach(function(e, index, keys) {
+         this[e] = opts[e];*/
+
+
+    /*this.title = repos.title;
     this.updatedOn = repos.updatedOn;
-    this.course = repos.course;
+    this.course = repos.course;*/
   }
 
   Project.all = [];
@@ -26,7 +34,7 @@
     $('#project-placeholder').append(a.toHtml());
   });*/
 
-  Project.fetchAll = function(callback) {
+  Project.fetchAll = function(initIndexPage) {
     $.ajax({
       type: 'HEAD',
       url: 'data/projects.json',
@@ -40,7 +48,7 @@
             Project.loadAll(data);
             localStorage.projects = JSON.stringify(data);
             localStorage.eTag = eTag;
-            callback();
+            initIndexPage();
           });
         }
       //  console.log(eTag);  // can remove this line
