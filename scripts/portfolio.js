@@ -62,14 +62,13 @@
       console.log(title);
       return title;
     });
-  /*  return Project.all.reduce(function(title, cur) {
+    return Project.all.reduce(function(title, cur) {
       if (title[cur] = cur + cur) {
-      //  title.push(cur);
+        title.push(cur);
       }
       return title;
-    }, []);*/
+    }, []);
   };
-
 
   module.Project = Project;
 } (window));

@@ -21,13 +21,11 @@
 
     // appends li Number of Repos
     var template = Handlebars.compile($('#repo-template').text());
-  //  $('.repo-count').append(template());
+    $('.repo-count').append(template());
 
     // project objects show up in console
     $('#repo-template .count').text(Project.countRepos());
-
-
-    //$('#repo-template .repo').text(Project.all.title);
+    $('#repo-template .repo').text(Project.all.title);
 
   };
 
