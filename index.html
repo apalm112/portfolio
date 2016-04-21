@@ -18,6 +18,13 @@
         </section>
       </article>
     </script>
+
+    <!--Handlebars for .map() repo-count-->
+    <script id="repo-template" type="text/x-handelbars-template">
+      <li class="clearfix">Number O Repos: {{count}}</li>
+    </script>
+
+
   </head>
   <body>
     <main>
@@ -42,6 +49,13 @@
         <div id="project-placeholder">
         </div>
       </section>
+
+        <!--Template for .map()-->
+      <section class="repo-count">
+        <dt class="repo"></dt> <dd class="count"></dd>
+        <ul></ul>
+      </section>
+
         <div id="about" class="tab-content">
           <article class="clearfix">
             <section class="byline">
@@ -66,11 +80,11 @@
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.min.js"></script>
-  <!--  <script src="data/projects.json"></script>-->
+    <script src="data/projects.json"></script>
     <script src="scripts/portfolio.js"></script>
     <script src="scripts/portfolioView.js"></script>
     <script>
-    Project.fetchAll();
+    Project.fetchAll(portfolioView.initIndexPage);
     </script>
   </body>
 </html>
