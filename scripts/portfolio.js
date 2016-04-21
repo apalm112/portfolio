@@ -23,8 +23,8 @@
   };
 
   Project.loadAll = function(dataPassedIn) {
-
-    dataPassedIn.forEach(function(proj) {
+    //DONE: change .forEach() to FP method
+    dataPassedIn.filter(function(proj) {
       Project.all.push(new Project(proj));
     });
   };
