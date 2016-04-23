@@ -13,7 +13,7 @@
     "strict": 0,
     "indent": [2, 2],
     "quotes": [1, "single"],
-    "no-mulit-spaces": [1, {
+    "no-multi-spaces": [1, {
       "exceptions": {
         "VariableDeclarator": true,
         "FunctionExpression": true,
