@@ -19,13 +19,10 @@
         </section>
       </article>
     </script>
-
     <!--Handlebars for .map() repo-count-->
     <script id="repo-template" type="text/x-handelbars-template">
       <li class="clearfix">Number O Repos: {{count}}</li>
     </script>
-
-
   </head>
   <body>
     <main>
@@ -50,15 +47,13 @@
         <div id="project-placeholder">
         </div>
       </section>
-
-        <!--Template for .map()-->
+        <!--Template for .map(), which isn't working correctly yet-->
       <section class="repo-count">
         <dt class="repo"></dt> <dd class="count"></dd>
         <ul></ul>
       </section>
-
         <div id="about" class="tab-content">
-          <article class="clearfix">
+          <article class="clearfix" id="about-location">
             <section class="byline">
               <h2>My Coding Interests</h2>
               <ul>
@@ -81,7 +76,6 @@
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.min.js"></script>
-    <script src="data/projects.json"></script>
     <script src="scripts/portfolio.js"></script>
     <script src="scripts/portfolioView.js"></script>
     <script>

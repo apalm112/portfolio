@@ -4,7 +4,8 @@
 }
 
 #name {
-  /* Hacky attempt to keep the name centered on page. */
+  /* Hacky code that keeps the <h1> centered on page, thanx w3!
+     But now it moves down on click events on Projects & About tabs. */
   margin: 0;
   position: absolute;
   top: 5%;
@@ -13,6 +14,22 @@
   transform: translate(-50%, -50%);
 }
 
+.about { /* div */
+  height: 10em;
+  position: relative;
+}
+
+.about-location{
+  margin-left: 40%;
+/*
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%); */
+}
+
+/* Not sure what this part does, if anything! */
 .clearfix::after {
   content: "";
   display: table;
