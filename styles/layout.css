@@ -1,6 +1,16 @@
 .heading-group-h1 {
-  max-width: 80%;
+  widows: 6em;
   text-shadow: 2px 2px 7px #bbb;
+}
+
+#name {
+  /* Hacky attempt to keep the name centered on page. */
+  margin: 0;
+  position: absolute;
+  top: 5%;
+  left: 48%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
 }
 
 .clearfix::after {
