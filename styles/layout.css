@@ -19,14 +19,12 @@
   position: relative;
 }
 
-.about-location{
-  margin-left: 40%;
-/*
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  margin-right: -50%;
-  transform: translate(-50%, -50%); */
+#about-location{
+  margin-left: 30%;
+}
+
+#projects {
+  margin-left: 28%;
 }
 
 /* Not sure what this part does, if anything! */
