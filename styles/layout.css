@@ -28,11 +28,11 @@
 }
 
 /* Not sure what this part does, if anything! */
-.clearfix::after {
+/*.clearfix::after {
   content: "";
   display: table;
   clear: both;
-}
+}*/
 
 @media only screen and (min-width: 900px) {
   .heading-group-h1 {
