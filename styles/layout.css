@@ -1,13 +1,38 @@
 .heading-group-h1 {
-  max-width: 80%;
+  widows: 6em;
   text-shadow: 2px 2px 7px #bbb;
 }
 
-.clearfix::after {
+#name {
+  /* Hacky code that keeps the <h1> centered on page, thanx w3!
+     But now it moves down on click events on Projects & About tabs. */
+  margin: 0;
+  position: absolute;
+  top: 5%;
+  left: 48%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+}
+
+.about { /* div */
+  height: 10em;
+  position: relative;
+}
+
+#about-location{
+  margin-left: 30%;
+}
+
+#projects {
+  margin-left: 28%;
+}
+
+/* Not sure what this part does, if anything! */
+/*.clearfix::after {
   content: "";
   display: table;
   clear: both;
-}
+}*/
 
 @media only screen and (min-width: 900px) {
   .heading-group-h1 {

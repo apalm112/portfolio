@@ -34,7 +34,7 @@
     $('#project-placeholder').append(a.toHtml());
   });*/
 
-  Project.fetchAll = function(initIndexPage) {
+  Project.fetchAll = function(callback) {
     $.ajax({
       type: 'HEAD',
       url: 'data/projects.json',
@@ -42,13 +42,13 @@
         var eTag = xhr.getResponseHeader('eTag');
         if (eTag === localStorage.eTag) {
           Project.loadAll(JSON.parse(localStorage.projects));
-          portfolioView.initIndexPage();
+          callback();
         } else {
           $.getJSON('data/projects.json', function(data) {
             Project.loadAll(data);
             localStorage.projects = JSON.stringify(data);
             localStorage.eTag = eTag;
-            initIndexPage();
+            callback();
           });
         }
       //  console.log(eTag);  // can remove this line
