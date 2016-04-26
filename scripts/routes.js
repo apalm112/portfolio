@@ -1,5 +1,5 @@
-page('/', );  // home page
-page('/about',  );  // about page
-page('/projects', );  // project page
+page('/', portfolioController.index);  // home page
+page('/about', aboutController.index);  // about page
+page('/projects', portfolioViewController.index);  // project page
 
 page();  // method call
