@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <title>Portfolio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="vendor/styles/normalize.css">
-    <link rel="stylesheet" href="styles/icons.css">
+    <link rel="stylesheet" href="/vendor/styles/normalize.css">
+    <link rel="stylesheet" href="/styles/icons.css">
     <link href="https://fonts.googleapis.com/css?family=Droid+Sans" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="styles/base.css">
-    <link rel="stylesheet" href="styles/layout.css">
-    <link rel="stylesheet" href="styles/modules.css">
+    <link rel="stylesheet" href="/styles/base.css">
+    <link rel="stylesheet" href="/styles/layout.css">
+    <link rel="stylesheet" href="/styles/modules.css">
     <script id="project-template" type="text/x-handlebars-template">
       <article class="clearfix">
         <section class="byline">
@@ -76,18 +76,19 @@
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.min.js"></script>
+    <script src="/vendor/scripts/page.js"></script>
 
-    <script src="vendor/scripts/page.js"></script>
+    <script src="/scripts/controller/githubToken.js"></script>
+    <script src="/scripts/model/portfolio.js"></script>
+    <script src="/scripts/controller/aboutController.js"></script>
 
-    <script src="scripts/portfolio.js"></script>
-    <script src="scripts/aboutController.js"></script>
+    <script src="/scripts/controller/portfolioViewController.js"></script>
+    <script src="/scripts/controller/portfolioViewController.js"></script>
+    <script src="/scripts/controller/portfolioController.js"></script>
 
-    <script src="scripts/portfolioViewController.js"></script>
+    <script src="/scripts/model/repo.js"></script>
+    <script src="/scripts/view/portfolioView.js"></script>
 
-    <script src="scripts/portfolioController.js"></script>
-
-    <script src="scripts/portfolioView.js"></script>
-
-    <script src="scripts/routes.js"></script>
+    <script src="/scripts/routes.js"></script>
   </body>
 </html>
