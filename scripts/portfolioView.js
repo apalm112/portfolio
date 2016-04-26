@@ -30,4 +30,4 @@
   };
 
   module.portfolioView = portfolioView;
-}(window));
+})(window);
