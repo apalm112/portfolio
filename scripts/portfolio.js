@@ -57,7 +57,7 @@
     );
   };
 
-  Project.countRepos = function(callback) {
+  /*Project.countRepos = function(callback) {
     return Project.all.map(function(title) {
       console.log(title);
       return title;
@@ -68,7 +68,7 @@
       }
       return title;
     }, []);
-  };
+  };*/
 
   module.Project = Project;
 } (window));
