@@ -1,8 +1,7 @@
 (function(module) {
   var portfolioViewController = {};
 
-  portfolioViewController.index = function() {
-    
+  portfolioViewController.index = function() {  
   };
 
   module.portfolioViewController = portfolioViewController;

@@ -2,7 +2,8 @@
 (function(module) {
   var portfolioView = {};
 
-/*  portfolioView.handleMainNav = function() {
+/*  commented for Class-11 todo
+    portfolioView.handleMainNav = function() {
     $('.main-nav').on('click', '.tab', function(e) {
       $('.tab-content').hide();
       $('#' + $(this).data('content')).fadeIn();
@@ -20,12 +21,12 @@
     });
 
     // appends li Number of Repos
-/*    var template = Handlebars.compile($('#repo-template').text());
+    var template = Handlebars.compile($('#repo-template').text());
     $('.repo-count').append(template());
 
     // project objects show up in console
     $('#repo-template .count').text(Project.countRepos());
-    $('#repo-template .repo').text(Project.all.title);*/
+    $('#repo-template .repo').text(Project.all.title);
 
   };
 

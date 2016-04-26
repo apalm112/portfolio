@@ -4,14 +4,6 @@
     Object.keys(repos).forEach(function(arr, curr, idx) {
       this[arr] = repos[arr];
     }, this);
-
-    /*   Object.keys(opts).forEach(function(e, index, keys) {
-         this[e] = opts[e];*/
-
-
-    /*this.title = repos.title;
-    this.updatedOn = repos.updatedOn;
-    this.course = repos.course;*/
   }
 
   Project.all = [];
@@ -51,13 +43,12 @@
             callback();
           });
         }
-      //  console.log(eTag);  // can remove this line
       }
     }
     );
   };
 
-  /*Project.countRepos = function(callback) {
+  Project.countRepos = function(callback) {
     return Project.all.map(function(title) {
       console.log(title);
       return title;
@@ -68,7 +59,7 @@
       }
       return title;
     }, []);
-  };*/
+  };
 
   module.Project = Project;
 } (window));
