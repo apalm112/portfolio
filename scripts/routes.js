@@ -1,5 +1,5 @@
-page('/', );
-page('/about',  );
-page('/projects', );
+page('/', );  // home page
+page('/about',  );  // about page
+page('/projects', );  // project page
 
-page();
+page();  // method call
