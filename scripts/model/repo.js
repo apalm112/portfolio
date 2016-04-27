@@ -7,9 +7,9 @@
     $.get('https://api.github.com/users/apalm112/repos' + '?per_page=5' + '&sort=updated')
       .done(function(data) {
         repos.all = data;
-      //  console.log('Here is yo ajax response data: ', data);
+        console.log('Here is yo ajax response data: ', data);
       });
-    callback(repos.data); //  Wrong place for callback?
+    Project.loadAll(repos.data); //  Wrong place for callback?
   };
 
   repos.with = function(attr) {

@@ -14,10 +14,10 @@
     return template(this);
   };
 
-  Project.loadAll = function(dataPassedIn) {
+  Project.loadAll = function(data) {
     console.log('NNnnnooooooooo!');
-    dataPassedIn.filter(function(proj) {
-      Project.all.push(new Project(proj));
+    return Project.all.filter(function(proj) {
+      return Project.all.push(new Project(proj));
       console.log('here is duh loadAll method working!');
     });
   };
