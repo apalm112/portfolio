@@ -26,25 +26,25 @@
   });*/
 
   Project.fetchAll = function(callback) {
-    $.ajax({
+    /*$.ajax({
       type: 'HEAD',
       url: 'data/projects.json',
       success: function (data, message, xhr) {
         var eTag = xhr.getResponseHeader('eTag');
         if (eTag === localStorage.eTag) {
-          Project.loadAll(JSON.parse(localStorage.projects));
+          Project.loadAll(JSON.parse(localStorage.projects)); */
           callback();
-        } else {
+      /*  } else {
           $.getJSON('data/projects.json', function(data) {
             Project.loadAll(data);
             localStorage.projects = JSON.stringify(data);
-            localStorage.eTag = eTag;
+            localStorage.eTag = eTag; */
             callback();
-          });
+    /*      });
         }
       }
     }
-    );
+    );*/
   };
 
   Project.countRepos = function(callback) {
