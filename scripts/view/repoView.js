@@ -11,13 +11,13 @@
   };
 
   var reposCompile = Handlebars.compile($('#project-template')).html();
-  // Might not need this, beind done line 12 portfolio.js
-
+  // Might not need this, being done line 12 portfolio.js?
 
   repoView.index = function() {
   //  method to append to DOM
     helperTimeMethod();
-    $('#about ul').append(repos.with('name').map(reposCompile)
+    $('#about ul').append(
+      repos.with('name').map(reposCompile)
     );
   };
   module.repoView = repoView;

@@ -2,7 +2,7 @@
   var portfolioViewController = {};
 
   portfolioViewController.index = function() {
-    // This does absolutely nothing.  Delete it.
+    // This does absolutely nothing.  Delete it?
   };
 
   module.portfolioViewController = portfolioViewController;

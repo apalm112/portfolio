@@ -5,7 +5,7 @@
     $('#projects').hide();
     $('#about').show();
 
-    //  callback();  for class-12
+    repos.requestRepos(repoView.index);
   };
 
   module.aboutController = aboutController;
