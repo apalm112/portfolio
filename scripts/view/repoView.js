@@ -13,7 +13,7 @@
   var render = function (repo) {
     var reposCompile = Handlebars.compile($('#project-template').html());
   // Might not need this, being done line 12 portfolio.js?
-    return reposCompile;
+  //  return reposCompile;
   };
 
 
