@@ -5,7 +5,7 @@
     $('#projects').hide();
     $('#about').show();
 
-  //  callbackHere();
+    //  callback();  for class-12
   };
 
   module.aboutController = aboutController;

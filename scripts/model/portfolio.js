@@ -9,13 +9,12 @@
   Project.all = [];
 
   Project.prototype.toHtml = function () {
-    var $source = $('#project-template').html();
+    var $source = $('#project-template').html();  // appends data to Handlebars project-template.
     var template = Handlebars.compile($source);
     return template(this);
   };
 
   Project.loadAll = function(dataPassedIn) {
-    //DONE: change .forEach() to FP method
     dataPassedIn.filter(function(proj) {
       Project.all.push(new Project(proj));
     });
