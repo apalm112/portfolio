@@ -4,14 +4,6 @@
     Object.keys(repos).forEach(function(arr, curr, idx) {
       this[arr] = repos[arr];
     }, this);
-
-    /*   Object.keys(opts).forEach(function(e, index, keys) {
-         this[e] = opts[e];*/
-
-
-    /*this.title = repos.title;
-    this.updatedOn = repos.updatedOn;
-    this.course = repos.course;*/
   }
 
   Project.all = [];
@@ -51,7 +43,6 @@
             callback();
           });
         }
-      //  console.log(eTag);  // can remove this line
       }
     }
     );

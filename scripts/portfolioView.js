@@ -2,7 +2,8 @@
 (function(module) {
   var portfolioView = {};
 
-  portfolioView.handleMainNav = function() {
+/*  commented for Class-11 todo
+    portfolioView.handleMainNav = function() {
     $('.main-nav').on('click', '.tab', function(e) {
       $('.tab-content').hide();
       $('#' + $(this).data('content')).fadeIn();
@@ -12,7 +13,7 @@
 
   $(function() {
     portfolioView.handleMainNav();
-  });
+  });*/
 
   portfolioView.initIndexPage = function() {
     Project.all.forEach(function(proj) {
@@ -30,4 +31,4 @@
   };
 
   module.portfolioView = portfolioView;
-}(window));
+})(window);
