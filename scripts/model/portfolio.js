@@ -9,15 +9,16 @@
   Project.all = [];
 
   Project.prototype.toHtml = function () {
-    var $source = $('#project-template').html();
+    var $source = $('#project-template').html();  // appends data to Handlebars project-template.
     var template = Handlebars.compile($source);
     return template(this);
   };
 
   Project.loadAll = function(dataPassedIn) {
-    //DONE: change .forEach() to FP method
+    console.log('NNnnnooooooooo!');
     dataPassedIn.filter(function(proj) {
       Project.all.push(new Project(proj));
+      console.log('here is duh loadAll method working!');
     });
   };
 
@@ -26,7 +27,7 @@
     $('#project-placeholder').append(a.toHtml());
   });*/
 
-  Project.fetchAll = function(callback) {
+  /*Project.fetchAll = function(callback) {
     $.ajax({
       type: 'HEAD',
       url: 'data/projects.json',
@@ -34,19 +35,19 @@
         var eTag = xhr.getResponseHeader('eTag');
         if (eTag === localStorage.eTag) {
           Project.loadAll(JSON.parse(localStorage.projects));
-          callback();
+    callback();
         } else {
           $.getJSON('data/projects.json', function(data) {
             Project.loadAll(data);
             localStorage.projects = JSON.stringify(data);
             localStorage.eTag = eTag;
-            callback();
+    callback();
           });
         }
       }
     }
     );
-  };
+  }; */
 
   Project.countRepos = function(callback) {
     return Project.all.map(function(title) {
