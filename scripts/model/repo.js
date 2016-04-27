@@ -3,7 +3,7 @@
 
   repos.all = [];
 
-  repos.initIndex = function() {
+  repos.requestRepos = function(callback) {
     $.ajax({
       url: 'https://api.github.com/users/apalm112/repos' +
            '?per_page=12' +
