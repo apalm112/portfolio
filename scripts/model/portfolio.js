@@ -15,8 +15,10 @@
   };
 
   Project.loadAll = function(dataPassedIn) {
+    console.log('NNnnnooooooooo!');
     dataPassedIn.filter(function(proj) {
       Project.all.push(new Project(proj));
+      console.log('here is duh loadAll method working!');
     });
   };
 

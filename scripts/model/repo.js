@@ -12,7 +12,7 @@
       headers: {'Authorization': 'token ' + githubToken},
       success: function(data) {
         repos.all = data;
-        console.log('Here is Yo .ajax call: ', data);
+        console.log('Here is yo ajax response data: ', data);
       }
     });
     Project.loadAll(repos.data);
