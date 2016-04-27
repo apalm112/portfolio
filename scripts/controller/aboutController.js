@@ -3,8 +3,7 @@
 
   aboutController.index = function(callback) {
     $('#projects').hide();
-    $('#about').show(); //.siblings().hide();
-
+    $('#about').show();
     repos.requestRepos(repoView.index);
   };
 

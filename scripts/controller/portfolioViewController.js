@@ -3,7 +3,7 @@
 
   portfolioViewController.index = function() {
     // This does absolutely nothing.  Delete it?
-  //  repos.requestRepos(portfolioView.initIndexPage);
+    repos.requestRepos(portfolioView.initIndexPage);
   };
 
   module.portfolioViewController = portfolioViewController;

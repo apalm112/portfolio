@@ -15,7 +15,6 @@
   };
 
   Project.loadAll = function(data) {
-    console.log('NNnnnooooooooo!');
     return Project.all.filter(function(proj) {
       return Project.all.push(new Project(proj));
       console.log('here is duh loadAll method working!');
