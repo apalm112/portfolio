@@ -15,11 +15,11 @@
         console.log('Here is yo ajax response data: ', data);
       }
     });
-    Project.loadAll(repos.data);
+    Project.loadAll(repos.data); //  Wrong place for callback? (callback)
   };
 
   repos.with = function(attr) {
-    return repos.all.filter(function(repo) {
+    return repos.all.filter(function (repo) {
       return repo[attr];
     });
   };
