@@ -20,5 +20,6 @@
       repos.with('name').map(reposCompile)
     );
   };
+
   module.repoView = repoView;
 }) (window);

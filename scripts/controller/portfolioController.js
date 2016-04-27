@@ -2,8 +2,6 @@
   var portfolioController = {};
 
   portfolioController.index = function() {
-    Project.fetchAll(portfolioView.initIndexPage);
-
     $('.main-nav').on('click', '.tab', function(e) {
       e.preventDefault();
       $('.tab-content').hide();
@@ -11,8 +9,7 @@
     });
     $('.main-nav .tab:first').click();
 
-  /*  $('').hide();
-    $('').show();*/
+    repos.requestRepos(portfolioView.initIndexPage);
 
   };
 
