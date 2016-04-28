@@ -10,17 +10,13 @@
     $about.show().siblings().hide();
   };
 
-  var render = function (repo) {
-    var reposCompile = Handlebars.compile($('#project-template').html());
-  // Might not need this, being done line 12 portfolio.js?
-    return reposCompile;
-  };
-
+  var reposCompile = Handlebars.compile($('#project-template').text());
+  // Might not need this, being done line 12 portfolio.js
 
   repoView.index = function() {
-  //  method to append to DOM
-    helperTimeMethod();
-    $('#about ul').append(
+  //  helperTimeMethod();
+    $('#about').hide();
+    $('#projects').append(
       repos.with('name').map(reposCompile)
     );
   };

@@ -1,11 +1,9 @@
 (function(module) {
   var aboutController = {};
 
-  aboutController.index = function(callback) {
-    // $('#projects').hide();
-    $('#about').show().siblings().hide();
-
-    repos.requestRepos(repoView.index);
+  aboutController.index = function() {
+    $('#projects').hide();
+    $('#about').show();
   };
 
   module.aboutController = aboutController;
