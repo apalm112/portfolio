@@ -2,8 +2,10 @@
   var portfolioViewController = {};
 
   portfolioViewController.index = function() {
-    // This does absolutely nothing.  Delete it?
-    repos.requestRepos(portfolioView.initIndexPage);
+    // Trying two statements below, not working so far
+    $('#about').hide();
+    $('#project-placeholder').show();
+    repos.requestRepos(repoView.index); // executes callback for .get() to Github
   };
 
   module.portfolioViewController = portfolioViewController;

@@ -9,7 +9,8 @@
         repos.all = data;
         console.log('Here is yo ajax response data: ', data);
       });
-    portfolioView.initIndexPage(repos.data);
+    //repoView.index();
+  //  portfolioView.initIndexPage(); <---this callback literally does nothing.
   };
 
   repos.with = function(attr) {

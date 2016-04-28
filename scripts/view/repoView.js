@@ -14,9 +14,9 @@
   // Might not need this, being done line 12 portfolio.js
 
   repoView.index = function() {
-  //  method to append to DOM
-    helperTimeMethod();
-    $('#about ul').append(
+  //  helperTimeMethod();
+    $('#about').hide();
+    $('#projects').append(
       repos.with('name').map(reposCompile)
     );
   };
