@@ -10,7 +10,7 @@
     $about.show().siblings().hide();
   };
 
-  var reposCompile = Handlebars.compile($('#project-template').html());
+  var reposCompile = Handlebars.compile($('#project-template').text());
   // Might not need this, being done line 12 portfolio.js
 
   repoView.index = function() {

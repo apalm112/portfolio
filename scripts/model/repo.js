@@ -9,7 +9,7 @@
         repos.all = data;
         console.log('Here is yo ajax response data: ', data);
       });
-    Project.loadAll(repos.data); //  Wrong place for callback?
+    portfolioView.initIndexPage(repos.data);
   };
 
   repos.with = function(attr) {
