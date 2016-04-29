@@ -34,9 +34,9 @@
   border-bottom: 1px solid #ccc;
 }
 
-.template {
-  display: none;
-}
+/*.template {
+  display: inline;
+}*/
 
 /* Changes the main-nav to hamburger menu on window resize. */
 @media (min-width: 895px) {

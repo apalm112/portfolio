@@ -12,7 +12,9 @@
         console.log('Here is yo .get() response data: ', data);
       })
   // Jeff said put a function call here to fire after .get() returns w/ repo data to append to the DOM
-    .done(callback);
+    .done(function(){
+      callback();
+    });
   };
 
   repos.with = function(attr) {

@@ -4,14 +4,14 @@
   var helperTimeMethod  = function() {
     var $about = $('#about');
     $about.find('ul').empty();
-    $about.show().siblings().hide();
+  //  $about.show().siblings().hide();
   };
 
   var reposCompile = Handlebars.compile($('#project-template').text());
   // Might not need this, being done line 12 portfolio.js
 
   repoView.index = function() {
-  //  helperTimeMethod();
+    helperTimeMethod();
     $('#about').hide();
     $('#project-placeholder').append(
       repos.with('name').map(reposCompile)

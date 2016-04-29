@@ -14,10 +14,6 @@ body {
   margin-bottom: 20px;
 }
 
-header {
-
-}
-
 main {
   position: relative;
   margin: auto;
@@ -34,8 +30,4 @@ a:hover, a:focus {
 
 ul {
   list-style: none;
-}
-
-footer p {
-
 }
