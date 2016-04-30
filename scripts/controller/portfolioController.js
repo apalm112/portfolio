@@ -2,7 +2,7 @@
   var portfolioController = {};
 
   portfolioController.index = function() {
-    $('.tab-content').hide();
+  //  $('.tab-content').hide();
     $('#' + $(this).data('content')).fadeIn();
   };
 

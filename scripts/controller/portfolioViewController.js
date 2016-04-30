@@ -4,7 +4,7 @@
   portfolioViewController.index = function() {
     // Trying two statements below, not working so far
     $('#about').hide();
-    $('#project-placeholder').show();
+    $('#projects').show();
     repos.requestRepos(repoView.index); // executes callback for .get() to Github
   };
 
