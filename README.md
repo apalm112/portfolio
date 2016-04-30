@@ -4,5 +4,7 @@ This is my Code 301 portfolio project, which will highlight my Github projects a
 App live on Heroku: https://portfolio-301d3.herokuapp.com/
 
 TODO's:
-    -- Fix the CSS for the header <h1>
-    -- get the .get() call & Handlebars template to append the repo info to the DOM.
+    -- Debug the CSS for the header <h1>
+    -- Debug repo data is not being removed from the DOM, multiple projects tab clicks will append just as many repos to the DOM.
+    -- Debug About Section not being hidden on home page
+    -- Debug About Section not displaying properly when About tab is clicked
