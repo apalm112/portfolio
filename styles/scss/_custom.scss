@@ -1,0 +1,167 @@
+img {
+  max-width: 100%;
+  float: right;
+}
+
+.code-png {
+	/* RWD style for images  */
+  max-width: 100%;
+}
+
+html {
+  height: 100%;
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+// Your variable overrides
+$body-bg: #000;
+$body-color: #111;
+
+body {
+  /* padding: 2em; */
+  line-height: 1.5;
+  font-size: 100%;
+	font-family: "Droid Sans";
+  margin-bottom: 10px;
+	background-color: $gray-800;
+}
+
+h1 {
+	margin-bottom: 0;
+	padding-top: 40px !important;
+}
+
+h3 {
+	font-weight: lighter;
+}
+
+footer {
+	background-color: $gray-300;
+	/*	Footer Styles position it always at the bottom of the page, but not fixed.
+ */
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	text-align: center;
+	padding: 1rem;
+	vertical-align: bottom;
+}
+
+main {
+  position: relative;
+  margin: auto;
+  max-width: 100%;
+}
+
+a {
+	color: $white;
+}
+
+a, a:link, a:active {
+  text-decoration: none;
+}
+
+a:hover, a:focus {
+  color: #29506D;
+}
+
+span {
+	letter-spacing: .3em;
+	word-spacing: .2em;
+}
+
+.container {
+	max-width: 100%;
+}
+
+.h1-name {
+	// font-size: .9rem;
+  text-shadow: 2px 2px 7px #bbb;
+}
+
+.main-header {
+	width: 100%;
+	margin: 0 auto;
+	text-align: center;
+}
+
+#name {
+  /* Hacky code that keeps the <h1> centered on page, thanx w3!
+     But now it moves down on click events on Projects & About tabs. */
+  margin: 0;
+  position: absolute;
+  top: 5%;
+  left: 48%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+}
+
+#about-location{
+  margin-left: 30%;
+}
+
+#projects {
+  margin-left: 28%;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.h1-name {
+  align-items: center;
+	font-weight: bolder;
+	padding: 0 0.1em 0 .1em;
+}
+
+.main-nav {
+	height: 40px;
+	padding-top: 11px;
+}
+
+.main-nav:hover ul {
+
+}
+
+.main-nav li {
+
+}
+
+.jumbotron {
+	background-color: $gray-300;
+	padding-top: 10px;
+	padding-bottom: 60px;
+}
+
+.nav-item {
+	padding-left: 0.5rem;
+	padding-right: 0.5rem;
+}
+
+/* These two styles get the <a></a> on one line  */
+.nav-link {
+	padding: 0.01rem 0.2rem 3rem 0.2rem;
+}
+.nav-link:first-child {
+	padding: 0.01rem 0.2rem 3rem 0.6rem;
+}
+
+.what {
+	margin-top: 1px;
+}
+.icon-up {
+	margin-top: 0.25rem;
+}
+
+.sub-title {
+	font: 125%/1.75;
+	font-size: 125%;
+}

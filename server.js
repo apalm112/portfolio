@@ -3,6 +3,8 @@ var requestProxy = require('express-request-proxy'),
   port = process.env.PORT || 3000,
   app = express();
 
+require('page');
+
 var proxyGitHub = function(request, response) {
   console.log('Routing GitHub request for', request.params[0]);
   (requestProxy({
@@ -15,11 +17,12 @@ app.get('/github/*', proxyGitHub);
 
 app.use(express.static('./'));
 
+
 app.get('*', function(request, response) {
   console.log('New request:', request.url);
   response.sendFile('index.html', { root: '.' });
 });
 
 app.listen(port, function() {
-  console.log('Server iz freaking started on port ' + port + '! Phuk Yeah!');
+  console.log('Server is listening on port ' + port);
 });

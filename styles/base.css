@@ -4,20 +4,53 @@ img {
 }
 
 .code-png {
+	/* RWD style for images  */
   max-width: 100%;
 }
 
+html {
+  height: 100%;
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
 body {
-  padding: 2em;
+  /* padding: 2em; */
   line-height: 1.5;
   font-size: 100%;
-  margin-bottom: 20px;
+	font-family: "Droid Sans";
+  margin-bottom: 10px;
+	background-color: grey;
+}
+
+h1 {
+	margin-bottom: 0;
+}
+
+h3 {
+	font-weight: lighter;
+}
+
+footer {
+	/*	Footer Styles position it always at the bottom of the page, but not fixed.
+ */
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	text-align: center;
+	padding: 1rem;
 }
 
 main {
   position: relative;
   margin: auto;
-  width: 75%;
+  max-width: 100%;
 }
 
 a, a:link, a:active {
@@ -26,8 +59,4 @@ a, a:link, a:active {
 
 a:hover, a:focus {
   color: #29506D;
-}
-
-ul {
-  list-style: none;
 }
