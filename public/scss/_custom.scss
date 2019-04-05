@@ -210,6 +210,28 @@ Media Queries
 }
 
 @media only screen and (min-width: 939px) {
+	// pop out to two cards side by side on the screen, so projects display 2 x 6
+	<div class="row" style="margin-left: 0px;">
+    <div class="six columns" style="margin-left: 10px;">SIX</div>
+		<div class="six columns" style="margin-left: 10px;">SIX</div>
+  </div>
 
+	// pop out to three columns:
+	<div class="row">
+    <div class="four columns" style="margin-left: 20px;">Four</div>
+    <div class="four columns" style="margin-left: 20px;">Four</div>
+    <div class="four columns" style="margin-left: 20px;">Four</div>
+  </div>
+
+}
+
+@media screen and (max-width: 310px) {
+	.jumbotron {
+		padding: 45px;
+	}
+	.nav {
+		margin-bottom: 40px;
+		padding: 20px;
+	}
 
 }
