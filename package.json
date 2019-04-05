@@ -1,12 +1,8 @@
 {
   "main": "server.js",
   "dependencies": {
-    "bootstrap": "^4.3.1",
     "express": "^4.13.3",
-    "express-request-proxy": "^1.0.10",
-    "jquery": "^3.3.1",
-    "page": "^1.11.4",
-    "popper": "^1.0.1"
+    "pug": "^2.0.3"
   },
   "scripts": {
     "start": "node server.js"

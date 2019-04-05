@@ -1,0 +1,17 @@
+//- for loop to iterate thru array which contains the projects & display a card for each project.
+
+if projects
+	each project, idx in projects
+		.card
+			if projects[idx].deploy
+				a.link(href='' + projects[idx].deploy + '')
+					img(src='/imgs/' + projects[idx].img + '' width='400' height='350' alt='...')
+					h5.card-title #{projects[idx].name}
+					p.card-text
+						| #{projects[idx].description}
+			else
+				a.link(href='' + projects[idx].repo_url + '')
+					img.img-code(src='/imgs/' + projects[idx].img + '' width='400' height='350' alt='...')
+					h5.card-title #{projects[idx].name}
+					p.card-text
+						| #{projects[idx].description}

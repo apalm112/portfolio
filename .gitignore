@@ -1,3 +1,6 @@
-/node_modules
-.gitignore
-/scripts/controller/githubToken.js
+node_modules
+
+package-lock.json
+
+public/.sass-cache
+public/css
