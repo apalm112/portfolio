@@ -9,7 +9,7 @@
 */
 
 /* Base files. */
-@import "base/normalize";
+@import "base/normalizev8";
 @import "base/variables";
 @import "base/functions";
 @import "base/base-styles";
@@ -25,5 +25,4 @@
 @import "modules/tables";
 @import "modules/spacing";
 @import "modules/media-queries";
-
-@import "_custom.scss";
+@import "modules/custom.scss";
