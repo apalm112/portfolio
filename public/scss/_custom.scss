@@ -1,3 +1,6 @@
+/* Base files. */
+@import "base/normalizev8";
+
 /* latin */
 @font-face {
   font-family: 'Droid Sans';
@@ -24,13 +27,12 @@ html {
 *,
 *:before,
 *:after {
-  box-sizing: inherit;
+  box-sizing: border-box;
 }
 
 body {
   line-height: 1.5;
-  font: 125%/1.75 "Droid Sans";
-	// font-family: "Droid Sans";
+	font-family: "Droid Sans";
   // margin-bottom: 30px;
 	background-color: $gray-666;
 	position: relative;
@@ -53,11 +55,10 @@ HEADER
 }
 
 .nav {
+  font-size: 90%;
 	height: 40px;
-	// padding-top: 2px;
-
-	font-size: 110%;
-	margin: .25em 0;
+	margin: 0 0 .45em 0;
+  padding-top: 10px;
 
 	ul {
 		margin: 0 auto;
@@ -88,18 +89,10 @@ HEADER
 
 .jumbotron {
 	background-color: $gray-300;
-	padding: 2rem 2rem 7rem 2rem;
+  padding: 2rem 2rem 7rem 2rem;
+  max-width: 100%;
 }
 
-h1 {
-}
-
-.h1-name {
-	margin-bottom: 0;
-	padding-top: 20px;
-	font-weight: bolder;
-	text-shadow: 2px 2px 7px #bbb;
-}
 
 .job-title {
 	font-size: 1.6rem;
@@ -108,11 +101,21 @@ h1 {
 	word-spacing: .2em;
 }
 
+a, a:link, a:active {
+	color: $white;
+  text-decoration: none;
+}
+
+a:hover, a:focus {
+  color: #b0c3d1;
+}
 /***************************************/
-/*
-/*
-/* ???
+/*  elements
 /***************************************/
+svg {
+  margin-top: 4.2rem;
+  max-height: 75px;
+}
 
 img {
 	border-radius: 5px;
@@ -125,21 +128,13 @@ img {
 }
 
 footer {
-	width: 100%;
 	background-color: $gray-300;
-	text-align: center;
+  clear: both;
 	padding: 1rem;
+  text-align: center;
+  width: 100%;
 }
 
-
-a, a:link, a:active {
-	color: $white;
-  text-decoration: none;
-}
-
-a:hover, a:focus {
-  color: #b0c3d1;
-}
 /* SKELETON GRID STYLES **************************************************/
 .container {
   align-content: center;
@@ -157,7 +152,7 @@ a:hover, a:focus {
 	font-size: 175%;
 	line-height: 1.5;
 	margin-top: 10px;
-	width: 331px;
+	// width: 331px;
 }
 
 .card-text {
@@ -193,55 +188,55 @@ Clearfix
 /***********************************************************
 Media Queries
 ***********************************************************/
-// or 750px)
-@media (min-width: 550px) {
-  .card {
-    width: 100%;
+@media only screen and (max-width: 310px) {
+  .nav {
+    margin-bottom: 48px;
+    padding: 20px;
+  }
+}
+
+@media only screen and (max-width: 199px) {
+  .nav {
+    margin-bottom: 78px;
+    padding: 20px;
+
+    li {
+      margin: 0.5rem 0;
+
+    }
   }
 }
 
 /* Make the Header Nav stay responsive ****************************/
-@media screen and (max-width: 310px) {
-	.nav {
-		margin-bottom: 48px;
-		padding: 20px;
-	}
+@media only screen and (max-width: 194px) {
+  .nav {
+    margin-bottom: 115px !important;
+  }
 }
-@media screen and (max-width: 199px) {
-	.nav {
-		margin-bottom: 78px;
-		padding: 20px;
-	}
-}
-@media screen and (max-width: 192px) {
-	.nav {
-		margin-bottom: 110px;
-	}
-}/* End Header Nav stay responsive *********************************/
+/* End Header Nav stay responsive *********************************/
 
 /* Make the Header Nav bigger on larger screens ********************/
 @media only screen and (min-width: 375px) {
   .nav {
     /* RWD style */
-  	width: 100%;
+    font-size: 102%;
+    margin-top: 0.5rem;
     padding-bottom: 20px;
-    font-size: 1.9rem;
+    padding-top: 5px;
+    width: 100%;
   }
 }
-@media only screen and (min-width: 641px) {
-  .nav {
-    /* RWD style */
-    font-size: 2.3rem;
-    height: 45px;
-    padding-top: 0;
 
-    li {
-      padding-left: 20px;
-      padding-right: 20px;
-    }
+// or 750px)
+@media only screen and (min-width: 550px) {
+  .jumbotron {
+      padding: 2rem 2rem 9rem 2rem;
+  }
+
+  .card {
+    width: 100%;
   }
 }
-/* End Header Nav bigger on larger screens ********************/
 
 /* Make the Jumbotron bigger on larger screens ****************/
 @media only screen and (min-width: 590px) {
@@ -255,8 +250,29 @@ Media Queries
 }
 /* End Jumbotron bigger on larger screens ********************/
 
+@media only screen and (min-width: 641px) {
+  .nav {
+    /* RWD style go */
+    // font-size: 2.3rem;
+    // height: 45px;
+    // margin: -0.6rem 0 .45em 0;
+    // padding-top: 0;
+
+    li {
+      // font-size: 0.9rem;
+      padding-left: 20px;
+      padding-right: 20px;
+
+      a {
+        font-size: 110%;
+      }
+    }
+  }
+}
+/* End Header Nav bigger on larger screens ********************/
+
 /* pop out to two cards side by side on the screen, so projects display 2 x 6 ****************/
-@media only screen and (min-width: 934px) and (orientation: landscape)  {
+@media only screen and (min-width: 934px) {
   .card {
     float: left;
     width: 45%;
@@ -300,9 +316,9 @@ Media Queries
   // }
 
 
-@media only screen and (max-width: 1140px) and (orientation: landscape) {
+/*@media only screen and (max-width: 1140px) and (orientation: landscape) {
 	// Works at small size?
   .card {
     // padding: 10px 3%;
   }
-}
+}*/
