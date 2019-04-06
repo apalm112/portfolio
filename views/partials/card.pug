@@ -1,9 +1,8 @@
 //- for loop to iterate thru array which contains the projects & display a card for each project.
 
+
 if projects
 	each project, idx in projects
-		//- div.row
-		//- 	div.three.columns
 		.card
 			if projects[idx].deploy
 				a.link(href='' + projects[idx].deploy + '')

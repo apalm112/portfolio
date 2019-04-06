@@ -1,0 +1,146 @@
+$max-width: 960px;
+$primary: #444;
+$secondary: #888;
+$font-std: helvetica;
+
+body {
+  font-family: $font-std;
+}
+/******************************
+Main Nav
+******************************/
+header {
+  background: $primary;
+  height: 100px;
+
+  .inner {
+    max-width: $max-width;
+    margin: 0 auto;
+    position: relative;
+    // outline: dotted 1px orange;
+
+    .logo {
+      float: left;
+      margin-top: 15px;
+      margin-right: 5%;
+    }
+
+    .hamburger {
+      display: none;
+      width: 40px;
+      position: absolute;
+      right: 5%;
+      top: 28px;
+    }
+
+    ul {
+
+      li {
+        display: inline-block;
+        margin-right: 5%;
+        margin-top: 40px;
+      }
+    }
+  }
+}
+/******************************
+Content
+******************************/
+main {
+  max-width: $max-width;
+  margin: 2.5% auto;
+
+  .banner {
+    max-width: 100%;
+  }
+
+  .sub-banners {
+
+    li {
+      float: left;
+      width: 30%;
+      margin-right: 5%;
+      margin-top: 2.5%;
+      margin-bottom: 2.5%;
+
+      img {
+        max-width: 100%;
+      }
+
+      &:last-child {
+        margin-right: 0px;
+      }
+    }
+  }
+}
+
+footer {
+  clear: both;
+  height: 50px;
+  background: $secondary;
+
+  /*	Footer Styles position it always at the bottom of the page, but not fixed.
+ */
+	position: relative;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  text-align: center;
+  padding: 1rem;
+  vertical-align: bottom;
+}
+/***********************************************************
+Media Queries
+***********************************************************/
+@media only screen and (min-width: 480px) {
+  nav a {
+    float: left;
+    width: 30%;
+    margin: 0 0 0 5%;
+    padding: 25px 1%;
+    margin-bottom: 0;
+  }
+}
+@media only screen and (max-width: 768px),
+       only screen and (max-width: 700px) and (orientation: landscape) {
+  .inner {
+    ul {
+      display: none;
+    }
+    img.hamburger {
+      display: block;
+
+      &:hover + ul {
+        display: block;
+      }
+    }
+  }
+
+  main {
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+
+    ul.sub-banners {
+      li {
+        width: 100%;
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 1140px) {
+  nav a {
+    padding: 25px 1%;
+  }
+}
+
+/*************************************
+Clearfix
+*************************************/
+.clearfix:before,
+.clearfix:after {
+  content: ' ';
+  display: table;
+}
