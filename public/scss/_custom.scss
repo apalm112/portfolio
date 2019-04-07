@@ -148,7 +148,7 @@ footer {
 
 .card-title {
 	border-bottom: 1px solid #535557;
-	display: inline-block;
+	// display: inline-block;
 	font-size: 175%;
 	line-height: 1.5;
 	margin-top: 10px;
@@ -159,9 +159,9 @@ footer {
 	padding: 0 4rem;
 }
 
-.img-code {
-	// width: 331.094px;
-	// height: 165.625px;
+.size {
+	width: 400px;
+	height: 250px;
 }
 
 .link {
@@ -227,7 +227,6 @@ Media Queries
   }
 }
 
-// or 750px)
 @media only screen and (min-width: 550px) {
   .jumbotron {
       padding: 2rem 2rem 9rem 2rem;
@@ -274,19 +273,12 @@ Media Queries
 /* pop out to two cards side by side on the screen, so projects display 2 x 6 ****************/
 @media only screen and (min-width: 934px) {
   .card {
-    float: left;
+    display: inline-block;
     width: 45%;
 
     img {
       max-width: 100%;
     }
-  }
-  .card:nth-child(5), .card:nth-child(7) {
-    float: right;
-  /* Clearfix ******/
-    content: '';
-    display: table;
-    clear: both;
   }
 }
 /* End Cards bigger on larger screens ********************/
