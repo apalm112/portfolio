@@ -1,3 +1,5 @@
+/*  This is the Sunday fuck up file version   */
+
 /* Base files. */
 @import "base/normalizev8";
 
@@ -36,8 +38,7 @@ body {
   // margin-bottom: 30px;
 	background-color: $gray-666;
 	position: relative;
-	min-height: 100%;
-  // min-height: 100vh;
+	min-height: 100%;  // 100vh;
 }
 
 /* Add space btwn jumbotron & first card NOT WORKING HITS ALL  */
@@ -48,22 +49,17 @@ div:first-of-type {
 /*************************************
 HEADER
 *************************************/
-.header {
-	// width: 100%;
-	// margin: 0 auto;
-	text-align: center;
-}
-
 .nav {
   font-size: 90%;
-	height: 40px;
+	height: 5vh; // 40px;
 	margin: 0 0 .45em 0;
   padding-top: 10px;
+  text-align: center;
 
 	ul {
 		margin: 0 auto;
 		padding-left: 0;
-		padding-top: 5px;
+		padding-top: 2px;
 		li {
 			display: inline-block;
 		}
@@ -87,18 +83,65 @@ HEADER
 	// padding: 0.01rem 0.2rem 0rem 0.6rem;
 }
 
+.header {
+	// margin: 0 auto;
+	text-align: center;
+  width: 100%;
+}
 .jumbotron {
-	background-color: $gray-300;
-  padding: 2rem 2rem 7rem 2rem;
-  max-width: 100%;
+	// background-color: $gray-300;
+  // padding: 2rem 2rem 7rem 2rem;
+  // max-width: 100%;
+  // height: calc(32vh - 44px);  // 300px;
+
+  position: relative;
+}
+.sizing {
+  width: 100%;
+  padding-bottom: 49.5%;
+  visibility: hidden;
+}
+.h1-name {
+  width: 100%;
+
+  max-height: 50vh;
+  background-color: $gray-300;
+  position: absolute;
+  margin-top: -50%;
+  z-index: -1;
+  font-size: 3.6em;
+  padding: 2rem 0 7rem 0;
+  // max-width: 100%;
+  // height: calc(32vh - 44px);  // 300px;
+  height: 48%;
+
+  // Sunday styles
+  // max-height: 71px;
+  // margin-left: -15px;
+  // margin-top: -20px;
 }
 
-
 .job-title {
+  width: 100%;
+  padding: 20px 0;
+  max-height: 32vh; // or 50%
+  background-color: rgba(148, 81, 184, 0.7);
+  position: absolute;
+  margin-top: -30%; // or -25%
+  z-index: 2;
+  justify-content: center;
+  // width: 100%;
+  // position: absolute;
+  // max-height: 32vh;
+  // position: absolute;
+  // margin-top: -40%;
+  // z-index: 2;
 	font-size: 1.6rem;
 	letter-spacing: .22em;
 	line-height: 0.8em;
 	word-spacing: .2em;
+
+  margin-left: -50%;
 }
 
 a, a:link, a:active {
@@ -112,11 +155,6 @@ a:hover, a:focus {
 /***************************************/
 /*  elements
 /***************************************/
-svg {
-  margin-top: 4.2rem;
-  max-height: 75px;
-}
-
 img {
 	border-radius: 5px;
   /* RWD style for images  */
@@ -130,7 +168,7 @@ img {
 footer {
 	background-color: $gray-300;
   clear: both;
-	padding: 1rem;
+	padding: 2px 0;
   text-align: center;
   width: 100%;
 }
@@ -217,20 +255,20 @@ Media Queries
 
 /* Make the Header Nav bigger on larger screens ********************/
 @media only screen and (min-width: 375px) {
-  .nav {
+  .nav ul {
     /* RWD style */
-    font-size: 102%;
-    margin-top: 0.5rem;
+    font-size: 98%;  // 102%;
+    margin-top: 0.1rem;
     padding-bottom: 20px;
-    padding-top: 5px;
+    padding-top: 0; // 5px;
     width: 100%;
   }
 }
 
 @media only screen and (min-width: 550px) {
-  .jumbotron {
-      padding: 2rem 2rem 9rem 2rem;
-  }
+  // .jumbotron {
+  //     padding: 2rem 2rem 19rem 0;
+  // }
 
   .card {
     width: 100%;
@@ -240,7 +278,7 @@ Media Queries
 /* Make the Jumbotron bigger on larger screens ****************/
 @media only screen and (min-width: 590px) {
   .h1-name {
-    font-size: 8rem;
+    font-size: 5rem;
   }
   .job-title {
     font-size: 2.5rem;
@@ -250,7 +288,7 @@ Media Queries
 /* End Jumbotron bigger on larger screens ********************/
 
 @media only screen and (min-width: 641px) {
-  .nav {
+  .nav ul {
     /* RWD style go */
     // font-size: 2.3rem;
     // height: 45px;
@@ -266,6 +304,9 @@ Media Queries
         font-size: 110%;
       }
     }
+  }
+  .jumbotron {
+      padding: 2rem 2rem 19rem 0;
   }
 }
 /* End Header Nav bigger on larger screens ********************/

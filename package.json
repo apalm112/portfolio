@@ -2,10 +2,14 @@
   "main": "server.js",
   "dependencies": {
     "express": "^4.13.3",
+    "node-sass": "^4.11.0",
     "pug": "^2.0.3"
   },
   "scripts": {
-    "start": "node server.js"
+    "start": "node server.js",
+    "watch": "npm run watch-code & npm run watch-css",
+    "watch-code": "nodemon server.js",
+    "watch-css": "sass --watch public/scss/_custom.scss:public/css/app.css"
   },
   "name": "portfolio",
   "description": "This is my JavaScript portfolio project, which will highlight my Github projects and coding interests.  It will be a static portfolio site created from scratch.",
