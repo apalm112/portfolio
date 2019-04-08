@@ -50,7 +50,7 @@ HEADER
 .nav {
   font-size: 90%;
 	height: 3vh; // 40px;
-	margin: 0 0 .45em 0;
+	margin: 0 0 1.45em 0;
   padding-top: 10px;
   text-align: center;
 
@@ -86,12 +86,14 @@ HEADER
 	text-align: center;
   width: 100%;
 }
-.jumbotron {
-  position: relative;
-  padding: 2rem 2rem 1rem 0;
-
-	// background-color: $gray-300;
-  // max-width: 100%;
+.jumbotron-test {
+  padding: 10% 0 6% 0;
+  background: $gray-300;
+  text-align: center;
+  margin: 0 0 1.5em 0;
+  display: inline-block;
+  width: 100%;
+  // height: 47rem;
   // height: calc(32vh - 44px);  // 300px;
 }
 .sizing {
@@ -99,29 +101,26 @@ HEADER
   padding-bottom: 49.5%;
   visibility: hidden;
 }
-.h1-name {
-  width: 100%;
-
-  max-height: 50vh;
-  background-color: $gray-300;
-  position: absolute;
-  margin-top: -50%;
-  z-index: -1;
-  font-size: 3.6em;
-  padding: 2rem 0 11.5rem 0;
-  // max-width: 100%;
+.name {
+  // background-color: $gray-300;
+  // font-size: 3.6em;
+  // max-height: 50vh;
   // height: calc(32vh - 44px);  // 300px;
-  height: 48%;
+  // position: absolute;
+  // width: 100%;
+  // margin-top: -50%;
+  // padding: 2rem 0 11.5rem 0;
 
-  // Sunday styles
-  // max-height: 71px;
-  // margin-left: -15px;
-  // margin-top: -20px;
+  display: block;
+  font-size: 230%;
+  color: #ffffff;
+  word-spacing: .5em;
+  margin: 0 0 29% 0;
 }
 
 .job-title {
   width: 100%;
-  padding: 25px 0;
+  padding: 12px 0;
   max-height: 32vh; // or 50%
   // background-color: rgba(148, 81, 184, 0.7);
   position: absolute;
@@ -134,12 +133,12 @@ HEADER
   // position: absolute;
   // margin-top: -40%;
   // z-index: 2;
-	font-size: 1.6rem;
+	font-size: 145%;
 	letter-spacing: .15em;
-	line-height: 0.999em;
+	line-height: 30px;
 	// word-spacing: .2em;
 
-  margin-left: -46%;
+  margin-left: -51%;
 }
 
 a, a:link, a:active {
@@ -230,8 +229,12 @@ Media Queries
     margin-bottom: 78px;
     padding: 18px;
 
+    ul > li:last-child {
+      padding-top: 0 !important;
+    }
+
     li {
-      margin: 0.5rem 0;
+      margin: 0.7rem 0;
     }
   }
 
@@ -302,7 +305,7 @@ Media Queries
     // padding-top: 0;
 
     ul {
-      font-size: 135%; 
+      font-size: 135%;
     }
 
     li {
