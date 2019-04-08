@@ -49,7 +49,7 @@ HEADER
 *************************************/
 .nav {
   font-size: 90%;
-	height: 5vh; // 40px;
+	height: 3vh; // 40px;
 	margin: 0 0 .45em 0;
   padding-top: 10px;
   text-align: center;
@@ -87,12 +87,12 @@ HEADER
   width: 100%;
 }
 .jumbotron {
+  position: relative;
+  padding: 2rem 2rem 1rem 0;
+
 	// background-color: $gray-300;
-  // padding: 2rem 2rem 7rem 2rem;
   // max-width: 100%;
   // height: calc(32vh - 44px);  // 300px;
-
-  position: relative;
 }
 .sizing {
   width: 100%;
@@ -139,7 +139,7 @@ HEADER
 	line-height: 0.999em;
 	// word-spacing: .2em;
 
-  margin-left: -50%;
+  margin-left: -46%;
 }
 
 a, a:link, a:active {
@@ -224,22 +224,30 @@ Clearfix
 /***********************************************************
 Media Queries
 ***********************************************************/
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 199px) {
+  .nav {
+    margin-bottom: 78px;
+    padding: 18px;
+
+    li {
+      margin: 0.5rem 0;
+    }
+  }
+
+  .jumbotron {
+    padding-top: 4rem;
+  }
+}
+
 @media only screen and (max-width: 310px) {
   .nav {
     margin-bottom: 48px;
     padding: 20px;
   }
-}
 
-@media only screen and (max-width: 199px) {
-  .nav {
-    margin-bottom: 78px;
-    padding: 20px;
-
-    li {
-      margin: 0.5rem 0;
-
-    }
+  .nav ul > li:last-child {
+    padding-top: 1rem;
   }
 }
 
@@ -255,7 +263,7 @@ Media Queries
 @media only screen and (min-width: 375px) {
   .nav ul {
     /* RWD style */
-    font-size: 98%;  // 102%;
+    // font-size: 135%;  // 102%;
     margin-top: 0.1rem;
     padding-bottom: 20px;
     padding-top: 0; // 5px;
@@ -264,9 +272,9 @@ Media Queries
 }
 
 @media only screen and (min-width: 550px) {
-  // .jumbotron {
-  //     padding: 2rem 2rem 19rem 0;
-  // }
+  .jumbotron {
+      padding: 2rem 2rem 19rem 0;
+  }
 
   .card {
     width: 100%;
@@ -284,14 +292,18 @@ Media Queries
   }
 }
 /* End Jumbotron bigger on larger screens ********************/
-
+/* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 641px) {
-  .nav ul {
+  .nav {
     /* RWD style go */
+    height: 5vh;
     // font-size: 2.3rem;
-    // height: 45px;
     // margin: -0.6rem 0 .45em 0;
     // padding-top: 0;
+
+    ul {
+      font-size: 135%; 
+    }
 
     li {
       // font-size: 0.9rem;
@@ -304,12 +316,13 @@ Media Queries
     }
   }
   .jumbotron {
-      padding: 2rem 2rem 19rem 0;
+      padding: 2rem 2rem 21rem 0;
   }
 }
 /* End Header Nav bigger on larger screens ********************/
 
-/* pop out to two cards side by side on the screen, so projects display 2 x 6 ****************/
+/* Large devices (laptops/desktops, 992px and up) ***************/
+/* pop out to two cards side by side on the screen, so projects display 2 x 6 **/
 @media only screen and (min-width: 934px) {
   .card {
     display: inline-block;
@@ -320,7 +333,6 @@ Media Queries
     }
   }
 }
-/* End Cards bigger on larger screens ********************/
 
 /* Switch to three Cards on larger screens ********************/
 @media only screen and (min-width: 1250px) and (orientation: landscape) {
@@ -328,28 +340,3 @@ Media Queries
     width: 30%;
   }
 }
-
-/* Not being used yet *********************************/
-// @media only screen and (max-width: 768px),
-//        only screen and (max-width: 700px) and (orientation: landscape) {
-
-  // main {
-  //   margin-left: 2.5%;
-  //   margin-right: 2.5%;
-	//
-  //   .card {
-  //   	width: 100%;
-  //       img {
-  //         width: 100%;
-  //       }
-  //     }
-  //   }
-  // }
-
-
-/*@media only screen and (max-width: 1140px) and (orientation: landscape) {
-	// Works at small size?
-  .card {
-    // padding: 10px 3%;
-  }
-}*/
