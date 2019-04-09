@@ -83,63 +83,98 @@ HEADER
 
 .header {
 	// margin: 0 auto;
-	text-align: center;
-  width: 100%;
+	// text-align: center;
+  // width: 100%;
+
+  /* test */
+  padding: 5.3% 0;
+  background-color: $gray-300;
 }
-.jumbotron-test {
-  padding: 10% 0 6% 0;
-  background: $gray-300;
+.jumbotron {
+  // padding: 10% 0 6% 0;
+  // background: $gray-300;
+  // text-align: center;
+  // margin: 0 0 1.5em 0;
+  // display: inline-block;
+  // width: 100%;
+
+  /* test */
+  max-width: 880px;
   text-align: center;
-  margin: 0 0 1.5em 0;
-  display: inline-block;
-  width: 100%;
+  margin: auto;
+  padding: 20px;
+  font-size: 0;
+
   // height: 47rem;
   // height: calc(32vh - 44px);  // 300px;
 }
-.sizing {
-  width: 100%;
-  padding-bottom: 49.5%;
-  visibility: hidden;
-}
-.name {
-  // background-color: $gray-300;
-  // font-size: 3.6em;
-  // max-height: 50vh;
-  // height: calc(32vh - 44px);  // 300px;
-  // position: absolute;
-  // width: 100%;
-  // margin-top: -50%;
-  // padding: 2rem 0 11.5rem 0;
 
-  display: block;
+.jumbotron-center {
+  /* test */
+  text-align: center;
+  font-size: 1.25rem;
+  box-sizing: border-box;
+  padding: 20px;
+  display: inline-block;
+  vertical-align: top;
+  width: 100%;
+}
+
+.title-name {
+  // display: block;
+  // margin: 0 0 29% 0;
+
+  /* test */
+  max-height: 75px;
+
+/*  max-height: 12.7rem; // calc(32vh - 44px);
   font-size: 230%;
   color: #ffffff;
-  word-spacing: .5em;
-  margin: 0 0 29% 0;
+  word-spacing: .5em;*/
 }
 
-.job-title {
-  width: 100%;
-  padding: 12px 0;
-  max-height: 32vh; // or 50%
-  // background-color: rgba(148, 81, 184, 0.7);
-  position: absolute;
-  margin-top: -30%; // or -25%
-  z-index: 2;
-  justify-content: center;
+.title-job {
   // width: 100%;
+  // padding: 12px 0;
+  // max-height: 32vh; // or 50%
+  // // background-color: rgba(148, 81, 184, 0.7);
   // position: absolute;
-  // max-height: 32vh;
-  // position: absolute;
-  // margin-top: -40%;
+  // margin-top: -30%; // or -25%
   // z-index: 2;
-	font-size: 145%;
-	letter-spacing: .15em;
-	line-height: 30px;
+  // justify-content: center;
+	// font-size: 145%;
+	// letter-spacing: .15em;
+	// line-height: 30px;
+  // text-transform: uppercase;
 	// word-spacing: .2em;
+  // margin-left: -51%;
 
-  margin-left: -51%;
+  /* test */
+  display: block;
+  font-size: 170%;
+  margin: 0.5em 0;
 }
+/* Example-specific styles */
+.scaling-svg-container {
+  position: relative;
+  height:0;
+  width: 100%;
+  padding: 0;
+  padding-bottom: 100%;
+  /* over-ride this inline for aspect ratio other than square */
+}
+.scaling-svg {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top:0;
+}
+
+
+
+
+
 
 a, a:link, a:active {
 	color: $white;
@@ -224,8 +259,10 @@ Clearfix
 Media Queries
 ***********************************************************/
 /* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 199px) {
+@media only screen and (max-width: 173px) {
+  /* Make the Header Nav stay responsive ****************************/
   .nav {
+    margin-bottom: 115px !important;
     margin-bottom: 78px;
     padding: 18px;
 
@@ -237,13 +274,9 @@ Media Queries
       margin: 0.7rem 0;
     }
   }
+}  //<----------------OK
 
-  .jumbotron {
-    padding-top: 4rem;
-  }
-}
-
-@media only screen and (max-width: 310px) {
+@media only screen and (max-width: 284px) {
   .nav {
     margin-bottom: 48px;
     padding: 20px;
@@ -252,49 +285,14 @@ Media Queries
   .nav ul > li:last-child {
     padding-top: 1rem;
   }
-}
+  .jumbotron, .jumbotron-center {
+    padding: 0;
+  }
+} //<----------------OK
 
-/* Make the Header Nav stay responsive ****************************/
-@media only screen and (max-width: 194px) {
-  .nav {
-    margin-bottom: 115px !important;
-  }
-}
-/* End Header Nav stay responsive *********************************/
+// @media only screen and (max-width: 330px) {
+// } //<----------------OK
 
-/* Make the Header Nav bigger on larger screens ********************/
-@media only screen and (min-width: 375px) {
-  .nav ul {
-    /* RWD style */
-    // font-size: 135%;  // 102%;
-    margin-top: 0.1rem;
-    padding-bottom: 20px;
-    padding-top: 0; // 5px;
-    width: 100%;
-  }
-}
-
-@media only screen and (min-width: 550px) {
-  .jumbotron {
-      padding: 2rem 2rem 19rem 0;
-  }
-
-  .card {
-    width: 100%;
-  }
-}
-
-/* Make the Jumbotron bigger on larger screens ****************/
-@media only screen and (min-width: 590px) {
-  .h1-name {
-    font-size: 5rem;
-  }
-  .job-title {
-    font-size: 2.5rem;
-    letter-spacing: .1em;
-  }
-}
-/* End Jumbotron bigger on larger screens ********************/
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 641px) {
   .nav {
@@ -318,15 +316,33 @@ Media Queries
       }
     }
   }
-  .jumbotron {
-      padding: 2rem 2rem 21rem 0;
-  }
-}
-/* End Header Nav bigger on larger screens ********************/
 
-/* Large devices (laptops/desktops, 992px and up) ***************/
-/* pop out to two cards side by side on the screen, so projects display 2 x 6 **/
+  .header {
+    padding: 7.2% 0;
+  }
+  .jumbotron {
+    // padding: 7.7% 0 0 0;
+    // margin: 0;
+  }
+
+} //<----------------OK
+
 @media only screen and (min-width: 934px) {
+  /* Large devices (laptops/desktops, 992px and up) ***************/
+  /* pop out to two cards side by side on the screen, so projects display 2 x 6 **/
+  .jumbotron {
+    // padding: 2% 0 5.1% 0;
+    // margin: 0;
+  }
+  // .title-name {
+  //   margin-top: 6.9%;
+  //   margin-bottom: 11%;
+  // }
+  // .title-job {
+  //   font-size: 165%;
+  //   padding: 18.4% 0 0.8% 0;
+  // }
+
   .card {
     display: inline-block;
     width: 45%;
@@ -339,6 +355,11 @@ Media Queries
 
 /* Switch to three Cards on larger screens ********************/
 @media only screen and (min-width: 1250px) and (orientation: landscape) {
+  .jumbotron {
+    // padding: 0;
+    // margin: 0;
+  }
+
   .card {
     width: 30%;
   }
