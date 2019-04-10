@@ -198,10 +198,10 @@ Clearfix
 Media Queries
 ***********************************************************/
 /* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 173px) {
+@media only screen and (max-width: 200px) {
   /* Make the Header Nav stay responsive ****************************/
   .nav {
-    margin-bottom: 115px !important;
+    margin-bottom: 135px !important;
     margin-bottom: 78px;
     padding: 18px;
 
@@ -219,9 +219,9 @@ Media Queries
   }
 }  //<----------------OK
 
-@media only screen and (max-width: 284px) {
+@media only screen and (max-width: 299px) {
   .nav {
-    margin-bottom: 48px;
+    margin-bottom: 77px;
     padding: 20px;
   }
 
@@ -257,6 +257,7 @@ Media Queries
 } //<----------------OK
 
 @media only screen and (max-width: 640px) {
+  /* No line for the last row of .cards  */
   .wrapper > div:nth-child(n + 12) {
     hr {
       border: 0;
@@ -299,6 +300,10 @@ Media Queries
     }
   }
 
+  img {
+    padding: 0;
+  }
+
 } //<----------------OK
 
 @media only screen and (min-width: 934px) {
@@ -316,19 +321,25 @@ Media Queries
 
     img {
       max-width: 100%;
+      padding: 0 1rem;
+      width: 450px;
     }
   }
 }
 
 /* Switch to three Cards on larger screens ********************/
 @media only screen and (min-width: 1250px) and (orientation: landscape) {
-  .card {
-    width: 33%;
-  }
-
   .wrapper > div:nth-child(n + 10) {
     hr {
       border: 0;
+    }
+  }
+
+  .card {
+    width: 33%;
+
+    img {
+      padding: 0 0.9rem;
     }
   }
 }
