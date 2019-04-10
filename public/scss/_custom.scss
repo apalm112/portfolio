@@ -39,7 +39,7 @@ body {
 }
 
 /*************************************
-HEADER
+NAVBAR
 *************************************/
 .nav {
   font-size: 90%;
@@ -72,6 +72,9 @@ HEADER
 	padding: 0.01rem 0.2rem 0rem 0.2rem;
 }
 
+/*************************************
+HEADER
+*************************************/
 .header {
   background-image: url('../imgs/SAM_1932.jpg');
   background-size: cover;
@@ -117,28 +120,9 @@ a:hover, a:focus {
   color: #b0c3d1;
 }
 
-img {
-	border-radius: 5px;
-  /* RWD style for images  */
-	height: auto;
-	max-width: 100%;
-  padding: 1.1rem 2.3rem;
-}
-
-/* Adds line between .card rows  */
-.wrapper > .card > a > hr:nth-last-child {
-  border-bottom: 1px solid #fff;
-}
-
-footer {
-	background-color: $gray-300;
-  clear: both;
-	padding: 2px 0;
-  text-align: center;
-  width: 100%;
-}
-
-/* Class Styles *********************************************/
+/*************************************
+MAIN
+*************************************/
 .container {
   margin: auto;
   padding: 3% 0;
@@ -149,6 +133,11 @@ footer {
   margin: 0 45px;
   padding: 20px;
   max-width: 100%;
+
+  /* Adds line between .card rows  */
+  // > .card > a > img {
+  //  border-bottom: 1px solid #fff;
+  // }
 }
 
 .card {
@@ -164,7 +153,16 @@ footer {
 }
 
 .card-text {
+  display: block;
+  orphans: 2;
 	padding: 0 4rem;
+}
+
+img {
+  /* RWD style for images  */
+	height: auto;
+	max-width: 100%;
+  padding: 1.1rem 2.3rem;
 }
 
 .size {
@@ -176,6 +174,14 @@ footer {
 	overflow: hidden;
 	height: 300px;
 	widows: 300px;
+}
+
+footer {
+	background-color: $gray-300;
+  clear: both;
+	padding: 2px 0;
+  text-align: center;
+  width: 100%;
 }
 
 /*************************************
@@ -207,6 +213,10 @@ Media Queries
       margin: 0.7rem 0;
     }
   }
+  img {
+    /* Adds line between .card rows  */
+    border-bottom: 1px solid #fff;
+  }
 }  //<----------------OK
 
 @media only screen and (max-width: 284px) {
@@ -223,7 +233,7 @@ Media Queries
   }
 } //<----------------OK
 
-@media only screen and (max-width: 374px) {
+@media only screen and (max-width: 376px) {
   .title-job {
     font-size: 103%;
   }
@@ -240,6 +250,10 @@ Media Queries
     padding: 0;
     margin: 0 35px;
   }
+
+  .line {
+    max-width: 100% !important;
+  }
 } //<----------------OK
 
 @media only screen and (max-width: 640px) {
@@ -247,6 +261,12 @@ Media Queries
     hr {
       border: 0;
     }
+  }
+}
+
+@media only screen and (max-width: 934px) {
+  .line {
+    max-width: 55%;
   }
 }
 
