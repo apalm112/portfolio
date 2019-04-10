@@ -21,7 +21,7 @@ exports.projects = [
 		img: 'proj-10.png',
 		repo_url: 'https://github.com/apalm112/FSJS-Build-A-Library-Manager',
 		deploy: '',
-		description: 'Implement a dynamic website using Express, Pug, and the SQL ORM Sequelize.'
+		description: 'Implement a library manager like dynamic website using Express, Pug, and SQL.'
 	},
 	{
 		name: 'React Gallery App',
@@ -42,7 +42,7 @@ exports.projects = [
 		img: 'proj-7.png',
 		repo_url: 'https://github.com/apalm112/FSJS-Twitter-Interface',
 		deploy: '',
-		description: 'This project utilizes Node, Pug & the Twitter API to render a Twitter users tweets, friends & dms.'
+		description: 'This project utilizes Node, Pug & the Twitter API to render a Twitter users tweets, friends.'
 	},
 	{
 		name: 'Content Scraper',
@@ -56,14 +56,14 @@ exports.projects = [
 		img: 'proj-5.png',
 		repo_url: 'https://github.com/apalm112/FSJS-Use-Public-API-to-Create-Employee-Directory',
 		deploy: 'https://apalm112.github.io/FSJS-Use-Public-API-to-Create-Employee-Directory/',
-		description: 'Uses the Random User Generator API to create a working example of an employee directory.'
+		description: 'Uses the Random User Generator API to create a working example of a directory.'
 	},
 	{
 		name: 'Tic-Tac-Toe',
 		img: 'proj-4.png',
 		repo_url: 'https://github.com/apalm112/FSJS-Tic-Tac-Toe',
 		deploy: 'https://apalm112.github.io/FSJS-Tic-Tac-Toe/',
-		description: 'A JavaScript powered two player Tic-Tac-Toe game.'
+		description: 'A JavaScript powered two player Tic-Tac-Toe game.A JavaScript powered.'
 	},
 	{
 		name: 'Interactive Form',
@@ -77,7 +77,7 @@ exports.projects = [
 		img: 'proj-2.png',
 		repo_url: 'https://github.com/apalm112/FSJS-Pagination',
 		deploy: 'https://apalm112.github.io/FSJS-Pagination/',
-		description: 'Project adds pagination & search bar features that allow users to search by student name.'
+		description: 'Project adds pagination & search bar features that allow users to search.'
 	},
 	{
 		name: 'Random Quote Generator',

@@ -33,15 +33,9 @@ html {
 body {
   line-height: 1.5;
 	font-family: "Droid Sans";
-  // margin-bottom: 30px;
 	background-color: $gray-666;
 	position: relative;
 	min-height: 100%;  // 100vh;
-}
-
-/* Add space btwn jumbotron & first card NOT WORKING HITS ALL  */
-div:first-of-type {
-  // padding-top: 1.5rem;
 }
 
 /*************************************
@@ -50,7 +44,7 @@ HEADER
 .nav {
   font-size: 90%;
 	height: 3vh; // 40px;
-	margin: 0 0 1.45em 0;
+	margin: 0 0 1.2em 0;
   padding-top: 10px;
   text-align: center;
 
@@ -73,44 +67,27 @@ HEADER
 	padding-right: 0.8rem;
 }
 
-/* These two styles get the <a></a> on one line  */
+/* This gets the <a></a> on one line  */
 .nav-anchor {
 	padding: 0.01rem 0.2rem 0rem 0.2rem;
 }
-.nav-anchor:first-child {
-	// padding: 0.01rem 0.2rem 0rem 0.6rem;
-}
 
 .header {
-	// margin: 0 auto;
-	// text-align: center;
-  // width: 100%;
-
-  /* test */
-  padding: 5.3% 0;
+  background-image: url('../imgs/SAM_1932.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  resize: both;
   background-color: $gray-300;
 }
 .jumbotron {
-  // padding: 10% 0 6% 0;
-  // background: $gray-300;
-  // text-align: center;
-  // margin: 0 0 1.5em 0;
-  // display: inline-block;
-  // width: 100%;
-
-  /* test */
   max-width: 880px;
   text-align: center;
   margin: auto;
   padding: 20px;
   font-size: 0;
-
-  // height: 47rem;
-  // height: calc(32vh - 44px);  // 300px;
 }
 
 .jumbotron-center {
-  /* test */
   text-align: center;
   font-size: 1.25rem;
   box-sizing: border-box;
@@ -121,60 +98,15 @@ HEADER
 }
 
 .title-name {
-  // display: block;
-  // margin: 0 0 29% 0;
-
-  /* test */
   max-height: 75px;
-
-/*  max-height: 12.7rem; // calc(32vh - 44px);
-  font-size: 230%;
-  color: #ffffff;
-  word-spacing: .5em;*/
 }
 
 .title-job {
-  // width: 100%;
-  // padding: 12px 0;
-  // max-height: 32vh; // or 50%
-  // // background-color: rgba(148, 81, 184, 0.7);
-  // position: absolute;
-  // margin-top: -30%; // or -25%
-  // z-index: 2;
-  // justify-content: center;
-	// font-size: 145%;
-	// letter-spacing: .15em;
-	// line-height: 30px;
-  // text-transform: uppercase;
-	// word-spacing: .2em;
-  // margin-left: -51%;
-
-  /* test */
+  color: #fff;
   display: block;
   font-size: 170%;
   margin: 0.5em 0;
 }
-/* Example-specific styles */
-.scaling-svg-container {
-  position: relative;
-  height:0;
-  width: 100%;
-  padding: 0;
-  padding-bottom: 100%;
-  /* over-ride this inline for aspect ratio other than square */
-}
-.scaling-svg {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  left: 0;
-  top:0;
-}
-
-
-
-
-
 
 a, a:link, a:active {
 	color: $white;
@@ -184,17 +116,18 @@ a, a:link, a:active {
 a:hover, a:focus {
   color: #b0c3d1;
 }
-/***************************************/
-/*  elements
-/***************************************/
+
 img {
 	border-radius: 5px;
   /* RWD style for images  */
 	height: auto;
 	max-width: 100%;
-	width: auto;
-
   padding: 1.1rem 2.3rem;
+}
+
+/* Adds line between .card rows  */
+.wrapper > .card > a > hr:nth-last-child {
+  border-bottom: 1px solid #fff;
 }
 
 footer {
@@ -205,24 +138,29 @@ footer {
   width: 100%;
 }
 
-/* SKELETON GRID STYLES **************************************************/
+/* Class Styles *********************************************/
 .container {
-  align-content: center;
-  padding: 5% 0;
+  margin: auto;
+  padding: 3% 0;
+  text-align: center;
 }
 
-/* Class Styles *********************************************/
+.wrapper {
+  margin: 0 45px;
+  padding: 20px;
+  max-width: 100%;
+}
+
 .card {
 	text-align: center;
+  margin-bottom: 45px;
 }
 
 .card-title {
-	border-bottom: 1px solid #535557;
-	// display: inline-block;
 	font-size: 175%;
 	line-height: 1.5;
 	margin-top: 10px;
-	// width: 331px;
+	margin-bottom: -5px;
 }
 
 .card-text {
@@ -243,11 +181,6 @@ footer {
 /*************************************
 Clearfix
 *************************************/
-/*.clearfix::after {
-  content: '';
-  display: table;
-  clear: both;
-}*/
 .clearfix:before,
 .clearfix:after {
   content: '';
@@ -290,24 +223,43 @@ Media Queries
   }
 } //<----------------OK
 
-// @media only screen and (max-width: 330px) {
-// } //<----------------OK
+@media only screen and (max-width: 374px) {
+  .title-job {
+    font-size: 103%;
+  }
+
+  .card-text {
+    padding: 0;
+  }
+
+  .size {
+    padding: 0;
+  }
+
+  .wrapper {
+    padding: 0;
+    margin: 0 35px;
+  }
+} //<----------------OK
+
+@media only screen and (max-width: 640px) {
+  .wrapper > div:nth-child(n + 12) {
+    hr {
+      border: 0;
+    }
+  }
+}
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 641px) {
   .nav {
-    /* RWD style go */
     height: 5vh;
-    // font-size: 2.3rem;
-    // margin: -0.6rem 0 .45em 0;
-    // padding-top: 0;
 
     ul {
       font-size: 135%;
     }
 
     li {
-      // font-size: 0.9rem;
       padding-left: 20px;
       padding-right: 20px;
 
@@ -318,11 +270,13 @@ Media Queries
   }
 
   .header {
-    padding: 7.2% 0;
+    padding: 4.8% 0;
   }
-  .jumbotron {
-    // padding: 7.7% 0 0 0;
-    // margin: 0;
+
+  .wrapper > div:nth-child(n + 12) {
+    hr {
+      border: 0;
+    }
   }
 
 } //<----------------OK
@@ -330,18 +284,11 @@ Media Queries
 @media only screen and (min-width: 934px) {
   /* Large devices (laptops/desktops, 992px and up) ***************/
   /* pop out to two cards side by side on the screen, so projects display 2 x 6 **/
-  .jumbotron {
-    // padding: 2% 0 5.1% 0;
-    // margin: 0;
+  .wrapper > div:nth-child(n + 11) {
+    hr {
+      border: 0;
+    }
   }
-  // .title-name {
-  //   margin-top: 6.9%;
-  //   margin-bottom: 11%;
-  // }
-  // .title-job {
-  //   font-size: 165%;
-  //   padding: 18.4% 0 0.8% 0;
-  // }
 
   .card {
     display: inline-block;
@@ -355,12 +302,13 @@ Media Queries
 
 /* Switch to three Cards on larger screens ********************/
 @media only screen and (min-width: 1250px) and (orientation: landscape) {
-  .jumbotron {
-    // padding: 0;
-    // margin: 0;
+  .card {
+    width: 33%;
   }
 
-  .card {
-    width: 30%;
+  .wrapper > div:nth-child(n + 10) {
+    hr {
+      border: 0;
+    }
   }
 }
