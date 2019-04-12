@@ -1,3 +1,14 @@
-/node_modules
-.gitignore
-/scripts/controller/githubToken.js
+node_modules
+
+package-lock.json
+
+public/app.css
+public/app.css.map
+.sass-cache
+css
+public/.sass-cache
+public/css
+
+
+rwd_demo/delete/README.md
+rwd_demo/delete/css/.sass-cache

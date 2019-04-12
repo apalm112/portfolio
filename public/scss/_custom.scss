@@ -1,0 +1,345 @@
+/* Base files. */
+@import "base/normalizev8";
+
+/* latin */
+@font-face {
+  font-family: 'Droid Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Droid Sans Regular'), local('DroidSans-Regular'), url(https://fonts.gstatic.com/s/droidsans/v9/SlGVmQWMvZQIdix7AFxXkHNSbQ.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+$white:    #fff;
+$gray-300: #dee2e6;
+$gray-800: #343a40;
+$gray-666: #575f62;
+$max-width: 100%;
+$max-width-lg: 960px;
+$primary: #444;
+$secondary: #888;
+
+html {
+  height: 100%;
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+body {
+  line-height: 1.5;
+	font-family: "Droid Sans";
+	background-color: $gray-666;
+	position: relative;
+	min-height: 100%;  // 100vh;
+}
+
+/*************************************
+NAVBAR
+*************************************/
+.nav {
+  font-size: 90%;
+	height: 3vh; // 40px;
+	margin: 0 0 1.2em 0;
+  padding-top: 10px;
+  text-align: center;
+
+	ul {
+		margin: 0 auto;
+		padding-left: 0;
+		padding-top: 2px;
+		li {
+			display: inline-block;
+		}
+	}
+}
+
+.nav:hover > ul > li {
+	cursor: pointer;
+}
+
+.nav-li {
+	padding-left: 0.8rem;
+	padding-right: 0.8rem;
+}
+
+/* This gets the <a></a> on one line  */
+.nav-anchor {
+	padding: 0.01rem 0.2rem 0rem 0.2rem;
+}
+
+/*************************************
+HEADER
+*************************************/
+.header {
+  background-image: url('../imgs/SAM_1932.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  resize: both;
+  background-color: $gray-300;
+}
+.jumbotron {
+  max-width: 880px;
+  text-align: center;
+  margin: auto;
+  padding: 20px;
+  font-size: 0;
+}
+
+.jumbotron-center {
+  text-align: center;
+  font-size: 1.25rem;
+  box-sizing: border-box;
+  padding: 20px;
+  display: inline-block;
+  vertical-align: top;
+  width: 100%;
+}
+
+.title-name {
+  max-height: 75px;
+}
+
+.title-job {
+  color: #fff;
+  display: block;
+  font-size: 170%;
+  margin: 0.5em 0;
+}
+
+a, a:link, a:active {
+	color: $white;
+  text-decoration: none;
+}
+
+a:hover, a:focus {
+  color: #b0c3d1;
+}
+
+/*************************************
+MAIN
+*************************************/
+.container {
+  margin: auto;
+  padding: 3% 0;
+  text-align: center;
+}
+
+.wrapper {
+  margin: 0 45px;
+  padding: 20px;
+  max-width: 100%;
+
+  /* Adds line between .card rows  */
+  // > .card > a > img {
+  //  border-bottom: 1px solid #fff;
+  // }
+}
+
+.card {
+	text-align: center;
+  margin-bottom: 45px;
+}
+
+.card-title {
+	font-size: 175%;
+	line-height: 1.5;
+	margin-top: 10px;
+	margin-bottom: -5px;
+}
+
+.card-text {
+  display: block;
+  orphans: 2;
+	padding: 0 4rem;
+}
+
+img {
+  /* RWD style for images  */
+	height: auto;
+	max-width: 100%;
+  padding: 1.1rem 2.3rem;
+}
+
+.size {
+	width: 400px;
+	height: 250px;
+}
+
+.link {
+	overflow: hidden;
+	height: 300px;
+	widows: 300px;
+}
+
+footer {
+	background-color: $gray-300;
+  clear: both;
+	padding: 2px 0;
+  text-align: center;
+  width: 100%;
+}
+
+/*************************************
+Clearfix
+*************************************/
+.clearfix:before,
+.clearfix:after {
+  content: '';
+  display: table;
+	clear: both;
+}
+
+/***********************************************************
+Media Queries
+***********************************************************/
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 200px) {
+  /* Make the Header Nav stay responsive ****************************/
+  .nav {
+    margin-bottom: 135px !important;
+    margin-bottom: 78px;
+    padding: 18px;
+
+    ul > li:last-child {
+      padding-top: 0 !important;
+    }
+
+    li {
+      margin: 0.7rem 0;
+    }
+  }
+  img {
+    /* Adds line between .card rows  */
+    border-bottom: 1px solid #fff;
+  }
+}  //<----------------OK
+
+@media only screen and (max-width: 299px) {
+  .nav {
+    margin-bottom: 77px;
+    padding: 20px;
+  }
+
+  .nav ul > li:last-child {
+    padding-top: 1rem;
+  }
+  .jumbotron, .jumbotron-center {
+    padding: 0;
+  }
+} //<----------------OK
+
+@media only screen and (max-width: 376px) {
+  .title-job {
+    font-size: 103%;
+  }
+
+  .card-text {
+    padding: 0;
+  }
+
+  .size {
+    padding: 0;
+  }
+
+  .wrapper {
+    padding: 0;
+    margin: 0 35px;
+  }
+
+  .line {
+    max-width: 100% !important;
+  }
+} //<----------------OK
+
+@media only screen and (max-width: 640px) {
+  /* No line for the last row of .cards  */
+  .wrapper > div:nth-child(n + 12) {
+    hr {
+      border: 0;
+    }
+  }
+}
+
+@media only screen and (max-width: 934px) {
+  .line {
+    max-width: 55%;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 641px) {
+  .nav {
+    height: 5vh;
+
+    ul {
+      font-size: 135%;
+    }
+
+    li {
+      padding-left: 20px;
+      padding-right: 20px;
+
+      a {
+        font-size: 110%;
+      }
+    }
+  }
+
+  .header {
+    padding: 4.8% 0;
+  }
+
+  .wrapper > div:nth-child(n + 12) {
+    hr {
+      border: 0;
+    }
+  }
+
+  img {
+    padding: 0;
+  }
+
+} //<----------------OK
+
+@media only screen and (min-width: 934px) {
+  /* Large devices (laptops/desktops, 992px and up) ***************/
+  /* pop out to two cards side by side on the screen, so projects display 2 x 6 **/
+  .wrapper > div:nth-child(n + 11) {
+    hr {
+      border: 0;
+    }
+  }
+
+  .card {
+    display: inline-block;
+    width: 45%;
+
+    img {
+      max-width: 100%;
+      padding: 0 1rem;
+      width: 450px;
+    }
+  }
+}
+
+/* Switch to three Cards on larger screens ********************/
+@media only screen and (min-width: 1250px) and (orientation: landscape) {
+  .wrapper > div:nth-child(n + 10) {
+    hr {
+      border: 0;
+    }
+  }
+
+  .card {
+    width: 33%;
+
+    img {
+      padding: 0 0.9rem;
+    }
+  }
+}

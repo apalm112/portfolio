@@ -1,0 +1,14 @@
+doctype html
+html(lang='en')
+	head
+		meta(charset='UTF-8')
+		title Portfolio
+		meta(name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no')
+		//- link( rel='stylesheet' type='text/css' href='https://fonts.googleapis.com/css?family=Droid+Sans')
+		link(rel='stylesheet' href='./css/app.css')
+	body
+		include partials/nav.pug
+		include includes/header.pug
+		main.container
+			include partials/card.pug
+		include includes/footer.pug
