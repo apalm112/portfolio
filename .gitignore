@@ -5,10 +5,13 @@ package-lock.json
 public/app.css
 public/app.css.map
 .sass-cache
-css
+#css
 public/.sass-cache
-public/css
+#public/css
 
 
 rwd_demo/delete/README.md
 rwd_demo/delete/css/.sass-cache
+
+config/
+rwd_demo
