@@ -358,11 +358,16 @@ NAVBAR
 HEADER
 *************************************/
 .header {
-  background-image: url("../imgs/SAM_1932.jpg");
+  background-image: url("../imgs/laptop-with-web-code-1300w-867h.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   resize: both;
-  background-color: #dee2e6; }
+  position: relative;
+  height: 100vh;
+  min-height: 500px;
+  max-height: 1080px;
+  padding: 26.8% 0;
+  overflow: hidden; }
 
 .jumbotron {
   max-width: 880px;
@@ -372,22 +377,76 @@ HEADER
   font-size: 0; }
 
 .jumbotron-center {
-  text-align: center;
-  font-size: 1.25rem;
   box-sizing: border-box;
-  padding: 20px;
   display: inline-block;
+  font-size: 1.25rem;
+  text-align: center;
+  padding: 20px;
   vertical-align: top;
-  width: 100%; }
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  min-width: 100%;
+  max-width: 100%;
+  min-height: 100%;
+  height: auto; }
+
+.overlay {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(120, 160, 187, 0.8);
+  z-index: 1; }
 
 .title-name {
-  max-height: 75px; }
+  color: #fff;
+  left: calc(-72% + 5px);
+  z-index: 12;
+  position: relative;
+  margin-top: 75px;
+  width: 135%;
+  min-width: 175px;
+  max-height: 110px; }
 
 .title-job {
   color: #fff;
   display: block;
-  font-size: 170%;
-  margin: 0.5em 0; }
+  font-size: 103%;
+  margin: 0.5em 0;
+  top: 42%;
+  z-index: 12;
+  line-height: 100%;
+  position: absolute;
+  bottom: 0;
+  left: -101%;
+  right: 0;
+  margin: 0 auto;
+  width: 82%;
+  min-width: 152px;
+  padding: 0; }
+
+.btn {
+  color: #fff;
+  font-size: 14px;
+  top: 55%;
+  z-index: 12;
+  position: absolute;
+  padding: 3px 5px;
+  left: -104%;
+  margin: 0 auto;
+  right: 0;
+  border: 4px solid #fff;
+  border-radius: 50px;
+  width: 82%;
+  min-width: 100px;
+  max-width: 159px; }
+
+.btn:hover {
+  background-color: #fff; }
 
 a, a:link, a:active {
   color: #fff;
@@ -465,7 +524,8 @@ Media Queries
   .nav {
     margin-bottom: 135px !important;
     margin-bottom: 78px;
-    padding: 18px; }
+    padding: 18px;
+    height: 18vh !important; }
     .nav ul > li:last-child {
       padding-top: 0 !important; }
     .nav li {
@@ -483,10 +543,20 @@ Media Queries
     padding-top: 1rem; }
 
   .jumbotron, .jumbotron-center {
-    padding: 0; } }
+    padding: 0; }
+
+  .btn {
+    top: 62%; } }
 @media only screen and (max-width: 376px) {
-  .title-job {
-    font-size: 103%; }
+  .nav {
+    height: 7vh; }
+    .nav > ul > li {
+      padding-top: 5px;
+      height: 3vh; }
+
+  .header {
+    height: auto;
+    min-height: 350px; }
 
   .card-text {
     padding: 0; }
@@ -507,6 +577,31 @@ Media Queries
 @media only screen and (max-width: 934px) {
   .line {
     max-width: 55%; } }
+@media only screen and (min-width: 376px) {
+  .nav {
+    height: 6vh; }
+
+  .header {
+    height: auto;
+    min-height: 390px; }
+
+  .card-text {
+    padding: 0 1em; } }
+@media only screen and (min-width: 480px) {
+  .header {
+    min-height: 405px; } }
+@media only screen and (min-width: 530px) {
+  .header {
+    min-height: 415px; } }
+@media only screen and (min-width: 575px) {
+  .header {
+    min-height: 430px; }
+
+  .title-job {
+    font-size: 35px; }
+
+  .btn {
+    top: 65%; } }
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 641px) {
   .nav {
@@ -520,15 +615,27 @@ Media Queries
         font-size: 110%; }
 
   .header {
-    padding: 4.8% 0; }
+    min-height: 445px; }
+
+  .btn {
+    top: 55%; }
 
   .wrapper > div:nth-child(n + 12) hr {
     border: 0; }
 
   img {
     padding: 0; } }
+@media only screen and (min-width: 680px) {
+  .header {
+    min-height: 455px; } }
+@media only screen and (min-width: 725px) {
+  .header {
+    min-height: 480px; } }
 @media only screen and (min-width: 934px) {
   /* Large devices (laptops/desktops, 992px and up) ***************/
+  .header {
+    padding: 0; }
+
   /* pop out to two cards side by side on the screen, so projects display 2 x 6 **/
   .wrapper > div:nth-child(n + 11) hr {
     border: 0; }
@@ -540,6 +647,15 @@ Media Queries
       max-width: 100%;
       padding: 0 1rem;
       width: 450px; } }
+@media only screen and (min-width: 934px) {
+  .title-job {
+    left: -106%;
+    top: 220px;
+    font-size: 35px; }
+
+  .btn {
+    left: -107%;
+    top: 290px; } }
 /* Switch to three Cards on larger screens ********************/
 @media only screen and (min-width: 1250px) and (orientation: landscape) {
   .wrapper > div:nth-child(n + 10) hr {
