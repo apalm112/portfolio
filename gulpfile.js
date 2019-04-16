@@ -14,7 +14,7 @@ const gulp = require('gulp'),
 
 // Variables w/ path to source & dist folders.
 const options = {
-	src: 'src',
+	src: 'public',
 	dist: 'dist'
 };
 
@@ -22,7 +22,7 @@ const options = {
 gulp.task('cssMinify', (callback) => {
 	// Concats SaSS files, creates source map.
 	pump([
-		gulp.src(options.src + '/sass/global.scss'),
+		gulp.src(options.src + '/scss/_custom.scss'),
 		maps.init({ largeFile: true }),
 		sass(),
 		maps.write('./'),
@@ -49,7 +49,7 @@ gulp.task('styles', ['cssMinify'], (callback) => {
 
 gulp.task('images', () => {
 	// Uses gulp-imagemin module to optimize the images for production.
-	return gulp.src(options.src + '/images/*')
+	return gulp.src(options.src + '/imgs/*')
 		.pipe(imagemin())
 		.pipe(gulp.dest(options.dist + '/content'));
 });
@@ -68,7 +68,7 @@ gulp.task('build', (callback) => {
 
 gulp.task('buildOut', () => {
 	//  Provides the static development files for the production folder.
-	gulp.src(['src/icons/**/*', 'src/index.html'], { base: './src/' })
+	gulp.src(['views/index.pug'], { base: './' })
 		.pipe(gulp.dest('dist'));
 });
 
