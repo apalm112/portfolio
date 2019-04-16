@@ -28,7 +28,7 @@ exports.projects = [
 		img: 'proj-9.png',
 		repo_url: 'https://github.com/apalm112/FSJS-React-Gallery-App',
 		deploy: 'https://react-gallery-1.herokuapp.com',
-		description: 'An image gallery using React, React Router 4 & the Flickr API.'
+		description: 'An image gallery using React, React Router 4 & the Flickr API to display various images.'
 	},
 	{
 		name: 'Gulp',

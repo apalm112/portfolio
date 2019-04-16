@@ -5,12 +5,3 @@ footer.section
 			document.write(new Date().getFullYear());
 	//- jQuery
 	script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-	script src="../../scripts/app.js"
-	script(type='text/javascript').
-		document.addEventListener('click', function( e ) {
-		e.preventDefault();
-		var targElem = e.target || e.srcElement;
-		console.log(targElem);
-		console.log(targElem.parentElement);
-		e.srcElement.style.border = '2px solid black';
-		}); 
