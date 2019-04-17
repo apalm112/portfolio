@@ -5,11 +5,12 @@ html(lang='en')
 		title Portfolio
 		meta(name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no')
 		//- link( rel='stylesheet' type='text/css' href='https://fonts.googleapis.com/css?family=Droid+Sans')
+		link(rel='stylesheet' href='./css/bootstrap.min.css')
 		link(rel='stylesheet' href='./css/app.css')
 	body
 		include partials/nav.pug
 		include includes/header.pug
-		main.container
+		main.container-main
 			include partials/about.pug
 			include partials/experience.pug
 			include partials/projects.pug

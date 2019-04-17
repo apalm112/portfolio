@@ -63,7 +63,7 @@ exports.projects = [
 		img: 'proj-4.png',
 		repo_url: 'https://github.com/apalm112/FSJS-Tic-Tac-Toe',
 		deploy: 'https://apalm112.github.io/FSJS-Tic-Tac-Toe/',
-		description: 'A JavaScript powered two player Tic-Tac-Toe game.A JavaScript powered.'
+		description: 'A JavaScript powered two player Tic-Tac-Toe game.  Created the JS to run it given provided HTML & CSS files.'
 	},
 	{
 		name: 'Interactive Form',
