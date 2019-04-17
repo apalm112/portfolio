@@ -1,0 +1,49 @@
+
+/*************************************
+NAVBAR
+*************************************/
+@keyframes dropHeader {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.nav {
+  font-size: 90%;
+	height: 3vh; // 40px;
+	margin: 0 0 1.2em 0;
+  padding-top: 10px;
+  text-align: center;
+
+  z-index: 10;
+  animation-name: dropHeader;
+  animation-iteration-count: 1;
+  animation-timing-function: ease;
+  animation-duration: 0.75s;
+
+	ul {
+		margin: 0 auto;
+		padding-left: 0;
+		padding-top: 2px;
+		li {
+			display: inline-block;
+		}
+	}
+}
+
+.nav:hover > ul > li {
+	cursor: pointer;
+}
+
+.nav-li {
+	padding-left: 0.8rem;
+	padding-right: 0.8rem;
+}
+
+/* This gets the <a></a> on one line  */
+#nav-anchor {
+	padding: 0.01rem 0.2rem 0rem 0.2rem;
+}

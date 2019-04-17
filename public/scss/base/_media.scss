@@ -1,0 +1,263 @@
+/***********************************************************
+Media Queries
+***********************************************************/
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 200px) {
+  /* Make the Header Nav stay responsive ****************************/
+  .nav {
+    margin-bottom: 135px !important;
+    margin-bottom: 78px;
+    padding: 18px;
+    height: 18vh !important;
+
+    ul > li:last-child {
+      padding-top: 0 !important;
+    }
+
+    li {
+      margin: 0.7rem 0;
+    }
+  }
+
+  img {
+    /* Adds line between .card rows  */
+    border-bottom: 1px solid #fff;
+  }
+}  //<----------------OK
+
+@media only screen and (max-width: 299px) {
+  .nav {
+    margin-bottom: 77px;
+    padding: 20px;
+  }
+
+  .nav ul > li:last-child {
+    padding-top: 1rem;
+  }
+  .jumbotron, .jumbotron-center {
+    padding: 0;
+  }
+  .btn {
+    top: 62%;
+  }
+} //<----------------OK
+
+@media only screen and (max-width: 376px) {
+  .nav {
+    height: 7vh;
+    > ul > li {
+      padding-top: 5px;
+      height: 3vh;
+    }
+  }
+
+  .header {
+    height: auto;
+    min-height: 350px;
+  }
+
+  .card-text {
+    padding: 0;
+  }
+
+  .size {
+    padding: 0;
+  }
+
+  .wrapper {
+    padding: 0;
+    margin: 0 35px;
+  }
+
+  .line {
+    max-width: 100% !important;
+  }
+} //<----------------OK
+
+
+
+// @media only screen and (max-width: 617px) {
+//   .title-job {
+//     margin-top: 100px;
+//   }
+//   .title-name {
+//     margin-top: 75px;
+//   }
+// }
+
+
+
+@media only screen and (max-width: 640px) {
+  /* No line for the last row of .cards  */
+  .wrapper > div:nth-child(n + 12) {
+    hr {
+      border: 0;
+    }
+  }
+}
+
+@media only screen and (max-width: 934px) {
+  .line {
+    max-width: 55%;
+  }
+}
+
+@media only screen and (min-width: 376px) {
+  .nav {
+    height: 6vh;
+  }
+
+  .header {
+    height: auto;
+    min-height: 390px;
+  }
+
+  // .title-name {
+  //   left: -67%;
+  //   margin-top: 60px;
+  //   width: 125%;
+  // }
+  //
+  // .title-job {
+  //   font-size: 100%;
+  //   top: 35%;
+  // }
+  //
+  // .btn  {
+  //   top: 55%;
+  // }
+
+  .card-text {
+    padding: 0 1em;
+  }
+}
+
+
+@media only screen and (min-width: 480px) {
+  .header {
+    min-height: 405px;
+  }
+}
+@media only screen and (min-width: 530px) {
+  .header {
+    min-height: 415px;
+  }
+}
+@media only screen and (min-width: 575px) {
+  .header {
+    min-height: 430px;
+  }
+
+  .title-job {
+    font-size: 35px;
+  }
+
+  .btn {
+    top: 65%;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 641px) {
+  .nav {
+    height: 5vh;
+
+    ul {
+      font-size: 135%;
+    }
+
+    li {
+      padding-left: 20px;
+      padding-right: 20px;
+
+      a {
+        font-size: 110%;
+      }
+    }
+  }
+
+  .header {
+    min-height: 445px;
+  }
+
+  .btn {
+    top: 55%;
+  }
+
+  .wrapper > div:nth-child(n + 12) {
+    hr {
+      border: 0;
+    }
+  }
+
+  img {
+    padding: 0;
+  }
+
+} //<----------------OK
+
+@media only screen and (min-width: 680px) {
+  .header {
+    min-height: 455px;
+  }
+}
+@media only screen and (min-width: 725px) {
+  .header {
+    min-height: 480px;
+  }
+}
+
+@media only screen and (min-width: 934px) {
+  /* Large devices (laptops/desktops, 992px and up) ***************/
+  .header {
+    padding: 0;
+  }
+
+  /* pop out to two cards side by side on the screen, so projects display 2 x 6 **/
+  .wrapper > div:nth-child(n + 11) {
+    hr {
+      border: 0;
+    }
+  }
+
+  .card {
+    display: inline-block;
+    width: 45%;
+
+    img {
+      max-width: 100%;
+      padding: 0 1rem;
+      width: 450px;
+    }
+  }
+}
+
+@media only screen and (min-width: 934px) {
+  .title-job {
+    left: -106%;
+    top: 220px;
+    font-size: 35px;
+  }
+
+  .btn {
+    left: -107%;
+    top: 290px;
+  }
+}
+
+/* Switch to three Cards on larger screens ********************/
+@media only screen and (min-width: 1250px) and (orientation: landscape) {
+  .wrapper > div:nth-child(n + 10) {
+    hr {
+      border: 0;
+    }
+  }
+
+  .card {
+    width: 33%;
+
+    img {
+      padding: 0 0.9rem;
+    }
+  }
+}
