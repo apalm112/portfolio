@@ -1,77 +1,72 @@
-/*
-    --------------------------------
-    ----- 6. Experience Styles -----
-    --------------------------------
-*/
+// ------- Experience Styles --
 
 #experience {
-    padding: 50px 15px;
-    text-align: center;
-    border-bottom: 1px solid $border;
+  border-bottom: 1px solid $border;
+  padding: 50px 15px;
+  text-align: center;
 
-    h2 {
-        color: $heading;
-    }
+  h2 {
+    color: $heading;
+  }
 }
 
 #experience-timeline {
-    margin: 30px auto 0 auto;
-    position: relative;
-    max-width: 1000px;
+  margin: 30px auto 0;
+  max-width: 1000px;
+  position: relative;
 
-    &:before {
-        position: absolute;
-        content: '';
-        top: 0;
-        bottom: 0;
-        left: 303px;
-        right: auto;
-        height: 100%;
-        width: 3px;
-        background: $base-color;
-        z-index: 0;
-    }
+  &::before {
+    background: $base-color;
+    bottom: 0;
+    content: '';
+    height: 100%;
+    left: 303px;
+    position: absolute;
+    right: auto;
+    top: 0;
+    width: 3px;
+    z-index: 0;
+  }
 
-    &:after {
-        position: absolute;
-        content: '';
-        width: 3px;
-        height: 40px;
-        background: $base-color;
-        background: linear-gradient(to bottom, $base-color, rgba($base-color, 0));
-        top: 100%;
-        left: 303px;
-    }
+  &::after {
+    background: linear-gradient(to bottom, $base-color, rgba($base-color, 0));
+    content: '';
+    height: 40px;
+    left: 303px;
+    position: absolute;
+    top: 100%;
+    width: 3px;
+  }
 }
 
 .vtimeline-content {
-    margin-left: 350px;
-    background: #fff;
-    border: 1px solid #e6e6e6;
-    padding: 15px;
-    border-radius: 3px;
-    text-align: left;
+  margin-left: 350px;
+  background: #fff;
+  border: 1px solid #e6e6e6;
+  padding: 15px;
+  border-radius: 3px;
+  text-align: left;
 
-    h3 {
-        font-size: 1.5em;
-        font-weight: 300;
-        color: $heading;
-        display: inline-block;
-        margin: 0;
-    }
+  h3 {
+    color: $heading;
+    display: inline-block;
+    font-size: 1.5em;
+    font-weight: 300;
+    margin: 0;
+  }
 
-    h4 {
-        font-size: 1.2em;
-        font-weight: 300;
-        color: #7e8890;
-        margin: 0 0 15px 0;
-    }
+  h4 {
+    color: #7e8890;
+    font-size: 1.2em;
+    font-weight: 300;
+    margin: 0 0 15px 0;
+  }
 
-    p {
-        color: $text;
-        font-size: 0.9em;
-        margin: 0;
-    }
+  p {
+    color: $text;
+    font-size: 0.9em;
+    margin: 0;
+  }
 }
 
 .vtimeline-point {

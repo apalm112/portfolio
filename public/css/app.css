@@ -309,7 +309,6 @@ template {
     ----- 1. Variables -----
     ------------------------
 */
-/* latin */
 @font-face {
   font-family: 'Droid Sans';
   font-style: normal;
@@ -543,6 +542,41 @@ footer {
   text-align: center;
   width: 100%; }
 
+/*
+    ---------------------------------------
+    ----- 11. Optional Section Styles -----
+    ---------------------------------------
+*/
+.optional-section {
+  padding: 50px 15px;
+  text-align: center;
+  border-top: 1px solid #dcd9d9; }
+  .optional-section h2 {
+    color: #374054; }
+
+.optional-section-block {
+  max-width: 700px;
+  margin: 0 auto 30px auto;
+  padding: 15px;
+  border: 1px solid #dcd9d9;
+  background: #fff;
+  text-align: left; }
+  .optional-section-block h3 {
+    font-weight: 500;
+    margin: 0 0 15px 0;
+    color: #374054; }
+  .optional-section-block h4 {
+    color: #74808a;
+    clear: both;
+    font-weight: 500;
+    margin: 0 0 15px 0; }
+  .optional-section-block p, .optional-section-block ul {
+    margin: 0 0 15px 0;
+    color: #74808a;
+    font-size: 0.9em; }
+  .optional-section-block ul {
+    padding: 0 0 0 15px; }
+
 /*************************************
 ABOUT
 *************************************/
@@ -565,42 +599,36 @@ ABOUT
     color: #74808a;
     margin: 0; }
 
-/*
-    --------------------------------
-    ----- 6. Experience Styles -----
-    --------------------------------
-*/
 #experience {
+  border-bottom: 1px solid #dcd9d9;
   padding: 50px 15px;
-  text-align: center;
-  border-bottom: 1px solid #dcd9d9; }
+  text-align: center; }
   #experience h2 {
     color: #374054; }
 
 #experience-timeline {
-  margin: 30px auto 0 auto;
-  position: relative;
-  max-width: 1000px; }
-  #experience-timeline:before {
-    position: absolute;
-    content: '';
-    top: 0;
+  margin: 30px auto 0;
+  max-width: 1000px;
+  position: relative; }
+  #experience-timeline::before {
+    background: #3498db;
     bottom: 0;
-    left: 303px;
-    right: auto;
-    height: 100%;
-    width: 3px;
-    background: #3498db;
-    z-index: 0; }
-  #experience-timeline:after {
-    position: absolute;
     content: '';
+    height: 100%;
+    left: 303px;
+    position: absolute;
+    right: auto;
+    top: 0;
     width: 3px;
-    height: 40px;
-    background: #3498db;
+    z-index: 0; }
+  #experience-timeline::after {
     background: linear-gradient(to bottom, #3498db, rgba(52, 152, 219, 0));
+    content: '';
+    height: 40px;
+    left: 303px;
+    position: absolute;
     top: 100%;
-    left: 303px; }
+    width: 3px; }
 
 .vtimeline-content {
   margin-left: 350px;
@@ -610,15 +638,15 @@ ABOUT
   border-radius: 3px;
   text-align: left; }
   .vtimeline-content h3 {
-    font-size: 1.5em;
-    font-weight: 300;
     color: #374054;
     display: inline-block;
+    font-size: 1.5em;
+    font-weight: 300;
     margin: 0; }
   .vtimeline-content h4 {
+    color: #7e8890;
     font-size: 1.2em;
     font-weight: 300;
-    color: #7e8890;
     margin: 0 0 15px 0; }
   .vtimeline-content p {
     color: #74808a;
@@ -694,46 +722,6 @@ ABOUT
   .education-block ul {
     padding: 0 0 0 15px; }
 
-/*
-    ---------------------------------------
-    ----- 11. Optional Section Styles -----
-    ---------------------------------------
-*/
-.optional-section {
-  padding: 50px 15px;
-  text-align: center;
-  border-top: 1px solid #dcd9d9; }
-  .optional-section h2 {
-    color: #374054; }
-
-.optional-section-block {
-  max-width: 700px;
-  margin: 0 auto 30px auto;
-  padding: 15px;
-  border: 1px solid #dcd9d9;
-  background: #fff;
-  text-align: left; }
-  .optional-section-block h3 {
-    font-weight: 500;
-    margin: 0 0 15px 0;
-    color: #374054; }
-  .optional-section-block h4 {
-    color: #74808a;
-    clear: both;
-    font-weight: 500;
-    margin: 0 0 15px 0; }
-  .optional-section-block p, .optional-section-block ul {
-    margin: 0 0 15px 0;
-    color: #74808a;
-    font-size: 0.9em; }
-  .optional-section-block ul {
-    padding: 0 0 0 15px; }
-
-/*
-    -------------------------------
-    ----- 9. Skills Styles -----
-    -------------------------------
-*/
 #skills {
   padding: 50px 15px;
   text-align: center; }
@@ -741,19 +729,17 @@ ABOUT
     color: #374054;
     margin-bottom: 50px; }
   #skills ul {
-    display: block;
-    margin: 0 auto;
-    padding: 0;
-    max-width: 800px; }
+    max-width: 800px;
+    padding: 0; }
   #skills li {
-    display: inline-block;
-    margin: 7px;
-    padding: 5px 10px;
-    color: #374054;
     background: #e4e4ea;
-    list-style: none;
+    color: #374054;
     cursor: default;
-    font-size: 1.2em; }
+    display: inline-block;
+    font-size: 1.2em;
+    list-style: none;
+    margin: 7px;
+    padding: 5px 10px; }
 
 /*-------------------------------
 ----- 10. Contact Styles -----

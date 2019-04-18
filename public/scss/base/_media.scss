@@ -74,19 +74,6 @@ Media Queries
   }
 } //<----------------OK
 
-
-
-// @media only screen and (max-width: 617px) {
-//   .title-job {
-//     margin-top: 100px;
-//   }
-//   .title-name {
-//     margin-top: 75px;
-//   }
-// }
-
-
-
 @media only screen and (max-width: 640px) {
   /* No line for the last row of .cards  */
   .wrapper > div:nth-child(n + 12) {
@@ -112,26 +99,10 @@ Media Queries
     min-height: 390px;
   }
 
-  // .title-name {
-  //   left: -67%;
-  //   margin-top: 60px;
-  //   width: 125%;
-  // }
-  //
-  // .title-job {
-  //   font-size: 100%;
-  //   top: 35%;
-  // }
-  //
-  // .btn  {
-  //   top: 55%;
-  // }
-
   .card-text {
     padding: 0 1em;
   }
 }
-
 
 @media only screen and (min-width: 480px) {
   .header {
