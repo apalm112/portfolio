@@ -74,6 +74,19 @@ Media Queries
   }
 } //<----------------OK
 
+@media only screen and (max-width: 575px) {
+  footer {
+    span {
+      margin: 0 auto;
+    }
+
+    ul {
+      margin-top: 5px;
+      padding-left: 0;
+    }
+  }
+}
+
 @media only screen and (max-width: 640px) {
   /* No line for the last row of .cards  */
   .wrapper > div:nth-child(n + 12) {
@@ -231,4 +244,83 @@ Media Queries
       padding: 0 0.9rem;
     }
   }
+}
+
+
+// ----- Media Queries ---------------------------------
+// Collapse timeline
+@media only screen and (max-width: 750px) {
+
+  #experience-timeline {
+    &:before, &:after {
+        left: 23px;
+    }
+  }
+
+  .vtimeline-date {
+    width: auto;
+    text-align: left;
+    position: relative;
+    margin-bottom: 15px;
+    display: block;
+    margin-left: 70px;
+  }
+
+  .vtimeline-icon {
+    margin-left: 0;
+  }
+
+  .vtimeline-content {
+    margin-left: 70px;
+  }
+
+}
+
+// Medium Devices
+@media only screen and (max-width : 992px) {
+  #about {
+    text-align: center;
+
+    p {
+      text-align: left;
+    }
+  }
+}
+
+// Small Devices
+@media only screen and (max-width : 768px) {
+  #about h2::after {
+    top: 90%;
+  }
+
+  .col-md-4 {
+    margin-bottom: 25px;
+  }
+
+  .education-block {
+      h3, span {
+          float: none;
+      }
+  }
+
+  .project-image {
+      display: none;
+  }
+
+  .project-info {
+      position: relative;
+      margin: 0;
+      padding: 30px 15px;
+      top: auto;
+      transform: none;
+  }
+
+  footer {
+      text-align: center;
+  }
+
+  .social {
+      text-align: center;
+  }
+
 }

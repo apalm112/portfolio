@@ -313,16 +313,16 @@ template {
   font-family: 'Droid Sans';
   font-style: normal;
   font-weight: 400;
-  src: local("Droid Sans Regular"), local("DroidSans-Regular"), url(https://fonts.gstatic.com/s/droidsans/v9/SlGVmQWMvZQIdix7AFxXkHNSbQ.woff2) format("woff2");
+  src: local("Droid Sans Regular"), local("DroidSans-Regular"), url("https://fonts.gstatic.com/s/droidsans/v9/SlGVmQWMvZQIdix7AFxXkHNSbQ.woff2") format("woff2");
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
 html {
-  height: 100%;
   box-sizing: border-box;
+  height: 100%;
   scroll-behavior: smooth; }
 
 *,
-*:before,
-*:after {
+*::before,
+*::after {
   box-sizing: border-box; }
 
 body {
@@ -487,21 +487,38 @@ a, a:link, a:active {
 a:hover, a:focus {
   color: #b0c3d1; }
 
-/*************************************
-MAIN
-*************************************/
-.container {
+.project-container {
   margin: auto;
-  padding: 3% 0;
-  text-align: center;
   overflow: hidden;
-  scroll-behavior: smooth; }
+  padding: 3% 0;
+  scroll-behavior: smooth;
+  text-align: center; }
+
+h2 {
+  color: #374054;
+  margin-bottom: 50px; }
+
+.heading {
+  position: relative;
+  display: inline-block;
+  font-size: 2em;
+  font-weight: 300;
+  margin: 0 0 30px 0; }
+  .heading::after {
+    position: absolute;
+    content: '';
+    top: 100%;
+    height: 1px;
+    width: 50px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    background: #3498db; }
 
 .wrapper {
   margin: 0 45px;
   padding: 20px;
-  max-width: 100%;
-  /* Adds line between .card rows  */ }
+  max-width: 100%; }
 
 .card {
   background-color: inherit;
@@ -521,26 +538,18 @@ MAIN
   padding: 0 4rem; }
 
 img {
-  /* RWD style for images  */
   height: auto;
   max-width: 100%;
   padding: 1.1rem 2.3rem; }
 
 .size {
-  width: 400px;
-  height: 250px; }
+  height: 250px;
+  width: 400px; }
 
 .link {
-  overflow: hidden;
   height: 300px;
+  overflow: hidden;
   widows: 300px; }
-
-footer {
-  background-color: #dee2e6;
-  clear: both;
-  padding: 2px 0;
-  text-align: center;
-  width: 100%; }
 
 /*
     ---------------------------------------
@@ -577,27 +586,32 @@ footer {
   .optional-section-block ul {
     padding: 0 0 0 15px; }
 
-/*************************************
-ABOUT
-*************************************/
 #about {
+  border-bottom: 1px solid #dcd9d9;
   padding: 75px 15px;
-  border-bottom: 1px solid #dcd9d9; }
+  margin: auto; }
   #about h2 {
     color: #374054; }
-    #about h2:after {
-      position: absolute;
+  #about .heading {
+    position: relative;
+    display: inline-block;
+    font-size: 2em;
+    font-weight: 300;
+    margin: 0 0 30px 0; }
+    #about .heading::after {
+      background: #3498db;
       content: '';
-      top: 100%;
       height: 1px;
-      width: 50px;
       left: 0;
-      right: 0;
       margin: 0 auto;
-      background: #3498db; }
+      position: absolute;
+      right: 0;
+      width: 50px; }
   #about p {
     color: #74808a;
     margin: 0; }
+  #about .col-md-8 {
+    text-align: justify; }
 
 #experience {
   border-bottom: 1px solid #dcd9d9;
@@ -683,11 +697,6 @@ ABOUT
   font-weight: 300;
   color: #374054; }
 
-/*
-    -------------------------------
-    ----- 7. Education Styles -----
-    -------------------------------
-*/
 #education {
   padding: 50px 15px 20px 15px;
   border-bottom: 1px solid #dcd9d9;
@@ -729,6 +738,8 @@ ABOUT
     color: #374054;
     margin-bottom: 50px; }
   #skills ul {
+    display: block;
+    margin: 0 auto;
     max-width: 800px;
     padding: 0; }
   #skills li {
@@ -797,6 +808,34 @@ ABOUT
     #contact-form button:hover {
       box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23); }
 
+footer {
+  background-color: #dee2e6;
+  clear: both;
+  padding: 2px 0;
+  text-align: center;
+  width: 100%; }
+  footer .container .row .copyright {
+    padding-top: 20px; }
+  footer .container .row ul li {
+    display: inline-block;
+    font-size: 2.25em;
+    list-style: none;
+    padding: 0 20px; }
+  footer span {
+    cursor: pointer;
+    display: block;
+    margin: 15px auto 0;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    border: 3px solid #b9bfc4;
+    text-align: center; }
+    footer span i {
+      color: #74808a;
+      display: inline-block;
+      font-size: inherit;
+      text-rendering: auto; }
+
 /***********************************************************
 Media Queries
 ***********************************************************/
@@ -852,6 +891,12 @@ Media Queries
 
   .line {
     max-width: 100% !important; } }
+@media only screen and (max-width: 575px) {
+  footer span {
+    margin: 0 auto; }
+  footer ul {
+    margin-top: 5px;
+    padding-left: 0; } }
 @media only screen and (max-width: 640px) {
   /* No line for the last row of .cards  */
   .wrapper > div:nth-child(n + 12) hr {
@@ -947,5 +992,52 @@ Media Queries
     width: 33%; }
     .card img {
       padding: 0 0.9rem; } }
+@media only screen and (max-width: 750px) {
+  #experience-timeline:before, #experience-timeline:after {
+    left: 23px; }
+
+  .vtimeline-date {
+    width: auto;
+    text-align: left;
+    position: relative;
+    margin-bottom: 15px;
+    display: block;
+    margin-left: 70px; }
+
+  .vtimeline-icon {
+    margin-left: 0; }
+
+  .vtimeline-content {
+    margin-left: 70px; } }
+@media only screen and (max-width: 992px) {
+  #about {
+    text-align: center; }
+    #about p {
+      text-align: left; } }
+@media only screen and (max-width: 768px) {
+  #about h2::after {
+    top: 90%; }
+
+  .col-md-4 {
+    margin-bottom: 25px; }
+
+  .education-block h3, .education-block span {
+    float: none; }
+
+  .project-image {
+    display: none; }
+
+  .project-info {
+    position: relative;
+    margin: 0;
+    padding: 30px 15px;
+    top: auto;
+    transform: none; }
+
+  footer {
+    text-align: center; }
+
+  .social {
+    text-align: center; } }
 
 /*# sourceMappingURL=app.css.map */
