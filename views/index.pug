@@ -2,11 +2,11 @@ doctype html
 html(lang='en')
 	head
 		meta(charset='UTF-8')
-		title Portfolio
+		title Adam Palmer
 		meta(name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no')
 		//- link( rel='stylesheet' type='text/css' href='https://fonts.googleapis.com/css?family=Droid+Sans')
-		//- link(rel='shortcut icon' href='favicon.ico' type='image/x-icon')
-		//- link(rel='icon' href='favicon.ico' type='image/x-icon')
+		link(rel='shortcut icon' href='../favicon.ico' type='image/x-icon')
+		link(rel='icon' href='../favicon.ico' type='image/x-icon')
 		link(rel='stylesheet' href='./libs/font-awesome/css/font-awesome.css')
 		link(rel='stylesheet' href='./css/bootstrap.min.css')
 		link(rel='stylesheet' href='./css/app.css')
@@ -15,10 +15,10 @@ html(lang='en')
 		include includes/header.pug
 		main.container-main
 			include partials/about.pug
-			include partials/experience.pug
+			include partials/education.pug
 			include partials/projects.pug
 			include partials/skills.pug
-			include partials/education.pug
+			include partials/experience.pug
 			include partials/contact.pug
 		include includes/footer.pug
 		//- jQuery
