@@ -7,10 +7,13 @@ html(lang='en')
 		//- link( rel='stylesheet' type='text/css' href='https://fonts.googleapis.com/css?family=Droid+Sans')
 		link(rel='shortcut icon' href='../favicon.ico' type='image/x-icon')
 		link(rel='icon' href='../favicon.ico' type='image/x-icon')
-		link(rel='stylesheet' href='./libs/font-awesome/css/font-awesome.css')
 		link(rel='stylesheet' href='./css/bootstrap.min.css')
+		link(rel='stylesheet' href='./libs/font-awesome/css/font-awesome.css')
 		link(rel='stylesheet' href='./css/app.css')
-	body(data-spy="scroll" data-target=".nav" data-offset="1500")
+		script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js')
+		script(src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js' integrity='sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1' crossorigin='anonymous')
+		script(type='text/javascript' href='./js/bootstrap.min.js')
+	body(data-spy='scroll' data-target='.navbar' data-offset='100')
 		include partials/nav.pug
 		include includes/header.pug
 		main.container-main
@@ -23,7 +26,6 @@ html(lang='en')
 		include includes/footer.pug
 		//- jQuery
 		//- script(src='https://code.jquery.com/jquery-3.3.1.slim.min.js')
-		script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js')
 		script(type='text/javascript').
 			(function($) {
 				// Sticky NavBar feature
@@ -71,6 +73,29 @@ html(lang='en')
 								}
 						});
 
+				});
+
+				let mainNavLinks = document.querySelectorAll("nav ul li a");
+				let mainSections = document.querySelectorAll("main div");
+
+				let lastId;
+				let cur = [];
+
+				window.addEventListener("scroll", event => {
+				  let fromTop = window.scrollY;
+
+				  mainNavLinks.forEach(link => {
+				    let section = document.querySelector(link.hash);
+
+				    if (
+				      section.offsetTop <= fromTop &&
+				      section.offsetTop + section.offsetHeight > fromTop
+				    ) {
+				      link.classList.add("current");
+				    } else {
+				      link.classList.remove("current");
+				    }
+				  });
 				});
 
 			})(jQuery);

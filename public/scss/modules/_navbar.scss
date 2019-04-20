@@ -64,9 +64,10 @@ NAVBAR
 // This gets the <a></a> on one line
 #nav-anchor {
   padding: 0.01rem 0.2rem 0rem 0.2rem;
-  // &:hover {
-  //   padding: 3px 10px;
-  // }
+}
+
+.current {
+  color: $base-color !important;
 }
 
 .sticky {
@@ -77,4 +78,8 @@ NAVBAR
   top: 0;
   width: 100%;
   z-index: 22;
+
+  ul li a {
+    color: lighten($secondary, 11%);
+  }
 }

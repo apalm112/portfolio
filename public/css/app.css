@@ -402,6 +402,9 @@ NAVBAR
 #nav-anchor {
   padding: 0.01rem 0.2rem 0rem 0.2rem; }
 
+.current {
+  color: #3498db !important; }
+
 .sticky {
   background-color: #d2cdcd;
   height: 8vh !important;
@@ -409,6 +412,8 @@ NAVBAR
   top: 0;
   width: 100%;
   z-index: 22; }
+  .sticky ul li a {
+    color: white; }
 
 /*************************************
 HEADER
