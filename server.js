@@ -16,22 +16,6 @@ app.use(express.static(path.join(__dirname, 'public')));
 // This tells express to use Pug:
 app.set('view engine', 'pug');
 
-
-/*sass.render({
-  file: 'public/scss/_custom.scss',
-}, function(err, result) {
-  if (err) {
-    console.error(err);
-  } else {
-    fs.writeFile('public/css/app.css', function(err) {
-      if (err) {
-        console.log(error);
-      }
-    });
-  }
-});*/
-
-
 app.get('/*', function(req, res) {
   console.log('server.js     New req.url:', req.url);
   // console.log(projects.projects[0])
