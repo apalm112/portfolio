@@ -24,6 +24,7 @@ body {
 	background-color: $background; // $gray-666;
 	position: relative;
 	min-height: 100%;  // 100vh;
+  overflow-y: scroll;
 }
 
 a {

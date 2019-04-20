@@ -11,9 +11,8 @@ html(lang='en')
 		link(rel='stylesheet' href='./libs/font-awesome/css/font-awesome.css')
 		link(rel='stylesheet' href='./css/app.css')
 		script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js')
-		script(src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js' integrity='sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1' crossorigin='anonymous')
 		script(type='text/javascript' href='./js/bootstrap.min.js')
-	body(data-spy='scroll' data-target='.navbar' data-offset='100')
+	body(data-spy='scroll' data-target='.navbar' data-offset='10')
 		include partials/nav.pug
 		include includes/header.pug
 		main.container-main
@@ -24,15 +23,13 @@ html(lang='en')
 			include partials/experience.pug
 			include partials/contact.pug
 		include includes/footer.pug
-		//- jQuery
-		//- script(src='https://code.jquery.com/jquery-3.3.1.slim.min.js')
 		script(type='text/javascript').
 			(function($) {
 				// Sticky NavBar feature
 				window.onscroll = function() {stickyNav()};
 				
 				const navbar = document.getElementById('navbar');
-				const sticky = navbar.offsetTop;
+				const sticky = navbar.offsetTop-110;
 				
 				function stickyNav() {
 					if (window.pageYOffset > sticky) {
