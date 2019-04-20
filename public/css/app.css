@@ -399,14 +399,14 @@ NAVBAR
 .current {
   color: #3498db !important; }
 
-.sticky {
+#navbar {
   background-color: #d2cdcd;
   height: 8vh !important;
   position: fixed;
   top: 0;
   width: 100%;
   z-index: 22; }
-  .sticky ul li a {
+  #navbar ul li a {
     color: white; }
 
 /*************************************
