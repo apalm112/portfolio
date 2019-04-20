@@ -1,4 +1,3 @@
-'use strict';
 // Require the needed npm modules.
 const gulp = require('gulp'),
 	uglify = require('gulp-uglify'),

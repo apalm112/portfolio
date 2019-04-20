@@ -1,37 +1,48 @@
-// Base Styles
-//––––––––––––––––––––––––––––––––––––––––––––––––––
-// NOTE
-// html is set to 62.5% so that all the REM measurements throughout Skeleton
-// are based on 10px sizing. So basically 1.5rem = 15px :)
+@font-face {
+  font-family: 'Droid Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Droid Sans Regular'), local('DroidSans-Regular'), url('https://fonts.gstatic.com/s/droidsans/v9/SlGVmQWMvZQIdix7AFxXkHNSbQ.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
 
 html {
-  font-size: 62.5%;
+  box-sizing: border-box;
+  height: 100%;
+  scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
 body {
-  font-size: 1.5em; // currently ems cause chrome bug misinterpreting rems on body element
-  line-height: 1.6;
-  font-weight: 400;
-  font-family: $font-family;
-  color: $font-color;
+  line-height: 1.5;
+	font-family: "Droid Sans";
+	background-color: $background; // $gray-666;
+	position: relative;
+	min-height: 100%;  // 100vh;
 }
 
-// Links
-//––––––––––––––––––––––––––––––––––––––––––––––––––
-
 a {
-  color: $link-color;
   &:hover {
-    color: darken($link-color, 5%);
+    color: $blue;
   }
 }
 
-// Misc
-//––––––––––––––––––––––––––––––––––––––––––––––––––
+.background-alt {
+    background: $background-alt;
+}
 
-hr {
-  margin-top: 3rem;
-  margin-bottom: 3.5rem;
-  border-width: 0;
-  border-top: 1px solid $light-grey;
+
+/*************************************
+Clearfix
+*************************************/
+.clearfix:before,
+.clearfix:after {
+  content: '';
+  display: table;
+	clear: both;
 }

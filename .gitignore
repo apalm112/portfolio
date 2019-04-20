@@ -1,20 +1,11 @@
 node_modules
-
 package-lock.json
 
-public/app.css
-public/app.css.map
-.sass-cache
-#css
 public/.sass-cache
-#public/css
 
+public/bootstrap-4.3.1-*
 
-rwd_demo/delete/README.md
-rwd_demo/delete/css/.sass-cache
-
-config/
-rwd_demo
-yaml
+public/css/app.css
+public/css/app.css.map
 
 dist/
