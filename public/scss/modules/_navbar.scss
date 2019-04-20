@@ -12,7 +12,7 @@ NAVBAR
 
 .nav {
   font-size: 90%;
-	height: 3vh; // 40px;
+	height: 7vh; // 40px;
 	margin: 0 0 1.2em 0;
   padding-top: 10px;
   text-align: center;
@@ -61,10 +61,20 @@ NAVBAR
 	padding-right: 0.8rem;
 }
 
-/* This gets the <a></a> on one line  */
+// This gets the <a></a> on one line
 #nav-anchor {
-	padding: 0.01rem 0.2rem 0rem 0.2rem;
+  padding: 0.01rem 0.2rem 0rem 0.2rem;
   // &:hover {
   //   padding: 3px 10px;
   // }
+}
+
+.sticky {
+  // This class is added w/ JS when it reaches its scroll position.
+  background-color: darken($primary, 15%);
+  height: 8vh !important;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 22;
 }

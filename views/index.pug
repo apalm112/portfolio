@@ -26,6 +26,20 @@ html(lang='en')
 		script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js')
 		script(type='text/javascript').
 			(function($) {
+				// Sticky NavBar feature
+				window.onscroll = function() {stickyNav()};
+				
+				const navbar = document.getElementById('navbar');
+				const sticky = navbar.offsetTop;
+				
+				function stickyNav() {
+					if (window.pageYOffset > sticky) {
+						navbar.classList.add('sticky');
+						} else {
+							navbar.classList.remove('sticky');
+						}
+				}
+				
 				// Scroll to top
 				$('#to-top').click(function() {
 						$('html, body').animate({
