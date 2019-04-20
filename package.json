@@ -23,21 +23,7 @@
     "watch-css": "sass --watch public/scss/_custom.scss:public/css/app.css"
   },
   "dependencies": {
-    "express": "^4.13.3",
-    "node-sass": "^4.11.0",
+    "express": "^4.16.4",
     "pug": "^2.0.3"
-  },
-  "devDependencies": {
-    "browser-sync": "^2.18.13",
-    "del": "^3.0.0",
-    "gulp": "^3.9.1",
-    "gulp-csso": "^3.0.0",
-    "gulp-imagemin": "^3.4.0",
-    "gulp-rename": "^1.2.2",
-    "gulp-sass": "^3.1.0",
-    "gulp-sourcemaps": "^2.6.1",
-    "gulp-uglify": "^3.0.0",
-    "pump": "^1.0.2",
-    "run-sequence": "^2.2.0"
   }
 }
