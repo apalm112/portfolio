@@ -328,9 +328,15 @@ html {
 body {
   line-height: 1.5;
   font-family: "Droid Sans";
-  background-color: #575f62;
+  background-color: #f6f5f5;
   position: relative;
   min-height: 100%; }
+
+a:hover {
+  color: #3498db; }
+
+.background-alt {
+  background: #e9e4e6; }
 
 /*************************************
 Clearfix
@@ -372,6 +378,19 @@ NAVBAR
     padding-top: 2px; }
     .nav ul li {
       display: inline-block; }
+      .nav ul li a {
+        display: block;
+        color: #3498db;
+        padding: 10px; }
+        .nav ul li a:hover {
+          color: #217dbb;
+          text-decoration: none;
+          background: #eee;
+          border-radius: 4px;
+          padding: 15px; }
+        .nav ul li a:focus {
+          color: #3498db;
+          text-decoration: none; }
 
 .nav:hover > ul > li {
   cursor: pointer; }
@@ -430,7 +449,7 @@ HEADER
   right: 0;
   bottom: 0;
   left: 0;
-  background: rgba(120, 160, 187, 0.8);
+  background: rgba(120, 160, 187, 0.5);
   z-index: 1; }
 
 .title-name {
@@ -493,6 +512,10 @@ a:hover, a:focus {
   padding: 3% 0;
   scroll-behavior: smooth;
   text-align: center; }
+  .project-container a {
+    color: #78a0bb; }
+    .project-container a:hover {
+      color: #3498db; }
 
 h2 {
   color: #374054;
@@ -607,6 +630,11 @@ img {
       position: absolute;
       right: 0;
       width: 50px; }
+  #about .about-me {
+    border-radius: 50%;
+    display: block;
+    margin-top: -10px;
+    margin-left: -15px; }
   #about p {
     color: #74808a;
     margin: 0; }
@@ -730,6 +758,10 @@ img {
     font-size: 0.9em; }
   .education-block ul {
     padding: 0 0 0 15px; }
+  .education-block a {
+    color: #78a0bb; }
+    .education-block a:hover {
+      color: #3498db; }
 
 #skills {
   padding: 50px 15px;
@@ -743,7 +775,7 @@ img {
     max-width: 800px;
     padding: 0; }
   #skills li {
-    background: #e4e4ea;
+    background: #ded6d9;
     color: #374054;
     cursor: default;
     display: inline-block;
@@ -758,7 +790,7 @@ img {
 */
 #contact {
   padding: 50px 15px;
-  background: #9ab8cc;
+  background: #3498db;
   text-align: center; }
   #contact h2 {
     margin: 0 0 15px 0;
@@ -900,7 +932,10 @@ Media Queries
 @media only screen and (max-width: 640px) {
   /* No line for the last row of .cards  */
   .wrapper > div:nth-child(n + 12) hr {
-    border: 0; } }
+    border: 0; }
+
+  #about .about-me {
+    padding: 0; } }
 @media only screen and (max-width: 934px) {
   .line {
     max-width: 55%; } }
@@ -955,6 +990,9 @@ Media Queries
 @media only screen and (min-width: 680px) {
   .header {
     min-height: 455px; } }
+@media only screen and (min-width: 641px) and (max-width: 700px) {
+  .nav {
+    height: 8vh; } }
 @media only screen and (min-width: 725px) {
   .header {
     min-height: 480px; } }
@@ -1017,6 +1055,9 @@ Media Queries
 @media only screen and (max-width: 768px) {
   #about h2::after {
     top: 90%; }
+
+  #about .about-me {
+    margin-left: 30%; }
 
   .col-md-4 {
     margin-bottom: 25px; }

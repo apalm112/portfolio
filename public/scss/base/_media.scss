@@ -94,6 +94,10 @@ Media Queries
       border: 0;
     }
   }
+
+  #about .about-me {
+    padding: 0;
+  }
 }
 
 @media only screen and (max-width: 934px) {
@@ -185,6 +189,13 @@ Media Queries
     min-height: 455px;
   }
 }
+
+@media only screen and (min-width: 641px) and (max-width: 700px) {
+  .nav {
+    height: 8vh;
+  }
+}
+
 @media only screen and (min-width: 725px) {
   .header {
     min-height: 480px;
@@ -291,6 +302,10 @@ Media Queries
 @media only screen and (max-width : 768px) {
   #about h2::after {
     top: 90%;
+  }
+
+  #about .about-me {
+    margin-left: 30%;
   }
 
   .col-md-4 {

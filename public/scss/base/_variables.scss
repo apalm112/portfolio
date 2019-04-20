@@ -8,11 +8,13 @@ $white:    #fff;
 $gray-300: #dee2e6;
 $gray-800: #343a40;
 $gray-666: #575f62;
+$blue: #3498db;
 $hover: #b0c3d1;
 $max-width: 100%;
 $max-width-lg: 960px;
-$primary: #444;
-$secondary: #888;
+$primary: #f6f5f5;
+$secondary: #e9e4e6;
+$contact: #048998;
 $my-base-color: #9ab8cc;
 $my-base-color-hover: darken($my-base-color, 10%);
 
@@ -22,8 +24,8 @@ $base-color: #3498db;
 $base-color-hover: darken($base-color, 10%);
 
 // Define background colors
-$background: #fff;
-$background-alt: #f2f2f5;
+$background: $primary;        //  #ebf0f6;
+$background-alt: $secondary; 		// darken(#f2f2f5, 10%);
 
 // Define border colors
 $border: #dcd9d9;

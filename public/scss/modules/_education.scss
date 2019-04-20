@@ -46,4 +46,11 @@
     ul {
         padding: 0 0 0 15px;
     }
+
+    a {
+      color: darken($my-base-color, 10%);
+      &:hover {
+        color: $blue; //darken($base-color, 80%);
+      }
+    }
 }

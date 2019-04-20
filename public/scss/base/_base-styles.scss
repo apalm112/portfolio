@@ -21,12 +21,20 @@ html {
 body {
   line-height: 1.5;
 	font-family: "Droid Sans";
-	background-color: $gray-666;
+	background-color: $background; // $gray-666;
 	position: relative;
 	min-height: 100%;  // 100vh;
 }
 
+a {
+  &:hover {
+    color: $blue;
+  }
+}
 
+.background-alt {
+    background: $background-alt;
+}
 
 
 /*************************************

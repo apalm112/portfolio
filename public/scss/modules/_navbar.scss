@@ -29,6 +29,25 @@ NAVBAR
 		padding-top: 2px;
 		li {
 			display: inline-block;
+      a {
+          display: block;
+          color: $base-color;
+          padding: 10px;
+
+          &:hover {
+              color: $base-color-hover;
+              text-decoration: none;
+              background: #eee;
+              border-radius: 4px;
+              padding: 15px;
+          }
+
+          &:focus {
+              color: $base-color;
+              text-decoration: none;
+          }
+      }
+
 		}
 	}
 }
@@ -45,4 +64,7 @@ NAVBAR
 /* This gets the <a></a> on one line  */
 #nav-anchor {
 	padding: 0.01rem 0.2rem 0rem 0.2rem;
+  // &:hover {
+  //   padding: 3px 10px;
+  // }
 }
