@@ -2,7 +2,6 @@ const express = require('express'),
   fs = require('fs'),
   path = require('path'),
   projects = require('./scripts/projects.js'),
-  sass = require('node-sass');
   app = express();
 
 app.set('port', process.env.PORT || 4000);
