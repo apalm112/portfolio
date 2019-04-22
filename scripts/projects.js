@@ -13,7 +13,7 @@ exports.projects = [
 		img: 'proj-11.png',
 		repo_url: 'https://github.com/apalm112/FSJS-Course-Rating-API-Express',
 		deploy: '',
-		description: 'A REST API using Express that let users CRUD items from a database.'
+		description: 'A back end project that uses Express & MongoDB which allows users to CRUD collections in the database.'
 	},
 	{
 		name: 'Library Manager',
@@ -34,7 +34,7 @@ exports.projects = [
 		img: 'proj-8.png',
 		repo_url: 'https://github.com/apalm112/FSJS-Gulp-Built-Front-End-Website',
 		deploy: '',
-		description: 'A Gulp build to deploy a website with HTML, SCSS, JPEGs, PNGs & JavaScript files.'
+		description: 'Using Gulp to build a front end website with HTML, SCSS, JPEGs, PNGs & JavaScript files.'
 	},
 	{
 		name: 'Twitter Interface',
@@ -83,6 +83,6 @@ exports.projects = [
 		img: 'proj-1.png',
 		repo_url: 'https://github.com/apalm112/FSJS-Random-Quote-Generator',
 		deploy: 'https://apalm112.github.io/FSJS-Random-Quote-Generator/',
-		description: 'Static site that uses vanilla JS to display random quotes each time a button is clicked.'
+		description: 'Static site that uses vanilla JS to display random quotes & background color each time a button is clicked.'
 	}
 ];

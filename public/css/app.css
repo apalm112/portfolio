@@ -395,19 +395,23 @@ NAVBAR
 
 #nav-anchor {
   padding: 0.01rem 0.2rem 0rem 0.2rem; }
+  #nav-anchor:hover {
+    color: #3498db; }
 
 .current {
   color: #3498db !important; }
 
 #navbar {
   background-color: #d2cdcd;
-  height: 8vh !important;
+  height: 8vh;
   position: fixed;
   top: 0;
   width: 100%;
   z-index: 22; }
   #navbar ul li a {
     color: white; }
+    #navbar ul li a::hover {
+      color: #3498db; }
 
 /*************************************
 HEADER
@@ -460,7 +464,7 @@ HEADER
 
 .title-name {
   color: #fff;
-  left: calc(-72% + 5px);
+  left: calc(-70% + 5px);
   z-index: 12;
   position: relative;
   margin-top: 75px;
@@ -478,7 +482,7 @@ HEADER
   line-height: 100%;
   position: absolute;
   bottom: 0;
-  left: -101%;
+  left: -103%;
   right: 0;
   margin: 0 auto;
   width: 82%;
@@ -878,7 +882,7 @@ footer {
 Media Queries
 ***********************************************************/
 /* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 200px) {
+@media only screen and (max-width: 226px) {
   /* Make the Header Nav stay responsive ****************************/
   .nav {
     margin-bottom: 135px !important;
@@ -896,10 +900,7 @@ Media Queries
 @media only screen and (max-width: 299px) {
   .nav {
     margin-bottom: 77px;
-    padding: 20px; }
-
-  .nav ul > li:last-child {
-    padding-top: 1rem; }
+    padding: 5px 20px 110px 20px; }
 
   .jumbotron, .jumbotron-center {
     padding: 0; }
@@ -915,7 +916,8 @@ Media Queries
 
   .header {
     height: auto;
-    min-height: 350px; }
+    min-height: 350px;
+    margin-top: 75px; }
 
   .card-text {
     padding: 0; }
@@ -928,7 +930,10 @@ Media Queries
     margin: 0 35px; }
 
   .line {
-    max-width: 100% !important; } }
+    max-width: 100% !important; }
+
+  #navbar {
+    height: 10.2vh; } }
 @media only screen and (max-width: 575px) {
   footer span {
     margin: 0 auto; }
@@ -1020,12 +1025,12 @@ Media Queries
       width: 450px; } }
 @media only screen and (min-width: 934px) {
   .title-job {
-    left: -106%;
+    left: -103%;
     top: 220px;
     font-size: 35px; }
 
   .btn {
-    left: -107%;
+    left: -104%;
     top: 290px; } }
 /* Switch to three Cards on larger screens ********************/
 @media only screen and (min-width: 1250px) and (orientation: landscape) {

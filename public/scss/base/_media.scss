@@ -2,7 +2,7 @@
 Media Queries
 ***********************************************************/
 /* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 200px) {
+@media only screen and (max-width: 226px) {
   /* Make the Header Nav stay responsive ****************************/
   .nav {
     margin-bottom: 135px !important;
@@ -28,11 +28,11 @@ Media Queries
 @media only screen and (max-width: 299px) {
   .nav {
     margin-bottom: 77px;
-    padding: 20px;
+    padding: 5px 20px 110px 20px;
   }
 
   .nav ul > li:last-child {
-    padding-top: 1rem;
+    // padding-top: 1rem;
   }
   .jumbotron, .jumbotron-center {
     padding: 0;
@@ -54,6 +54,7 @@ Media Queries
   .header {
     height: auto;
     min-height: 350px;
+    margin-top: 75px;
   }
 
   .card-text {
@@ -71,6 +72,10 @@ Media Queries
 
   .line {
     max-width: 100% !important;
+  }
+
+  #navbar {
+    height: 10.2vh;
   }
 } //<----------------OK
 
@@ -229,13 +234,13 @@ Media Queries
 
 @media only screen and (min-width: 934px) {
   .title-job {
-    left: -106%;
+    left: -103%;
     top: 220px;
     font-size: 35px;
   }
 
   .btn {
-    left: -107%;
+    left: -104%;
     top: 290px;
   }
 }
