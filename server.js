@@ -4,7 +4,7 @@ const express = require('express'),
   projects = require('./scripts/projects.js'),
   app = express();
 
-app.set('port', process.env.PORT || 4000);
+app.set('port', process.env.PORT || 8080);
 
 app.use(express.json());
 // express || body-parser middleware parses request to make it accessible to req.body
