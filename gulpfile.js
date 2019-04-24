@@ -21,14 +21,12 @@ const options = {
 gulp.task('cssMinify', (callback) => {
 	// Concats SaSS files, creates source map.
 	pump([
-		gulp.src(options.src + '/scss/_custom.scss'),
+		gulp.src(options.src + '/scss/custom.scss'),
 		maps.init({ largeFile: true }),
 		sass(),
 		maps.write('./'),
-		gulp.dest(options.src + '/css/'),
-		browserSync.reload({
-			stream: true
-		})
+		gulp.dest(options.src + '/dist/css/'),
+		browserSync.reload({ stream: true })
 	],
 	callback
 	);
@@ -40,7 +38,7 @@ gulp.task('styles', ['cssMinify'], (callback) => {
 		gulp.src(options.src + '/css/global.css'),
 		csso(),
 		rename('all.min.css'),
-		gulp.dest(options.dist + '/styles/'),
+		gulp.dest(options.src + '/dist/css/')
 	],
 	callback
 	);
@@ -50,17 +48,24 @@ gulp.task('images', () => {
 	// Uses gulp-imagemin module to optimize the images for production.
 	return gulp.src(options.src + '/imgs/*')
 		.pipe(imagemin())
-		.pipe(gulp.dest(options.dist + '/content'));
+		.pipe(gulp.dest(options.dist + '/imgs/'));
 });
 
 gulp.task('clean', () => {
 	// Deletes all of the files and folders in the dist folder created from tasks & other files created during build process.
-	return del(['dist/*', 'src/css/']);
+	return del([
+							'dist/*',
+							'src/css/'
+						]);
 });
 
 gulp.task('build', (callback) => {
 	//  Runs tasks in sequence to create files for the production folder.
-	runSequence('clean', ['styles', 'images', 'buildOut'],
+	runSequence('clean', [
+												'styles',
+												'images',
+												'buildOut'
+												],
 		callback
 	);
 });
@@ -80,9 +85,7 @@ gulp.task('default', (callback) => {
 gulp.task('server', () => {
 	// Start local webserver displaying the project files, refreshes on change to any .scss file.
 	browserSync.init({
-		server: {
-			baseDir: 'src'
-		}
+		server: { baseDir: 'src' }
 	});
 	gulp.watch(options.src + '/sass/**/*.scss', ['styles']);
 });
