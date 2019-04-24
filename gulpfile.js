@@ -54,7 +54,7 @@ gulp.task('images', () => {
 gulp.task('clean', () => {
 	// Deletes all of the files and folders in the dist folder created from tasks & other files created during build process.
 	return del([
-							'dist/*',
+							'public/dist/css/',
 							'src/css/'
 						]);
 });
