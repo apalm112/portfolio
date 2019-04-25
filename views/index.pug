@@ -1,6 +1,13 @@
 doctype html
 html(lang='en')
 	head
+		//- Global site tag (gtag.js) - Google Analytics
+		script(async='' src='https://www.googletagmanager.com/gtag/js?id=UA-139067206-1')
+		script.
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+			gtag('config', 'UA-139067206-1');
 		meta(charset='UTF-8')
 		title Adam Palmer
 		meta(name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no')
@@ -79,19 +86,19 @@ html(lang='en')
 				let cur = [];
 
 				window.addEventListener("scroll", event => {
-				  let fromTop = window.scrollY;
+					let fromTop = window.scrollY;
 
-				  mainNavLinks.forEach(link => {
-				    let section = document.querySelector(link.hash);
+					mainNavLinks.forEach(link => {
+						let section = document.querySelector(link.hash);
 
-				    if (
-				      section.offsetTop <= fromTop &&
-				      section.offsetTop + section.offsetHeight > fromTop
-				    ) {
-				      link.classList.add("current");
-				    } else {
-				      link.classList.remove("current");
-				    }
-				  });
+						if (
+							section.offsetTop <= fromTop &&
+							section.offsetTop + section.offsetHeight > fromTop
+						) {
+							link.classList.add("current");
+						} else {
+							link.classList.remove("current");
+						}
+					});
 				});
 			})(jQuery);
