@@ -44,7 +44,7 @@ Media Queries
 
 @media only screen and (max-width: 376px) {
   .nav {
-    height: 8vh;
+    height: 8.2vh;
     > ul > li {
       padding-top: 5px;
       height: 3vh;
@@ -75,7 +75,7 @@ Media Queries
   }
 
   #navbar {
-    height: 10.2vh;
+    height: 12.2vh;
   }
 } //<----------------OK
 
@@ -156,7 +156,7 @@ Media Queries
     height: 5vh;
 
     ul {
-      font-size: 135%;
+      font-size: 135%;  // 135%
     }
 
     li {
@@ -304,13 +304,13 @@ Media Queries
 }
 
 // Small Devices
-@media only screen and (max-width : 768px) {
+@media only screen and (max-width: 768px) {
   #about h2::after {
     top: 90%;
   }
 
   #about .about-me {
-    margin-left: 30%;
+    margin-left: 17%; // 30%
   }
 
   .col-md-4 {

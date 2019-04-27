@@ -6,14 +6,14 @@
 			each project, idx in projects
 				.card
 					if projects[idx].deploy
-						a.link(href='' + projects[idx].deploy + '')
+						a.link(href='' + projects[idx].deploy + '', target='_blank')
 							h5.card-title #{projects[idx].name}
 							p.card-text
 								| #{projects[idx].description}
 							img.size(src='/imgs/' + projects[idx].img + '' width='400' height='350' alt='...')
 							hr.line
 					else
-						a.link(href='' + projects[idx].repo_url + '')
+						a.link(href='' + projects[idx].repo_url + '', target='_blank')
 							h5.card-title #{projects[idx].name}
 							p.card-text
 								| #{projects[idx].description}

@@ -909,7 +909,7 @@ Media Queries
     top: 62%; } }
 @media only screen and (max-width: 376px) {
   .nav {
-    height: 8vh; }
+    height: 8.2vh; }
     .nav > ul > li {
       padding-top: 5px;
       height: 3vh; }
@@ -933,7 +933,7 @@ Media Queries
     max-width: 100% !important; }
 
   #navbar {
-    height: 10.2vh; } }
+    height: 12.2vh; } }
 @media only screen and (max-width: 575px) {
   footer span {
     margin: 0 auto; }
@@ -1068,7 +1068,7 @@ Media Queries
     top: 90%; }
 
   #about .about-me {
-    margin-left: 30%; }
+    margin-left: 17%; }
 
   .col-md-4 {
     margin-bottom: 25px; }
