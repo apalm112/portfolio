@@ -16,8 +16,6 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.set('view engine', 'pug');
 
 app.get('/*', function(req, res) {
-  console.log('server.js     New req.url:', req.url);
-  // console.log(projects.projects[0])
   res.render('index', { projects: projects.projects });
 });
 

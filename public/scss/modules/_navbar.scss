@@ -85,7 +85,7 @@ NAVBAR
   ul li a {
     color: lighten($secondary, 11%);
 
-    &::hover {
+    &:hover {
       color: #3498db;
     }
   }

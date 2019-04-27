@@ -10,7 +10,7 @@
 
 	h2 {
 	    margin: 0 0 15px 0;
-	    color: #fff;
+	    color: $white;
 	    font-weight: 500;
 	}
 }
@@ -27,10 +27,10 @@
 	    border: none;
 	    margin-bottom: 10px;
 	    background: darken($my-base-color, 15%);
-	    color: #fff;
+	    color: $white;
 	    @include transition();
 	    @include placeholder {
-	        color: #fff;
+	        color: $white;
 	    }
 
 	    &:focus {
@@ -47,7 +47,7 @@
 	button {
 	    display: block;
 	    width: 100%;
-	    background: #fff;
+	    background: $white;
 	    border-radius: 4px;
 	    padding: 5px 10px;
 	    border: none;

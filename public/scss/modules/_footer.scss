@@ -21,11 +21,8 @@ footer {
 					list-style: none;
 					padding: 0 20px;
 				}
-
 			}
-
 		}
-
 	}
 
 	span {
@@ -35,11 +32,11 @@ footer {
 		width: 35px;
 		height: 35px;
 		border-radius: 50%;
-		border: 3px solid #b9bfc4;
+		border: 3px solid $footer-span-grey;
 		text-align: center;
 
 		i {
-			color: #74808a;
+			color: $footer-i-grey;
 			display: inline-block;
 			font-size: inherit;
 			text-rendering: auto;

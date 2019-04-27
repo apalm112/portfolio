@@ -41,7 +41,7 @@
 
 .vtimeline-content {
   margin-left: 350px;
-  background: #fff;
+  background: $white;
   border: 1px solid #e6e6e6;
   padding: 15px;
   border-radius: 3px;
@@ -78,7 +78,7 @@
 
 .vtimeline-icon {
     position: relative;
-    color: #fff;
+    color: $white;
     width: 50px;
     height: 50px;
     background: $base-color;
