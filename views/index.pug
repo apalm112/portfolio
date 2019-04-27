@@ -86,7 +86,7 @@ html(lang='en')
 				let cur = [];
 
 				window.addEventListener("scroll", event => {
-					let fromTop = window.scrollY;
+					let fromTop = window.scrollY + 30;
 
 					mainNavLinks.forEach(link => {
 						let section = document.querySelector(link.hash);
