@@ -876,7 +876,7 @@ Media Queries
   .nav {
     height: 8.2vh; }
     .nav > ul > li {
-      padding-top: 5px;
+      padding-top: 10px;
       height: 3vh; }
 
   .header {
@@ -898,7 +898,7 @@ Media Queries
     max-width: 100% !important; }
 
   #navbar {
-    height: 12.2vh; }
+    height: 13.2vh; }
 
   #about .about-me {
     margin-left: 17% !important; } }
