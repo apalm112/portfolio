@@ -5,6 +5,7 @@
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
+@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css");
 html {
   line-height: 1.15;
   /* 1 */
@@ -355,6 +356,54 @@ NAVBAR
     transform: translateY(-100%); }
   100% {
     transform: translateY(0); } }
+/************** HAMBURGER NAVIGATION ***************/
+nav ul {
+  background: #343a40;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto; }
+
+nav ul,
+nav li {
+  flex: 1; }
+
+nav a {
+  text-decoration: none;
+  display: block;
+  font-size: 1.8rem; }
+
+nav li {
+  line-height: 50px;
+  position: relative;
+  text-align: center; }
+
+nav input,
+nav label {
+  display: none;
+  width: 36px;
+  height: 36px;
+  text-align: center;
+  background: #555;
+  color: #fff;
+  line-height: 36px;
+  font-size: 1.6rem;
+  border-radius: 2px; }
+
+nav label {
+  position: absolute;
+  right: 8px;
+  top: 8px;
+  transition: .8s; }
+
+nav label:hover {
+  cursor: pointer; }
+
+nav label:before {
+  font-family: FontAwesome;
+  font-size: 24px;
+  content: '\f0c9';
+  text-align: center; }
+
 .nav {
   font-size: 90%;
   height: 7vh;
@@ -366,6 +415,14 @@ NAVBAR
   animation-iteration-count: 1;
   animation-timing-function: ease;
   animation-duration: 0.75s; }
+  .nav .hamburger {
+    display: none;
+    height: 80%;
+    position: absolute;
+    right: 5%; }
+  .nav .menu {
+    display: block;
+    top: -1px; }
   .nav ul {
     margin: 0 auto;
     padding-left: 0;
@@ -374,14 +431,10 @@ NAVBAR
       display: inline-block; }
       .nav ul li a {
         display: block;
-        color: #3498db;
-        padding: 10px; }
+        color: #3498db; }
         .nav ul li a:hover {
           color: #217dbb;
-          text-decoration: none;
-          background: #eee;
-          border-radius: 4px;
-          padding: 15px; }
+          text-decoration: none; }
         .nav ul li a:focus {
           color: #3498db;
           text-decoration: none; }
@@ -402,7 +455,6 @@ NAVBAR
   color: #3498db !important; }
 
 #navbar {
-  background-color: #d2cdcd;
   height: 8vh;
   position: fixed;
   top: 0;
@@ -950,8 +1002,8 @@ Media Queries
     .nav ul {
       font-size: 135%; }
     .nav li {
-      padding-left: 20px;
-      padding-right: 20px; }
+      padding-left: 10px;
+      padding-right: 10px; }
       .nav li a {
         font-size: 110%; }
 
@@ -972,6 +1024,9 @@ Media Queries
 @media only screen and (min-width: 641px) and (max-width: 700px) {
   .nav {
     height: 8vh; } }
+@media only screen and (min-width: 675px) {
+  #navbar {
+    background-color: rgba(24, 26, 27, 0.9); } }
 @media only screen and (min-width: 725px) {
   .header {
     min-height: 480px; } }
@@ -1000,7 +1055,6 @@ Media Queries
   .btn {
     left: -104%;
     top: 290px; } }
-/* Switch to three Cards on larger screens ********************/
 @media only screen and (min-width: 1250px) and (orientation: landscape) {
   .wrapper > div:nth-child(n + 10) hr {
     border: 0; }
@@ -1009,6 +1063,35 @@ Media Queries
     width: 33%; }
     .card img {
       padding: 0 0.9rem; } }
+@media only screen and (max-width: 674px) {
+  nav {
+    position: relative; }
+
+  nav ul {
+    transform: translateY(0);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.7);
+    transition: all .5s;
+    position: absolute;
+    width: 100%;
+    background: #343a40; }
+
+  nav li {
+    flex: none;
+    width: 100%;
+    border-bottom: solid 1px #777; }
+
+  nav input[type="checkbox"]:checked + ul {
+    transform: translateY(-100%);
+    width: 100%;
+    background: #999;
+    transition: all .5s; }
+
+  nav label {
+    display: block; }
+
+  nav input[type="checkbox"]:checked + ul li:nth-child(1) {
+    background: #777;
+    color: #fff; } }
 @media only screen and (max-width: 750px) {
   #experience-timeline:before, #experience-timeline:after {
     left: 23px; }
