@@ -1,6 +1,3 @@
-/*************************************
-NAVBAR
-*************************************/
 @keyframes dropHeader {
   0% {
     transform: translateY(-100%);
@@ -10,6 +7,66 @@ NAVBAR
   }
 }
 
+//************** HAMBURGER NAVIGATION ***************
+// Sauce: https://codepen.io/torbencolding/pen/OPwwOg
+@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css");
+
+nav ul {
+  background: $gray-800;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+
+nav ul,
+nav li {
+  flex: 1;
+}
+
+nav a {
+  text-decoration: none;
+  display: block;
+  font-size: 1.8rem;
+}
+
+nav li {
+  line-height: 50px;
+  position: relative;
+  text-align: center;
+}
+
+nav input,
+nav label {
+  display: none;
+  width: 36px;
+  height: 36px;
+  text-align: center;
+  background: #555;
+  color: $white;
+  line-height: 36px;
+  font-size: 1.6rem;
+  border-radius: 2px;
+}
+
+nav label {
+  position: absolute;
+  right: 8px;
+  top: 8px;
+  transition: .8s;
+}
+
+nav label:hover {
+  cursor: pointer;
+}
+
+nav label:before {
+  font-family: FontAwesome;
+  font-size: 24px;
+  content: '\f0c9';
+  text-align: center;
+}
+
+// NAVBAR
 .nav {
   font-size: 90%;
 	height: 7vh; // 40px;
@@ -23,6 +80,19 @@ NAVBAR
   animation-timing-function: ease;
   animation-duration: 0.75s;
 
+  .hamburger {
+    display: none;
+    height: 80%;
+    position: absolute;
+    right: 5%;
+    // top: 30%;
+  }
+
+  .menu {
+    display: block;
+    top: -1px;
+  }
+
 	ul {
 		margin: 0 auto;
 		padding-left: 0;
@@ -32,14 +102,14 @@ NAVBAR
       a {
         display: block;
         color: $base-color;
-        padding: 10px;
+        // padding: 10px;
 
         &:hover {
           color: $base-color-hover;
           text-decoration: none;
-          background: #eee;
-          border-radius: 4px;
-          padding: 15px;
+          // background: #eee;
+          // border-radius: 4px;
+          // padding: 15px;
         }
 
         &:focus {
@@ -75,7 +145,7 @@ NAVBAR
 
 #navbar {
   // This class is added w/ JS when it reaches its scroll position.
-  background-color: darken($primary, 15%);
+  // background-color: $background-dark;  // darken($primary, 15%);
   height: 8vh;
   position: fixed;
   top: 0;

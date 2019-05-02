@@ -47,14 +47,12 @@ Media Queries
     height: 8.2vh;
     > ul > li {
       padding-top: 10px;
-      height: 3vh;
     }
   }
 
   .header {
     height: auto;
     min-height: 350px;
-    margin-top: 75px;
   }
 
   .card-text {
@@ -164,8 +162,8 @@ Media Queries
     }
 
     li {
-      padding-left: 20px;
-      padding-right: 20px;
+      padding-left: 10px;
+      padding-right: 10px;
 
       a {
         font-size: 110%;
@@ -202,6 +200,12 @@ Media Queries
 @media only screen and (min-width: 641px) and (max-width: 700px) {
   .nav {
     height: 8vh;
+  }
+}
+
+@media only screen and (min-width: 675px) {
+  #navbar {
+    background-color: $background-dark;
   }
 }
 
@@ -249,7 +253,7 @@ Media Queries
   }
 }
 
-/* Switch to three Cards on larger screens ********************/
+// Switch to three Cards on larger screens ********************
 @media only screen and (min-width: 1250px) and (orientation: landscape) {
   .wrapper > div:nth-child(n + 10) {
     hr {
@@ -266,9 +270,46 @@ Media Queries
   }
 }
 
+// HAMBURGER NAVIGATION
+@media only screen and (max-width: 674px) {
+  nav {
+    position: relative;
+  }
+
+  nav ul {
+    transform: translateY(0);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.7);
+    transition: all .5s;
+    position: absolute;
+    width: 100%;
+    background: $gray-800;
+  }
+
+  nav li {
+    flex: none;
+    width: 100%;
+    border-bottom: solid 1px #777;
+  }
+
+  nav input[type="checkbox"]:checked + ul {
+    transform: translateY(-100%);
+    width: 100%;
+    background: #999;
+    transition: all .5s;
+  }
+
+  nav label {
+    display: block;
+  }
+
+  nav input[type="checkbox"]:checked + ul li:nth-child(1) {
+    background: #777;
+    color: #fff;
+  }
+}
+
 // Collapse timeline
 @media only screen and (max-width: 750px) {
-
   #experience-timeline {
     &:before, &:after {
         left: 23px;
