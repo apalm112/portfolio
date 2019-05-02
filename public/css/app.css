@@ -348,15 +348,11 @@ Clearfix
     ----- 2. Mixins -----
     ---------------------
 */
-/*************************************
-NAVBAR
-*************************************/
 @keyframes dropHeader {
   0% {
     transform: translateY(-100%); }
   100% {
     transform: translateY(0); } }
-/************** HAMBURGER NAVIGATION ***************/
 nav ul {
   background: #343a40;
   display: flex;
@@ -928,13 +924,11 @@ Media Queries
   .nav {
     height: 8.2vh; }
     .nav > ul > li {
-      padding-top: 10px;
-      height: 3vh; }
+      padding-top: 10px; }
 
   .header {
     height: auto;
-    min-height: 350px;
-    margin-top: 75px; }
+    min-height: 350px; }
 
   .card-text {
     padding: 0; }

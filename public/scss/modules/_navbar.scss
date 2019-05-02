@@ -1,6 +1,3 @@
-/*************************************
-NAVBAR
-*************************************/
 @keyframes dropHeader {
   0% {
     transform: translateY(-100%);
@@ -10,7 +7,8 @@ NAVBAR
   }
 }
 
-/************** HAMBURGER NAVIGATION ***************/
+//************** HAMBURGER NAVIGATION ***************
+// Sauce: https://codepen.io/torbencolding/pen/OPwwOg
 @import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css");
 
 nav ul {
