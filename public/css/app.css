@@ -343,11 +343,6 @@ Clearfix
   display: table;
   clear: both; }
 
-/*
-    ---------------------
-    ----- 2. Mixins -----
-    ---------------------
-*/
 @keyframes dropHeader {
   0% {
     transform: translateY(-100%); }
@@ -411,11 +406,6 @@ nav label:before {
   animation-iteration-count: 1;
   animation-timing-function: ease;
   animation-duration: 0.75s; }
-  .nav .hamburger {
-    display: none;
-    height: 80%;
-    position: absolute;
-    right: 5%; }
   .nav .menu {
     display: block;
     top: -1px; }
@@ -426,8 +416,8 @@ nav label:before {
     .nav ul li {
       display: inline-block; }
       .nav ul li a {
-        display: block;
-        color: #3498db; }
+        color: #3498db;
+        display: block; }
         .nav ul li a:hover {
           color: #217dbb;
           text-decoration: none; }
@@ -443,7 +433,7 @@ nav label:before {
   padding-right: 0.8rem; }
 
 #nav-anchor {
-  padding: 0.01rem 0.2rem 0rem 0.2rem; }
+  padding: 0.01rem 0.2rem 0rem; }
   #nav-anchor:hover {
     color: #3498db; }
 
@@ -461,9 +451,6 @@ nav label:before {
     #navbar ul li a:hover {
       color: #3498db; }
 
-/*************************************
-HEADER
-*************************************/
 .header {
   background-image: url("../imgs/st-helens.jpg");
   background-size: cover;
@@ -807,10 +794,6 @@ img {
     margin: 7px;
     padding: 5px 10px; }
 
-/*-------------------------------
------ 10. Contact Styles -----
--------------------------------
-*/
 #contact {
   padding: 50px 15px;
   background: #3498db;

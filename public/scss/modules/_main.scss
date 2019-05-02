@@ -1,6 +1,3 @@
-//*************************************
-//        MAIN Projects
-//*************************************
 .project-container {
   margin: auto;
   overflow: hidden;
@@ -11,7 +8,7 @@
   a {
     color: darken($my-base-color, 10%);
     &:hover {
-      color: $blue; // darken($base-color, 80%);
+      color: $blue;
     }
   }
 }
@@ -44,11 +41,6 @@ h2 {
   margin: 0 45px;
   padding: 20px;
   max-width: 100%;
-
-  // Adds line between .card rows
-  // > .card > a > img {
-  //  border-bottom: 1px solid #fff;
-  // }
 }
 
 .card {

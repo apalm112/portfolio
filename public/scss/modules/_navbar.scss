@@ -9,7 +9,7 @@
 
 //************** HAMBURGER NAVIGATION ***************
 // Sauce: https://codepen.io/torbencolding/pen/OPwwOg
-@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css");
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css');
 
 nav ul {
   background: $gray-800;
@@ -66,10 +66,10 @@ nav label:before {
   text-align: center;
 }
 
-// NAVBAR 
+// NAVBAR
 .nav {
   font-size: 90%;
-	height: 7vh; // 40px;
+	height: 7vh;
 	margin: 0 0 1.2em 0;
   padding-top: 10px;
   text-align: center;
@@ -80,36 +80,25 @@ nav label:before {
   animation-timing-function: ease;
   animation-duration: 0.75s;
 
-  .hamburger {
-    display: none;
-    height: 80%;
-    position: absolute;
-    right: 5%;
-    // top: 30%;
-  }
-
   .menu {
     display: block;
     top: -1px;
   }
 
 	ul {
-		margin: 0 auto;
-		padding-left: 0;
-		padding-top: 2px;
-		li {
-			display: inline-block;
+    margin: 0 auto;
+    padding-left: 0;
+    padding-top: 2px;
+
+    li {
+      display: inline-block;
       a {
-        display: block;
         color: $base-color;
-        // padding: 10px;
+        display: block;
 
         &:hover {
           color: $base-color-hover;
           text-decoration: none;
-          // background: #eee;
-          // border-radius: 4px;
-          // padding: 15px;
         }
 
         &:focus {
@@ -117,23 +106,22 @@ nav label:before {
           text-decoration: none;
         }
       }
-
 		}
 	}
 }
 
 .nav:hover > ul > li {
-	cursor: pointer;
+  cursor: pointer;
 }
 
 .nav-li {
-	padding-left: 0.8rem;
-	padding-right: 0.8rem;
+  padding-left: 0.8rem;
+  padding-right: 0.8rem;
 }
 
 // This gets the <a></a> on one line
 #nav-anchor {
-  padding: 0.01rem 0.2rem 0rem 0.2rem;
+  padding: 0.01rem 0.2rem 0rem;
   &:hover {
     color: $blue;
   }
@@ -145,7 +133,6 @@ nav label:before {
 
 #navbar {
   // This class is added w/ JS when it reaches its scroll position.
-  // background-color: $background-dark;  // darken($primary, 15%);
   height: 8vh;
   position: fixed;
   top: 0;
