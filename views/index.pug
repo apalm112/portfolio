@@ -80,30 +80,22 @@ html(lang='en')
 
 				});
 
-				// Does what now?
-				let mainNavLinks = document.querySelectorAll("nav ul li a");
-				let mainSections = document.querySelectorAll("main div");
-
-				let lastId;
-				let cur = [];
-
-				window.addEventListener("scroll", event => {
-					let fromTop = window.scrollY + 30;
-
-					mainNavLinks.forEach(link => {
-						let section = document.querySelectorAll.hash;
-
-						if (section) {
-							if (
-								section.offsetTop <= fromTop &&
-								section.offsetTop + section.offsetHeight > fromTop
-							) {
-								link.classList.add("current");
-							} else {
-								link.classList.remove("current");
-							}
+				// Highlights current section in navbar when scrolling
+				// Sauce: https://jsfiddle.net/cse_tushar/Dxtyu/141/
+				function onScroll(event){
+					var scrollPos = $(document).scrollTop();
+					$('#navbar #nav-anchor').each(function () {
+						var currLink = $(this);
+						var refElement = $(currLink.attr("href"));
+						if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
+							$('#menu-center ul li a').removeClass("current");
+							currLink.addClass("current");
+						}
+						else{
+							currLink.removeClass("current");
 						}
 					});
-				});
+				}
+				$(document).on("scroll", onScroll);
 				
 			})(jQuery);

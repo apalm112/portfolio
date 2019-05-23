@@ -784,13 +784,6 @@ img {
     margin: 0 auto;
     max-width: 800px;
     padding: 0; }
-  #skills ul.delighter.right {
-    opacity: 0;
-    transform: translateX(-100%);
-    transition: all .75s ease-out; }
-  #skills .started {
-    transform: none;
-    opacity: 1; }
   #skills li {
     background: #ded6d9;
     color: #374054;

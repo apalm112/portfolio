@@ -11,18 +11,6 @@
         max-width: 800px;
         padding: 0;
     }
-    ul.delighter.right {
-        opacity: 0;
-        transform: translateX(-100%);
-        transition: all .75s ease-out;
-    }
-    .started {
-        transform: none;
-        opacity: 1;
-    }
-    ul.delighter.ended {
-        // border: solid red 10px;
-    }
     li {
         background: darken($background-alt, 5%);
         color: $heading;
