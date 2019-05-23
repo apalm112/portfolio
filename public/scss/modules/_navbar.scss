@@ -1,149 +1,141 @@
 @keyframes dropHeader {
-  0% {
-    transform: translateY(-100%);
-  }
-  100% {
-    transform: translateY(0);
-  }
+    0% {
+        transform: translateY(-100%);
+    }
+    100% {
+        transform: translateY(0);
+    }
 }
 
 //************** HAMBURGER NAVIGATION ***************
 // Sauce: https://codepen.io/torbencolding/pen/OPwwOg
 @import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css');
-
 nav ul {
-  background: $gray-800;
-  display: flex;
-  flex-wrap: wrap;
-  margin: 0 auto;
+    background: $gray-800;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
 }
 
 nav ul,
 nav li {
-  flex: 1;
+    flex: 1;
 }
 
 nav a {
-  text-decoration: none;
-  display: block;
-  font-size: 1.8rem;
+    text-decoration: none;
+    display: block;
+    font-size: 1.8rem;
 }
 
 nav li {
-  line-height: 50px;
-  position: relative;
-  text-align: center;
+    line-height: 50px;
+    position: relative;
+    text-align: center;
 }
 
 nav input,
 nav label {
-  display: none;
-  width: 36px;
-  height: 36px;
-  text-align: center;
-  background: #555;
-  color: $white;
-  line-height: 36px;
-  font-size: 1.6rem;
-  border-radius: 2px;
+    display: none;
+    width: 36px;
+    height: 36px;
+    text-align: center;
+    background: #555;
+    color: $white;
+    line-height: 36px;
+    font-size: 1.6rem;
+    border-radius: 2px;
 }
 
 nav label {
-  position: absolute;
-  right: 8px;
-  top: 8px;
-  transition: .8s;
+    position: absolute;
+    right: 8px;
+    top: 8px;
+    transition: .8s;
 }
 
 nav label:hover {
-  cursor: pointer;
+    cursor: pointer;
 }
 
-nav label:before {
-  font-family: FontAwesome;
-  font-size: 24px;
-  content: '\f0c9';
-  text-align: center;
+nav label:after {
+    font-family: FontAwesome;
+    font-size: 24px;
+    content: '\f0c9';
+    text-align: center;
 }
 
+//************** END HAMBURGER NAVIGATION ***************
 // NAVBAR
 .nav {
-  font-size: 90%;
-	height: 7vh;
-	margin: 0 0 1.2em 0;
-  padding-top: 10px;
-  text-align: center;
-
-  z-index: 10;
-  animation-name: dropHeader;
-  animation-iteration-count: 1;
-  animation-timing-function: ease;
-  animation-duration: 0.75s;
-
-  .menu {
-    display: block;
-    top: -1px;
-  }
-
-	ul {
-    margin: 0 auto;
-    padding-left: 0;
-    padding-top: 2px;
-
-    li {
-      display: inline-block;
-      a {
-        color: $base-color;
+    font-size: 90%;
+    height: 7vh;
+    margin: 0 0 1.2em 0;
+    padding-top: 10px;
+    text-align: center;
+    z-index: 10;
+    animation-name: dropHeader;
+    animation-iteration-count: 1;
+    animation-timing-function: ease;
+    animation-duration: 0.75s;
+    .menu {
         display: block;
-
-        &:hover {
-          color: $base-color-hover;
-          text-decoration: none;
+        top: -1px;
+    }
+    ul {
+        margin: 0 auto;
+        padding-left: 0;
+        padding-top: 2px;
+        li {
+            display: inline-block;
+            a {
+                color: $base-color;
+                display: block;
+                &:hover {
+                    color: $base-color-hover;
+                    text-decoration: none;
+                }
+                &:focus {
+                    color: $base-color;
+                    text-decoration: none;
+                }
+            }
         }
-
-        &:focus {
-          color: $base-color;
-          text-decoration: none;
-        }
-      }
-		}
-	}
+    }
 }
 
-.nav:hover > ul > li {
-  cursor: pointer;
+.nav:hover>ul>li {
+    cursor: pointer;
 }
 
 .nav-li {
-  padding-left: 0.8rem;
-  padding-right: 0.8rem;
+    padding-left: 0.8rem;
+    padding-right: 0.8rem;
 }
 
 // This gets the <a></a> on one line
 #nav-anchor {
-  padding: 0.01rem 0.2rem 0rem;
-  &:hover {
-    color: $blue;
-  }
+    padding: 0.01rem 0.2rem 0rem;
+    &:hover {
+        color: $blue;
+    }
 }
 
 .current {
-  color: $base-color !important;
+    color: $base-color !important;
 }
 
 #navbar {
-  // This class is added w/ JS when it reaches its scroll position.
-  height: 8vh;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 22;
-
-  ul li a {
-    color: lighten($secondary, 11%);
-
-    &:hover {
-      color: #3498db;
+    // This class is added w/ JS when it reaches its scroll position.
+    height: 8vh;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 22;
+    ul li a {
+        color: lighten($secondary, 11%);
+        &:hover {
+            color: #3498db;
+        }
     }
-  }
 }

@@ -389,7 +389,7 @@ nav label {
 nav label:hover {
   cursor: pointer; }
 
-nav label:before {
+nav label:after {
   font-family: FontAwesome;
   font-size: 24px;
   content: '\f0c9';
@@ -784,6 +784,15 @@ img {
     margin: 0 auto;
     max-width: 800px;
     padding: 0; }
+  #skills ul.delighter {
+    transition: all .3s ease-out;
+    transform: translateX(-100%);
+    opacity: 0; }
+  #skills ul.delighter.started {
+    transform: none;
+    opacity: 1; }
+  #skills ul.delighter.ended {
+    border: solid red 10px; }
   #skills li {
     background: #ded6d9;
     color: #374054;
@@ -793,6 +802,18 @@ img {
     list-style: none;
     margin: 7px;
     padding: 5px 10px; }
+
+.delighter li {
+  opacity: 0;
+  transform: translateY(400%);
+  transition: all .7s ease-out; }
+
+.delighter.started li:nth-child(1) {
+  transition: all .7x ease-out; }
+
+.delighter.started li {
+  opacity: 1;
+  transform: none; }
 
 #contact {
   padding: 50px 15px;
@@ -898,7 +919,8 @@ Media Queries
     margin-bottom: 77px;
     padding: 5px 20px 110px 20px; }
 
-  .jumbotron, .jumbotron-center {
+  .jumbotron,
+  .jumbotron-center {
     padding: 0; }
 
   .btn {
@@ -1101,7 +1123,8 @@ Media Queries
   .col-md-4 {
     margin-bottom: 25px; }
 
-  .education-block h3, .education-block span {
+  .education-block h3,
+  .education-block span {
     float: none; }
 
   .project-image {
