@@ -19,6 +19,7 @@ html(lang='en')
 		link(rel='stylesheet' href='./css/app.css')
 		script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js')
 		script(type='text/javascript' href='./js/bootstrap.min.js')
+		script(type='text/javascript' src='./js/delighters.js')
 	body(data-spy='scroll' data-offset='10' data-target='.navbar')
 		include partials/nav.pug
 		include includes/header.pug
@@ -79,6 +80,7 @@ html(lang='en')
 
 				});
 
+				// Does what now?
 				let mainNavLinks = document.querySelectorAll("nav ul li a");
 				let mainSections = document.querySelectorAll("main div");
 
@@ -89,19 +91,22 @@ html(lang='en')
 					let fromTop = window.scrollY + 30;
 
 					mainNavLinks.forEach(link => {
-						let section = document.querySelector(link.hash);
+						let section = document.querySelectorAll.hash;
 
-						if (
-							section.offsetTop <= fromTop &&
-							section.offsetTop + section.offsetHeight > fromTop
-						) {
-							link.classList.add("current");
-						} else {
-							link.classList.remove("current");
+						if (section) {
+							if (
+								section.offsetTop <= fromTop &&
+								section.offsetTop + section.offsetHeight > fromTop
+							) {
+								link.classList.add("current");
+							} else {
+								link.classList.remove("current");
+							}
 						}
 					});
 				});
 				
+				// Open mobile menu
 				$('.hamburger').click(function(){
 					$('.nav').toggleClass('hamb-nav');
 					$('.hamburger').toggleClass('hamb-urger');

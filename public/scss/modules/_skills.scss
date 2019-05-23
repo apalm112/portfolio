@@ -13,6 +13,18 @@
     max-width: 800px;
     padding: 0;
   }
+  ul.delighter {
+    transition: all .3s ease-out;
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  ul.delighter.started {
+    transform: none;
+    opacity: 1;
+  }
+  ul.delighter.ended {
+    border: solid red 10px;
+  }
 
   li {
     background: darken($background-alt, 5%);
@@ -24,4 +36,19 @@
     margin: 7px;
     padding: 5px 10px;
   }
+}
+
+
+// Delighter.js styles
+.delighter li {
+  opacity: 0;
+  transform: translateY(400%);
+  transition: all .7s ease-out;
+}
+.delighter.started li:nth-child(1) {
+  transition: all .7x ease-out;
+}
+.delighter.started li {
+  opacity: 1;
+  transform: none;
 }
