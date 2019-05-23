@@ -1,54 +1,52 @@
 #skills {
-  padding: 50px 15px;
-  text-align: center;
-
-  h2 {
-    color: $heading;
-    margin-bottom: 50px;
-  }
-
-  ul {
-    display: block;
-    margin: 0 auto;
-    max-width: 800px;
-    padding: 0;
-  }
-  ul.delighter {
-    transition: all .3s ease-out;
-    transform: translateX(-100%);
-    opacity: 0;
-  }
-  ul.delighter.started {
-    transform: none;
-    opacity: 1;
-  }
-  ul.delighter.ended {
-    border: solid red 10px;
-  }
-
-  li {
-    background: darken($background-alt, 5%);
-    color: $heading;
-    cursor: default;
-    display: inline-block;
-    font-size: 1.2em;
-    list-style: none;
-    margin: 7px;
-    padding: 5px 10px;
-  }
+    padding: 50px 15px;
+    text-align: center;
+    h2 {
+        color: $heading;
+        margin-bottom: 50px;
+    }
+    ul {
+        display: block;
+        margin: 0 auto;
+        max-width: 800px;
+        padding: 0;
+    }
+    ul.delighter.right {
+        opacity: 0;
+        transform: translateX(-100%);
+        transition: all .75s ease-out;
+    }
+    .started {
+        transform: none;
+        opacity: 1;
+    }
+    ul.delighter.ended {
+        // border: solid red 10px;
+    }
+    li {
+        background: darken($background-alt, 5%);
+        color: $heading;
+        cursor: default;
+        display: inline-block;
+        font-size: 1.2em;
+        list-style: none;
+        margin: 7px;
+        padding: 5px 10px;
+    }
 }
-
 
 // Delighter.js styles
 .delighter li {
-  opacity: 0;
-  transform: translateY(400%);
-  transition: all .7s ease-out;
+    opacity: 0;
+    transform: translateY(400%);
+    transition: all .7s ease-out;
 }
+
 .delighter.started li:nth-child(1) {
-  transition: all .7x ease-out;
+    transition: all .7x ease-out;
 }
+
 .delighter.started li {
-  opacity: 1;
-  transform: none;
+    opacity: 1;
+    transform: none;
 }
