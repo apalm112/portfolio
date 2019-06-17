@@ -76,7 +76,14 @@ img {
 }
 
 .link {
-  height: 300px;
+  // height: 300px;
   overflow: hidden;
-  widows: 300px;
+}
+
+.card-text a {
+  padding-right: 1em;
+  
+  i {
+    padding-left: 1em;
+  }
 }

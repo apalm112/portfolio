@@ -64,6 +64,9 @@ Media Queries
     .line {
         max-width: 100% !important;
     }
+    .title-job {
+        left: -94%
+    }
     #navbar {
         height: 13.2vh;
     }
@@ -132,6 +135,7 @@ Media Queries
     }
     .title-job {
         font-size: 35px;
+        left: -99%
     }
     .btn {
         top: 65%;
@@ -184,7 +188,7 @@ Media Queries
 
 @media only screen and (min-width: 675px) {
     #navbar {
-        background-color: $background-dark;
+        background-color: $gray-800;
     }
 }
 

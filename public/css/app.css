@@ -615,9 +615,12 @@ img {
   width: 400px; }
 
 .link {
-  height: 300px;
-  overflow: hidden;
-  widows: 300px; }
+  overflow: hidden; }
+
+.card-text a {
+  padding-right: 1em; }
+  .card-text a i {
+    padding-left: 1em; }
 
 #about {
   border-bottom: 1px solid #dcd9d9;
@@ -939,6 +942,9 @@ Media Queries
   .line {
     max-width: 100% !important; }
 
+  .title-job {
+    left: -94%; }
+
   #navbar {
     height: 13.2vh; }
 
@@ -981,7 +987,8 @@ Media Queries
     min-height: 430px; }
 
   .title-job {
-    font-size: 35px; }
+    font-size: 35px;
+    left: -99%; }
 
   .btn {
     top: 65%; } }
@@ -1016,7 +1023,7 @@ Media Queries
     height: 8vh; } }
 @media only screen and (min-width: 675px) {
   #navbar {
-    background-color: rgba(24, 26, 27, 0.9); } }
+    background-color: #343a40; } }
 @media only screen and (min-width: 725px) {
   .header {
     min-height: 480px; } }

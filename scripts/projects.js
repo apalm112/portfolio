@@ -6,14 +6,14 @@ exports.projects = [
 		img: 'proj-12.png',
 		repo_url: 'https://github.com/apalm112/FSJS-Capstone',
 		deploy: 'https://wa-vaccine.herokuapp.com',
-		description: 'A MERN stack web app deployed on Heroku, with a React frontend with a Express backend.'
+		description: 'A MERN stack web app deployed on Heroku, with a React frontend and an Express backend.'
 	},
 	{
 		name: 'Course Rating API',
 		img: 'proj-11.png',
 		repo_url: 'https://github.com/apalm112/FSJS-Course-Rating-API-Express',
 		deploy: '',
-		description: 'A back end project that uses Express & MongoDB which allows users to CRUD collections in the database.'
+		description: 'A back end project that uses Express & MongoDB which allows users to CRUD collections in a database.'
 	},
 	{
 		name: 'Library Manager',
@@ -37,11 +37,11 @@ exports.projects = [
 		description: 'Using Gulp to build a front end website with HTML, SCSS, JPEGs, PNGs & JavaScript files.'
 	},
 	{
-		name: 'Twitter Interface',
+		name: 'Twitter Client',
 		img: 'proj-7.png',
 		repo_url: 'https://github.com/apalm112/FSJS-Twitter-Interface',
 		deploy: '',
-		description: 'This project utilizes Node, Pug & the Twitter API to render a Twitter users tweets, friends.'
+		description: 'Utilizes Node, Pug & the Twitter API to authenticate a Twitter user & display tweets & followers.'
 	},
 	{
 		name: 'Content Scraper',

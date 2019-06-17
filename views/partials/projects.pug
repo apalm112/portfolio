@@ -6,16 +6,24 @@
 			each project, idx in projects
 				.card
 					if projects[idx].deploy
+						a.link(href='' + projects[idx].deploy + '', target='_blank' data-toggle="tooltip" data-placement="top" title="Click for demo")
+							h5.card-title #{projects[idx].name}
+							p.card-text
+								| #{projects[idx].description}
+							p.card-text
+								a(href=projects[idx].repo_url target='_blank') GitHub Repo
+									i.fa.fa-github(aria-hidden='true')
 						a.link(href='' + projects[idx].deploy + '', target='_blank')
-							h5.card-title #{projects[idx].name}
-							p.card-text
-								| #{projects[idx].description}
 							img.size(src='/imgs/' + projects[idx].img + '' width='400' height='350' alt='...')
-							hr.line
+							//- hr.line
 					else
-						a.link(href='' + projects[idx].repo_url + '', target='_blank')
+						a.link(href='' + projects[idx].repo_url + '', target='_blank' data-toggle="tooltip" data-placement="top" title="Click for GitHub repo")
 							h5.card-title #{projects[idx].name}
 							p.card-text
 								| #{projects[idx].description}
+							p.card-text
+								a(href=projects[idx].repo_url target='_blank') GitHub Repo
+									i.fa.fa-github(aria-hidden='true')
+						a.link(href='' + projects[idx].repo_url + '', target='_blank')
 							img.size(src='/imgs/' + projects[idx].img + '' width='400' height='350' alt='...')
-							hr.line
+							//- hr.line
