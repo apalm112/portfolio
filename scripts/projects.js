@@ -13,7 +13,7 @@ exports.projects = [
 		img: 'proj-11.png',
 		repo_url: 'https://github.com/apalm112/FSJS-Course-Rating-API-Express',
 		deploy: '',
-		description: 'A back end project that uses Express & MongoDB which allows users to CRUD collections in a database.'
+		description: 'A back end project that uses Express & MongoDB which allows users to CRUD collections in a database.' 
 	},
 	{
 		name: 'Library Manager',
