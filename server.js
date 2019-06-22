@@ -20,7 +20,7 @@ app.get('/*', function(req, res) {
 });
 
 
-// start listening on our port, log message to stdout
+// start listening on our port, log message to stdout for development
 const server = app.listen(app.get('port'), () => {
 	console.log('\n                \x1b[45m%s\x1b[0m', `The portfolio server is listening on port ${server.address().port}`, '\n');	// eslint-disable-line no-console
 });
