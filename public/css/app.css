@@ -652,7 +652,13 @@ img {
     color: #74808a;
     margin: 0; }
   #about .col-md-8 {
-    text-align: justify; }
+    text-align: justify;
+    left: -10px; }
+  #about .about-first {
+    margin-top: 20px;
+    margin-bottom: 10px; }
+  #about .about-para {
+    margin: 10px 0; }
 
 #experience {
   border-bottom: 1px solid #dcd9d9;
@@ -888,6 +894,9 @@ footer {
       display: inline-block;
       font-size: inherit;
       text-rendering: auto; }
+
+.icon-footer:hover {
+  color: #3498db; }
 
 /***********************************************************
 Media Queries
