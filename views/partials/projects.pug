@@ -6,9 +6,6 @@
 			each project, idx in projects
 				.card
 					if projects[idx].deploy
-						//- Add function(?) that is added to deployed projects, which on click event opens that project in a modal w/ an <iframe> instead of target="_blank".
-						//- add an 'X' to close the modal && feature where clicking anywhere outside of modal will also close the modal.
-						//- addEventListener('click', () => { open modal w/ <iframe> });
 						a.link(href='' + projects[idx].deploy + '', target='_blank' data-toggle="tooltip" data-placement="top" title="Click for demo")
 							h5.card-title #{projects[idx].name}
 							p.card-text
