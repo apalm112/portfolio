@@ -7,7 +7,7 @@
 				const sticky = navbar.offsetTop;
 				
 				function stickyNav() {
-					if (window.pageYOffset > sticky) {
+					if ((window.pageYOffset > sticky) && (window.innerWidth > 674)) {
 						navbar.classList.add('sticky');
 						navbar.classList.add('sticky-background-color');
 						} else {
