@@ -52,10 +52,11 @@
 
 .title-name {
   color: $white;
-  left: calc(-70% + 5px);
+  left: calc(-70% + -12px);
   z-index: 12;
   position: relative;
-  margin-top: 75px;
+  margin: 75px auto;
+  // margin-top: 75px;
   width: 135%;
   min-width: 175px;
   max-height: 110px;
