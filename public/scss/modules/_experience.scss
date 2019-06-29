@@ -101,3 +101,11 @@
     font-weight: 300;
     color: #374054;
 }
+
+.weblink {
+  color: $text;
+
+  &:hover {
+    color: $blue;
+  }
+}
