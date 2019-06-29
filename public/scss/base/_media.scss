@@ -52,14 +52,14 @@ Media Queries
         min-height: 350px;
     }
     .card-text {
-        padding: 0;
+        padding: 0 10px;
     }
     .size {
         padding: 0;
     }
     .wrapper {
-        padding: 0;
-        margin: 0 35px;
+        // padding: 0;
+        margin: 0 10px;
     }
     .line {
         max-width: 100% !important;
@@ -135,7 +135,7 @@ Media Queries
     }
     .title-job {
         font-size: 35px;
-        left: -99%
+        left: -105%;  //-99%
     }
     .btn {
         top: 65%;
@@ -188,7 +188,7 @@ Media Queries
 
 @media only screen and (min-width: 675px) {
     #navbar {
-        background-color: $gray-800;
+        // background-color: $gray-800;
     }
 }
 

@@ -9,8 +9,10 @@
 				function stickyNav() {
 					if (window.pageYOffset > sticky) {
 						navbar.classList.add('sticky');
+						navbar.classList.add('sticky-background-color');
 						} else {
 							navbar.classList.remove('sticky');
+							navbar.classList.remove('sticky-background-color');
 						}
 				}
 				
