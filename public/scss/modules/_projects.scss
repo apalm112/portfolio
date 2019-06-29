@@ -1,0 +1,136 @@
+.project-container {
+  margin: auto;
+  overflow: hidden;
+  padding: 3% 0;
+  scroll-behavior: smooth;
+  text-align: center;
+
+  a {
+    color: darken($my-base-color, 10%);
+    &:hover {
+      color: $blue;
+    }
+  }
+}
+
+h2 {
+  color: $heading;
+  margin-bottom: 50px;
+}
+
+.heading {
+  position: relative;
+  display: inline-block;
+  font-size: 2em;
+  font-weight: 300;
+  margin: 0 0 30px 0;
+
+  &::after {
+    position: absolute;
+    content: '';
+    top: 100%;
+    height: 1px;
+    width: 50px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    background: $base-color;
+  }
+}
+
+.wrapper {
+  margin: 0 45px;
+  padding: 20px;
+  max-width: 100%;
+}
+
+.card {
+  background-color: inherit;  // overrides Bootstrap style
+  border: 0;  // overrides Bootstrap style
+	text-align: center;
+  margin-bottom: 45px;
+}
+
+.card-title {
+	font-size: 175%;
+	// line-height: 1.5;
+	margin-top: 10px;
+	margin-bottom: 10px; // -5px
+}
+
+.card-text {
+  display: block;
+  orphans: 2;
+  padding: 0 8rem;
+  margin-top: 15px;
+}
+
+img {
+  // RWD style for images
+  // height: auto;
+  // max-width: 100%;
+  // padding: 1.1rem 2.3rem;
+}
+
+.size {
+  height: 100%;
+  width: 100%;
+  border-radius: 5px;
+}
+
+.link {
+  // height: 300px;
+  overflow: hidden;
+}
+
+.card-text a {
+  padding-right: 1em;
+  
+  i {
+    padding-left: 1em;
+  }
+}
+
+/* =====================================
+   Grid Layout
+======================================== */
+.grid {
+  border-radius: 0.285em;
+  box-shadow: 0 0.1em 0 0 rgba(0,0,0,0.1);
+  margin: 45px auto;
+  
+	max-width: 1400px;
+	display: grid;
+
+	grid-template-columns: repeat(auto-fit, minmax(500px, 350px, 3fr));
+	grid-column-gap: 15px;  /* <-- is gutter value */
+	grid-row-gap: 15px;  /* <-- is gutter value */
+	grid-auto-rows: minmax(450px, auto); /* <--are the implicit grid values */
+	grid-auto-flow: row;
+}
+
+
+.item {
+  // color: #fff;
+  // padding: 0.85em;
+  // background: #b5d1ee;
+  border: solid 2px rgba(51, 59, 66, 0.15);
+  border-radius: 0.6em;
+}
+
+.item:nth-child(even) {
+  // background: #a5cee9;
+}
+
+/* TODO: 
+        -remove 
+        @media only screen and (max-width: 376px)
+          .wrapper {
+            padding: 0;
+            margin: 0 35px;
+        }
+        so that at smallest viewport size the project cards take up moar space, looks better
+
+
+    /* track list sets three column tracks */
+	  // grid-template-rows: 100px 100px;	/* <--are the explicit grid values */
