@@ -65,13 +65,13 @@ Media Queries
         max-width: 100% !important;
     }
     .title-job {
-        left: -94%
+        left: -97%
     }
     #navbar {
         height: 13.2vh;
     }
     #about .about-me {
-        margin-left: 17% !important;
+        // margin-left: 17% !important;
     }
 } //<----------------OK
 @media only screen and (max-width: 575px) {
@@ -113,7 +113,7 @@ Media Queries
         min-height: 390px;
     }
     .card-text {
-        padding: 0 1em;
+        // padding: 0 1em;
     }
 }
 
@@ -135,7 +135,7 @@ Media Queries
     }
     .title-job {
         font-size: 35px;
-        left: -105%;  //-99%
+        left: -102%;  //-99%
     }
     .btn {
         top: 65%;
@@ -222,12 +222,12 @@ Media Queries
 
 @media only screen and (min-width: 934px) {
     .title-job {
-        left: -103%;
+        // left: -103%;
         top: 220px;
         font-size: 35px;
     }
     .btn {
-        left: -104%;
+        left: -107%;
         top: 290px;
     }
 }
@@ -320,7 +320,7 @@ Media Queries
         top: 90%;
     }
     #about .about-me {
-        margin: auto;
+        margin: 0 auto;
         // margin-left: 30%;
     }
     .col-md-4 {
