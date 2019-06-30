@@ -79,10 +79,10 @@
   padding: 0;
 }
 
-.btn  {
+.btn-resume  {
   color: $white;
   font-size: 14px;
-  top: 55%;
+  top: 60%;  //55%;
   z-index: 12;
   position: absolute;
   padding: 3px 5px;
@@ -97,7 +97,7 @@
   @include transition();
 }
 
-.btn:hover {
+.btn-resume:hover {
   background-color: $white;
 }
 

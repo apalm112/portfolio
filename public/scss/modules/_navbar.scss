@@ -131,7 +131,6 @@ nav label:after {
 
 #navbar {
     // This class is added w/ JS when it reaches its scroll position.
-    height: 8vh;
     position: fixed;
     top: 0;
     width: 100%;
@@ -139,7 +138,7 @@ nav label:after {
     ul li a {
         color: lighten($secondary, 11%);
         &:hover {
-            color: #3498db;
+            color: $base-color;
         }
     }
 }

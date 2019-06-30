@@ -27,7 +27,7 @@ h2 {
 
   &::after {
     position: absolute;
-    content: '';
+    content: "";
     top: 100%;
     height: 1px;
     width: 50px;
@@ -45,31 +45,25 @@ h2 {
 }
 
 .card {
-  background-color: inherit;  // overrides Bootstrap style
-  border: 0;  // overrides Bootstrap style
-	text-align: center;
+  background-color: inherit; // overrides Bootstrap style
+  border: 0; // overrides Bootstrap style
+  text-align: center;
   margin-bottom: 45px;
+  /* Slider style */
+  scroll-snap-align: center;
 }
 
 .card-title {
-	font-size: 175%;
-	// line-height: 1.5;
-	margin-top: 10px;
-	margin-bottom: 10px; // -5px
+  font-size: 175%;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .card-text {
   display: block;
   orphans: 2;
-  padding: 0 8rem;
+  padding: 0 4rem;
   margin-top: 15px;
-}
-
-img {
-  // RWD style for images
-  // height: auto;
-  // max-width: 100%;
-  // padding: 1.1rem 2.3rem;
 }
 
 .size {
@@ -79,15 +73,33 @@ img {
 }
 
 .link {
-  // height: 300px;
   overflow: hidden;
 }
 
 .card-text a {
   padding-right: 1em;
-  
-  i {
-    padding-left: 1em;
+  flex-direction: row;
+}
+
+.contain {
+  // flexbox for buttons
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: flex-end;
+}
+
+.demo {
+  width: auto;
+  height: 30px;
+  margin: 10px 5px;
+  background-color: lighten($base-color, 60%);
+  flex: 0 1 auto;
+  align-self: auto;
+
+  &:hover {
+    background-color: $base-color;
+    color: $white;
   }
 }
 
@@ -96,30 +108,21 @@ img {
 ======================================== */
 .grid {
   border-radius: 0.285em;
-  box-shadow: 0 0.1em 0 0 rgba(0,0,0,0.1);
   margin: 45px auto;
-  
-	max-width: 1400px;
-	display: grid;
 
-	grid-template-columns: repeat(auto-fit, minmax(500px, 350px, 3fr));
-	grid-column-gap: 15px;  /* <-- is gutter value */
-	grid-row-gap: 15px;  /* <-- is gutter value */
-	grid-auto-rows: minmax(450px, auto); /* <--are the implicit grid values */
-	grid-auto-flow: row;
+  max-width: 1400px;
+  display: grid;
+
+  grid-template-columns: repeat(auto-fit, minmax(425px, 1fr));
+  grid-column-gap: 15px;
+  grid-row-gap: 15px;
+  // grid-auto-rows: minmax(450px, auto);
+  // grid-auto-flow: row;
 }
-
 
 .item {
-  // color: #fff;
-  // padding: 0.85em;
-  // background: #b5d1ee;
   border: solid 2px rgba(51, 59, 66, 0.15);
-  border-radius: 0.6em;
-}
-
-.item:nth-child(even) {
-  // background: #a5cee9;
+  // border-radius: 0.6em;
 }
 
 /* TODO: 
@@ -133,4 +136,4 @@ img {
 
 
     /* track list sets three column tracks */
-	  // grid-template-rows: 100px 100px;	/* <--are the explicit grid values */
+// grid-template-rows: 100px 100px;	/* <--are the explicit grid values */
