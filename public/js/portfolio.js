@@ -4,7 +4,7 @@
 				window.onscroll = function() {stickyNav()};
 				
 				const navbar = document.getElementById('navbar');
-				const sticky = navbar.offsetTop;
+				const sticky = navbar.offsetTop + 60;
 				
 				function stickyNav() {
 					if ((window.pageYOffset > sticky) && (window.innerWidth > 674)) {

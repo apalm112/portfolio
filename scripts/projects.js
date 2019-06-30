@@ -3,6 +3,7 @@
 exports.projects = [
 	{
 		name: 'WA School Immunization Rates',
+		id: 'proj-12',
 		img: 'proj-12.png',
 		repo_url: 'https://github.com/apalm112/FSJS-Capstone',
 		deploy: 'https://wa-vaccine.herokuapp.com',
@@ -10,6 +11,7 @@ exports.projects = [
 	},
 	{
 		name: 'Course Rating API',
+		id: 'proj-11',
 		img: 'proj-11.png',
 		repo_url: 'https://github.com/apalm112/FSJS-Course-Rating-API-Express',
 		deploy: '',
@@ -17,6 +19,7 @@ exports.projects = [
 	},
 	{
 		name: 'Library Manager',
+		id: 'proj-10',
 		img: 'proj-10.png',
 		repo_url: 'https://github.com/apalm112/FSJS-Build-A-Library-Manager',
 		deploy: '',
@@ -24,6 +27,7 @@ exports.projects = [
 	},
 	{
 		name: 'React Gallery App',
+		id: 'proj-9',
 		img: 'proj-9.png',
 		repo_url: 'https://github.com/apalm112/FSJS-React-Gallery-App',
 		deploy: 'https://react-gallery-1.herokuapp.com',
@@ -31,6 +35,7 @@ exports.projects = [
 	},
 	{
 		name: 'Gulp',
+		id: 'proj-8',
 		img: 'proj-8.png',
 		repo_url: 'https://github.com/apalm112/FSJS-Gulp-Built-Front-End-Website',
 		deploy: '',
@@ -38,6 +43,7 @@ exports.projects = [
 	},
 	{
 		name: 'Twitter Client',
+		id: 'proj-7',
 		img: 'proj-7.png',
 		repo_url: 'https://github.com/apalm112/FSJS-Twitter-Interface',
 		deploy: '',
@@ -45,6 +51,7 @@ exports.projects = [
 	},
 	{
 		name: 'Content Scraper',
+		id: 'proj-6',
 		img: 'proj-6.png',
 		repo_url: 'https://github.com/apalm112/Project6_Content_Scraper',
 		deploy: '',
@@ -52,6 +59,7 @@ exports.projects = [
 	},
 	{
 		name: 'Public API Employee Directory',
+		id: 'proj-5',
 		img: 'proj-5.png',
 		repo_url: 'https://github.com/apalm112/FSJS-Use-Public-API-to-Create-Employee-Directory',
 		deploy: 'https://apalm112.github.io/FSJS-Use-Public-API-to-Create-Employee-Directory/',
@@ -59,6 +67,7 @@ exports.projects = [
 	},
 	{
 		name: 'Tic-Tac-Toe',
+		id: 'proj-4',
 		img: 'proj-4.png',
 		repo_url: 'https://github.com/apalm112/FSJS-Tic-Tac-Toe',
 		deploy: 'https://apalm112.github.io/FSJS-Tic-Tac-Toe/',
@@ -66,23 +75,26 @@ exports.projects = [
 	},
 	{
 		name: 'Interactive Form',
+		id: 'proj-3',
 		img: 'proj-3.png',
 		repo_url: 'https://github.com/apalm112/FSJS-Interactive-Form',
 		deploy: 'https://apalm112.github.io/FSJS-Interactive-Form/',
-		description: 'Project provides user interactivity to a provided form by adding JavaScript to it.'
+		description: 'Project provides user interactivity to a form by adding JavaScript to it.'
 	},
 	{
 		name: 'Pagination & Content Filter',
+		id: 'proj-2',
 		img: 'proj-2.png',
 		repo_url: 'https://github.com/apalm112/FSJS-Pagination',
 		deploy: 'https://apalm112.github.io/FSJS-Pagination/',
-		description: 'Project dynamically adds pagination & search bar features that allow users to search.'
+		description: 'Project dynamically adds pagination & search features.'
 	},
 	{
 		name: 'Random Quote Generator',
+		id: 'proj-1',
 		img: 'proj-1.png',
 		repo_url: 'https://github.com/apalm112/FSJS-Random-Quote-Generator',
 		deploy: 'https://apalm112.github.io/FSJS-Random-Quote-Generator/',
-		description: 'Static site that uses vanilla JS to display random quotes & background color each time a button is clicked.'
+		description: 'Static site that uses vanilla JS to display random quotes & change the background color.'
 	}
 ];
