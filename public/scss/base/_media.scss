@@ -1,350 +1,272 @@
 /***********************************************************
 Media Queries
 ***********************************************************/
-
-
 /* Extra small devices (phones, 600px and down) */
-
-@media only screen and (max-width: 226px) {
-    /* Make the Header Nav stay responsive ****************************/
-    .nav {
-        margin-bottom: 135px !important;
-        margin-bottom: 78px;
-        padding: 18px;
-        height: 18vh !important;
-        ul>li:last-child {
-            padding-top: 0 !important;
-        }
-        li {
-            margin: 0.7rem 0;
-        }
-    }
-    img {
-        /* Adds line between .card rows  */
-        border-bottom: 1px solid #fff;
-    }
-} //<----------------OK
-@media only screen and (max-width: 299px) {
-    .nav {
-        margin-bottom: 77px;
-        padding: 5px 20px 110px 20px;
-    }
-    .nav ul>li:last-child {
-        // padding-top: 1rem;
-    }
-    .jumbotron,
-    .jumbotron-center {
-        padding: 0;
-    }
-    .btn {
-        top: 62%;
-    }
-} //<----------------OK
 @media only screen and (max-width: 376px) {
-    .nav {
-        height: 8.2vh;
-        >ul>li {
-            padding-top: 10px;
-        }
-    }
-    .header {
-        height: auto;
-        min-height: 350px;
-    }
-    .card-text {
-        padding: 0;
-    }
-    .size {
-        padding: 0;
-    }
-    .wrapper {
-        padding: 0;
-        margin: 0 35px;
-    }
-    .line {
-        max-width: 100% !important;
-    }
-    .title-job {
-        left: -94%
-    }
-    #navbar {
-        height: 13.2vh;
-    }
-    #about .about-me {
-        margin-left: 17% !important;
-    }
-} //<----------------OK
+  .header {
+    height: auto;
+    min-height: 350px;
+  }
+  .wrapper {
+    margin: 0 10px;
+  }
+  .title-job {
+    left: -97%;
+  }
+}
+
 @media only screen and (max-width: 575px) {
-    footer {
-        span {
-            margin: 0 auto;
-        }
-        ul {
-            margin-top: 5px;
-            padding-left: 0;
-        }
+  footer {
+    span {
+      margin: 0 auto;
     }
-}
-
-@media only screen and (max-width: 640px) {
-    /* No line for the last row of .cards  */
-    .wrapper>div:nth-child(n + 12) {
-        hr {
-            border: 0;
-        }
+    ul {
+      margin-top: 5px;
+      padding-left: 0;
     }
-    #about .about-me {
-        padding: 0;
-    }
-}
-
-@media only screen and (max-width: 934px) {
-    .line {
-        max-width: 55%;
-    }
+  }
 }
 
 @media only screen and (min-width: 376px) {
-    .nav {
-        height: 6vh;
-    }
-    .header {
-        height: auto;
-        min-height: 390px;
-    }
-    .card-text {
-        padding: 0 1em;
-    }
-}
-
-@media only screen and (min-width: 480px) {
-    .header {
-        min-height: 405px;
-    }
-}
-
-@media only screen and (min-width: 530px) {
-    .header {
-        min-height: 415px;
-    }
+  .header {
+    height: auto;
+    min-height: 390px;
+  }
 }
 
 @media only screen and (min-width: 575px) {
-    .header {
-        min-height: 430px;
-    }
-    .title-job {
-        font-size: 35px;
-        left: -99%
-    }
-    .btn {
-        top: 65%;
-    }
+  .title-job {
+    font-size: 35px;
+    left: -102%;
+    top: 185px;
+  }
 }
 
-
 /* Small devices (portrait tablets and large phones, 600px and up) */
-
 @media only screen and (min-width: 641px) {
-    .nav {
-        height: 5vh;
-        ul {
-            font-size: 135%; // 135%
-        }
-        li {
-            padding-left: 10px;
-            padding-right: 10px;
-            a {
-                font-size: 110%;
-            }
-        }
+  .nav {
+    ul {
+      font-size: 135%;
     }
-    .header {
-        min-height: 445px;
+    li {
+      padding-left: 10px;
+      padding-right: 10px;
+      a {
+        font-size: 110%;
+      }
     }
-    .btn {
-        top: 55%;
-    }
-    .wrapper>div:nth-child(n + 12) {
-        hr {
-            border: 0;
-        }
-    }
-    img {
-        padding: 0;
-    }
-} //<----------------OK
-@media only screen and (min-width: 680px) {
-    .header {
-        min-height: 455px;
-    }
+  }
 }
 
 @media only screen and (min-width: 641px) and (max-width: 700px) {
-    .nav {
-        height: 8vh;
-    }
-}
-
-@media only screen and (min-width: 675px) {
-    #navbar {
-        background-color: $gray-800;
-    }
+  .nav {
+    height: 7vh;
+  }
 }
 
 @media only screen and (min-width: 725px) {
-    .header {
-        min-height: 480px;
-    }
+  .card-text {
+    padding: 0 12rem;
+  }
 }
 
 @media only screen and (min-width: 934px) {
-    /* Large devices (laptops/desktops, 992px and up) ***************/
-    .header {
-        padding: 0;
-    }
-    /* pop out to two cards side by side on the screen, so projects display 2 x 6 **/
-    .wrapper>div:nth-child(n + 11) {
-        hr {
-            border: 0;
-        }
-    }
-    .card {
-        display: inline-block;
-        width: 45%;
-        img {
-            max-width: 100%;
-            padding: 0 1rem;
-            width: 450px;
-        }
+  .title-job {
+    top: 220px;
+    font-size: 35px;
+  }
+  .btn-resume {
+    left: -107%;
+    top: 290px;
+  }
+  .nav {
+    height: 7vh;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+/* Large viewport sizes and up **********************************************/
+/*                            **********************************************/
+  .header {
+      padding: 13% 0;
+  }
+  .grid {
+      max-width: 1600px;
+      grid-row-gap: 0;
+      grid-column-gap: 25px;
+  }
+  .card-text {
+    padding: 0 7rem;
+  }
+  .nav {
+    height: 9vh;
+  }
+  .size {
+    max-width: 100%;
+  }
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: portrait) {
+    .nav {
+        height: 5vh;
     }
 }
 
-@media only screen and (min-width: 934px) {
-    .title-job {
-        left: -103%;
-        top: 220px;
-        font-size: 35px;
-    }
-    .btn {
-        left: -104%;
-        top: 290px;
-    }
+@media only screen and (min-width: 1100px) {
+  .card-text {
+    padding: 0 6rem;
+  }
+  .btn-resume {
+    left: -106%;
+  }
+  .col-md-4 {
+    flex: 0 0 26.33%;
+  }
+  #about .heading {
+    left: 13px;
+  }
+  .grid {
+    margin: 5px auto;
+  }
 }
 
-// Switch to three Cards on larger screens ********************
-@media only screen and (min-width: 1250px) and (orientation: landscape) {
-    .wrapper>div:nth-child(n + 10) {
-        hr {
-            border: 0;
-        }
-    }
-    .card {
-        width: 33%;
-        img {
-            padding: 0 0.9rem;
-        }
-    }
+@media only screen and (min-width: 1196px) {
+  .title-job {
+    left: -104%;
+  }
 }
 
-// HAMBURGER NAVIGATION
+/* =====================================
+     HAMBURGER MENU
+======================================== */
 @media only screen and (max-width: 674px) {
-    nav {
-        position: relative;
-    }
-    nav ul {
-        transform: translateY(0);
-        box-shadow: 0 0 5px rgba(0, 0, 0, 0.7);
-        transition: all .5s;
-        position: absolute;
-        width: 100%;
-        background: $gray-800;
-    }
-    nav li {
-        flex: none;
-        width: 100%;
-        border-bottom: solid 1px #777;
-    }
-    nav input[type="checkbox"]:checked+ul {
-        transform: translateY(-100%);
-        width: 100%;
-        background: #999;
-        transition: all .5s;
-    }
-    nav label {
-        display: block;
-    }
-    nav input[type="checkbox"]:checked+ul li:nth-child(1) {
-        background: #777;
-        color: #fff;
-    }
+  nav {
+    position: relative;
+  }
+  nav ul {
+    transform: translateY(0);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.7);
+    transition: all 0.5s;
+    position: absolute;
+    width: 100%;
+    background: $gray-800;
+  }
+  nav li {
+    flex: none;
+    width: 100%;
+    border-bottom: solid 1px #777;
+  }
+  nav input[type="checkbox"]:checked + ul {
+    transform: translateY(-100%);
+    width: 100%;
+    background: #999;
+    transition: all 0.5s;
+  }
+  nav label {
+    display: block;
+  }
+  nav input[type="checkbox"]:checked + ul li:nth-child(1) {
+    background: #777;
+    color: $white;
+  }
 }
 
-// Collapse timeline
+/* =====================================
+     Collapse timeline
+======================================== */
 @media only screen and (max-width: 750px) {
-    #experience-timeline {
-        &:before,
-        &:after {
-            left: 23px;
-        }
+  #experience-timeline {
+    &:before,
+    &:after {
+      left: 23px;
     }
-    .vtimeline-date {
-        width: auto;
-        text-align: left;
-        position: relative;
-        margin-bottom: 15px;
-        display: block;
-        margin-left: 70px;
-    }
-    .vtimeline-icon {
-        margin-left: 0;
-    }
-    .vtimeline-content {
-        margin-left: 70px;
-    }
+  }
+  .vtimeline-date {
+    width: auto;
+    text-align: left;
+    position: relative;
+    margin-bottom: 15px;
+    display: block;
+    margin-left: 70px;
+  }
+  .vtimeline-icon {
+    margin-left: 0;
+  }
+  .vtimeline-content {
+    margin-left: 70px;
+  }
 }
 
 // Medium Devices
 @media only screen and (max-width: 992px) {
-    #about {
-        text-align: center;
-        p {
-            text-align: left;
-        }
+  #about {
+    text-align: center;
+    p {
+      text-align: left;
     }
+  }
+  .nav {
+      height: 16vh;
+  }
 }
 
 // Small Devices
 @media only screen and (max-width: 768px) {
-    #about h2::after {
-        top: 90%;
+  #about h2::after {
+    top: 90%;
+  }
+  #about .about-me {
+    margin: 0 auto;
+  }
+  .col-md-4 {
+    margin-bottom: 25px;
+  }
+  .education-block {
+    h3,
+    span {
+      float: none;
     }
-    #about .about-me {
-        margin-left: 30%; // 17%
-    }
-    .col-md-4 {
-        margin-bottom: 25px;
-    }
-    .education-block {
-        h3,
-        span {
-            float: none;
-        }
-    }
-    .project-image {
-        display: none;
-    }
-    .project-info {
-        position: relative;
-        margin: 0;
-        padding: 30px 15px;
-        top: auto;
-        transform: none;
-    }
-    footer {
-        text-align: center;
-    }
-    .social {
-        text-align: center;
-    }
+  }
+  .project-image {
+    display: none;
+  }
+  .project-info {
+    position: relative;
+    margin: 0;
+    padding: 30px 15px;
+    top: auto;
+    transform: none;
+  }
+  footer {
+    text-align: center;
+  }
+  .social {
+    text-align: center;
+  }
+
+  /* =====================================
+    Slider Styles
+======================================== */
+  .slider {
+    /* line the divs up horizontally */
+    display: flex;
+    /* allow for scrolling */
+    overflow-x: scroll;
+    /* make it smooth on iOS */
+    -webkit-overflow-scrolling: touch;
+
+    margin: 0 8px;
+
+    /* add snap points for each slide */
+    scroll-snap-points-x: repeat(300px);
+    scroll-snap-type: x mandatory;
+  }
+
+  .slider > div {
+    /* make sure the width is honored */
+    flex-shrink: 0;
+    width: 100%;
+    height: 100%;
+    margin: 0 20px;
+  }
 }

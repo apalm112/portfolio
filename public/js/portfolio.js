@@ -4,13 +4,15 @@
 				window.onscroll = function() {stickyNav()};
 				
 				const navbar = document.getElementById('navbar');
-				const sticky = navbar.offsetTop;
+				const sticky = navbar.offsetTop + 60;
 				
 				function stickyNav() {
-					if (window.pageYOffset > sticky) {
+					if ((window.pageYOffset > sticky) && (window.innerWidth > 674)) {
 						navbar.classList.add('sticky');
+						navbar.classList.add('sticky-background-color');
 						} else {
 							navbar.classList.remove('sticky');
+							navbar.classList.remove('sticky-background-color');
 						}
 				}
 				

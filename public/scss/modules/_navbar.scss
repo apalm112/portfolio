@@ -11,7 +11,7 @@
 // Sauce: https://codepen.io/torbencolding/pen/OPwwOg
 @import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css');
 nav ul {
-    background: $gray-800;
+    // background: $gray-800;
     display: flex;
     flex-wrap: wrap;
     margin: 0 auto;
@@ -113,6 +113,10 @@ nav label:after {
     padding-right: 0.8rem;
 }
 
+.sticky-background-color {
+    background-color: $gray-800;
+}
+
 // This gets the <a></a> on one line
 #nav-anchor {
     padding: 0.01rem 0.2rem 0rem;
@@ -127,7 +131,6 @@ nav label:after {
 
 #navbar {
     // This class is added w/ JS when it reaches its scroll position.
-    height: 8vh;
     position: fixed;
     top: 0;
     width: 100%;
@@ -135,7 +138,7 @@ nav label:after {
     ul li a {
         color: lighten($secondary, 11%);
         &:hover {
-            color: #3498db;
+            color: $base-color;
         }
     }
 }

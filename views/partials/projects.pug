@@ -1,29 +1,34 @@
 //- for loop to iterate thru array which contains the projects & display a card for each project.
 .background-alt.project-container.section#projects
 	h2.heading Projects
-	.wrapper
+	.wrapper.grid.slider
 		if projects
 			each project, idx in projects
-				.card
+				.card.item
 					if projects[idx].deploy
-						a.link(href='' + projects[idx].deploy + '', target='_blank' data-toggle="tooltip" data-placement="top" title="Click for demo")
-							h5.card-title #{projects[idx].name}
-							p.card-text
-								| #{projects[idx].description}
-							p.card-text
-								a(href=projects[idx].repo_url target='_blank') GitHub Repo
+						h5.card-title #{projects[idx].name}
+						p.card-text
+							| #{projects[idx].description}
+						p.card-text
+						img.size(src='/imgs/' + projects[idx].img + '' width='400' height='350' alt='...')
+						.contain
+							a.link(href='' + projects[idx].deploy + '', target='_blank' data-toggle="tooltip" data-placement="top" title="Click for demo")
+								button.btn.demo Demo
+							a(href=projects[idx].repo_url target='_blank')
+								button.btn.demo GitHub Repo
+									|
+									|		
 									i.fa.fa-github(aria-hidden='true')
-						a.link(href='' + projects[idx].deploy + '', target='_blank')
-							img.size(src='/imgs/' + projects[idx].img + '' width='400' height='350' alt='...')
-							//- hr.line
 					else
-						a.link(href='' + projects[idx].repo_url + '', target='_blank' data-toggle="tooltip" data-placement="top" title="Click for GitHub repo")
-							h5.card-title #{projects[idx].name}
-							p.card-text
-								| #{projects[idx].description}
-							p.card-text
-								a(href=projects[idx].repo_url target='_blank') GitHub Repo
-									i.fa.fa-github(aria-hidden='true')
+						h5.card-title #{projects[idx].name}
+						p.card-text
+							| #{projects[idx].description}
+						p.card-text
 						a.link(href='' + projects[idx].repo_url + '', target='_blank')
 							img.size(src='/imgs/' + projects[idx].img + '' width='400' height='350' alt='...')
-							//- hr.line
+							.contain
+								a(href=projects[idx].repo_url target='_blank')
+									button.btn.demo GitHub Repo
+										|
+										|		
+										i.fa.fa-github(aria-hidden='true')
