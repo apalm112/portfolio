@@ -396,7 +396,7 @@ nav label:after {
 
 .nav {
   font-size: 90%;
-  height: 7vh;
+  height: 9%;
   margin: 0 0 1.2em 0;
   padding-top: 10px;
   text-align: center;
@@ -802,7 +802,7 @@ h2 {
   max-width: 700px;
   margin: 0 auto 30px auto;
   padding: 15px;
-  border: 1px solid #dcd9d9;
+  border: 2px solid #dcd9d9;
   text-align: left; }
   .education-block h3 {
     font-weight: 500;
@@ -1077,9 +1077,6 @@ Media Queries
     padding-right: 10px; }
     .nav li a {
       font-size: 110%; } }
-@media only screen and (min-width: 641px) and (max-width: 700px) {
-  .nav {
-    height: 7vh; } }
 @media only screen and (min-width: 725px) {
   .card-text {
     padding: 0 12rem; } }
@@ -1090,10 +1087,7 @@ Media Queries
 
   .btn-resume {
     left: -107%;
-    top: 290px; }
-
-  .nav {
-    height: 7vh; } }
+    top: 290px; } }
 @media only screen and (min-width: 1024px) {
   /* Large viewport sizes and up **********************************************/
   /*                            **********************************************/
@@ -1109,12 +1103,12 @@ Media Queries
     padding: 0 7rem; }
 
   .nav {
-    height: 9vh;
     padding-right: 45px; }
 
   .size {
     max-width: 100%; } }
-@media only screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: portrait) {
+@media only screen and (min-width: 1023px) and (max-width: 1367px) and (orientation: portrait) {
+  /* For iPad Pro viewport size */
   .nav {
     height: 5vh; } }
 @media only screen and (min-width: 1100px) {
@@ -1191,10 +1185,7 @@ Media Queries
   #about {
     text-align: center; }
     #about p {
-      text-align: left; }
-
-  .nav {
-    height: 16vh; } }
+      text-align: left; } }
 @media only screen and (max-width: 768px) {
   #about h2::after {
     top: 90%; }
