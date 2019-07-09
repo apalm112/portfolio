@@ -396,7 +396,6 @@ nav label:after {
 
 .nav {
   font-size: 90%;
-  height: 9%;
   margin: 0 0 1.2em 0;
   padding-top: 10px;
   text-align: center;
@@ -432,7 +431,7 @@ nav label:after {
   padding-right: 0.8rem; }
 
 .sticky-background-color {
-  background-color: #343a40; }
+  background-color: rgba(52, 58, 64, 0.9); }
 
 #nav-anchor {
   padding: 0.01rem 0.2rem 0rem; }
@@ -600,7 +599,7 @@ h2 {
 .card-title {
   font-size: 175%;
   margin-top: 10px;
-  margin-bottom: 10px; }
+  margin-bottom: 0; }
 
 .card-text {
   display: block;
@@ -609,7 +608,7 @@ h2 {
   margin-top: 15px; }
 
 .size {
-  height: 100%;
+  max-height: 100%;
   width: 100%;
   border-radius: 5px; }
 
@@ -660,7 +659,6 @@ h2 {
             margin: 0 35px;
         }
         so that at smallest viewport size the project cards take up moar space, looks better
-
 
     /* track list sets three column tracks */
 #about {
@@ -1077,10 +1075,16 @@ Media Queries
     padding-right: 10px; }
     .nav li a {
       font-size: 110%; } }
-@media only screen and (min-width: 725px) {
+@media only screen and (min-width: 811px) and (max-width: 816px) {
+  .nav {
+    height: 16vh; } }
+@media only screen and (min-width: 934px) {
   .card-text {
     padding: 0 12rem; } }
 @media only screen and (min-width: 934px) {
+  .card-text {
+    padding: 0 4rem; }
+
   .title-job {
     top: 220px;
     font-size: 35px; }
