@@ -58,19 +58,22 @@ Media Queries
   }
 }
 
-@media only screen and (min-width: 641px) and (max-width: 700px) {
+@media only screen and (min-width: 811px) and (max-width: 816px) {
   .nav {
-    height: 7vh;
-  }
+    height: 16vh;
+  } 
 }
 
-@media only screen and (min-width: 725px) {
+@media only screen and (min-width: 934px) {  // 725px`
   .card-text {
-    padding: 0 12rem;
+    padding: 0 12rem;  //is breaking on 934px to 920px size!
   }
 }
 
 @media only screen and (min-width: 934px) {
+  .card-text {
+    padding: 0 4rem;
+  }
   .title-job {
     top: 220px;
     font-size: 35px;
@@ -79,15 +82,14 @@ Media Queries
     left: -107%;
     top: 290px;
   }
-  .nav {
-    height: 7vh;
-  }
 }
 
 @media only screen and (min-width: 1024px) {
 /* Large viewport sizes and up **********************************************/
 /*                            **********************************************/
-  .header {
+// TODO:   fix grid bug @1024px to 920px goes to 2 column grid layout and the cards are overlapping
+
+.header {
       padding: 13% 0;
   }
   .grid {
@@ -99,14 +101,15 @@ Media Queries
     padding: 0 7rem;
   }
   .nav {
-    height: 9vh;
+    padding-right: 45px;
   }
   .size {
     max-width: 100%;
   }
 }
 
-@media only screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: portrait) {
+@media only screen and (min-width: 1023px) and (max-width: 1367px) and (orientation: portrait) {
+  /* For iPad Pro viewport size */
     .nav {
         height: 5vh;
     }
@@ -204,9 +207,6 @@ Media Queries
     p {
       text-align: left;
     }
-  }
-  .nav {
-      height: 16vh;
   }
 }
 
