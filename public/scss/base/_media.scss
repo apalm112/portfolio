@@ -11,7 +11,7 @@ Media Queries
     margin: 0 10px;
   }
   .title-job {
-    left: -97%;
+    left: -98%;
   }
 }
 
@@ -84,21 +84,27 @@ Media Queries
   }
 }
 
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 994px) { // 1024px) {
 /* Large viewport sizes and up **********************************************/
 /*                            **********************************************/
 // TODO:   fix grid bug @1024px to 920px goes to 2 column grid layout and the cards are overlapping
 
-.header {
-      padding: 13% 0;
+  .header {
+    padding: 13% 0;
   }
   .grid {
-      max-width: 1600px;
-      grid-row-gap: 0;
-      grid-column-gap: 25px;
+    max-width: 1200px; // 1000px;
+    grid-row-gap: 0;
+    grid-column-gap: 0; //25px;
+  }
+  .card.item {
+    max-width: 90%;
+    justify-self: center;
+    padding: 0 20px;
+    margin: 25px auto;
   }
   .card-text {
-    padding: 0 7rem;
+    padding: 0 1rem; // 7rem;
   }
   .nav {
     padding-right: 45px;

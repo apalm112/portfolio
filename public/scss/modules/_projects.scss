@@ -38,17 +38,17 @@ h2 {
   }
 }
 
-.wrapper {
-  margin: 0 45px;
-  padding: 20px;
-  max-width: 100%;
-}
+// .wrapper {
+//   margin: 0 45px;
+//   padding: 20px;
+//   max-width: 100%;
+// }
 
 .card {
   background-color: inherit; // overrides Bootstrap style
   border: 0; // overrides Bootstrap style
   text-align: center;
-  margin-bottom: 45px;
+  margin-bottom: 15px;  //45px;
   /* Slider style */
   scroll-snap-align: center;
 }
@@ -62,11 +62,19 @@ h2 {
 .card-text {
   display: block;
   orphans: 2;
-  padding: 0 4rem;
+  padding: 0 2rem;   //4rem;
   margin-top: 15px;
 }
 
+.card.item {
+  max-width: 80%;
+  // left: 18px;
+  justify-self: center;
+}
+
+
 .size {
+  // height: 75%;
   max-height: 100%;
   width: 100%;
   border-radius: 5px;
@@ -108,7 +116,7 @@ h2 {
 ======================================== */
 .grid {
   border-radius: 0.285em;
-  margin: 45px auto;
+  // margin: 45px auto;
 
   max-width: 1400px;
   display: grid;
@@ -116,6 +124,7 @@ h2 {
   grid-template-columns: repeat(auto-fit, minmax(425px, 1fr));
   grid-column-gap: 15px;
   grid-row-gap: 15px;
+  place-content: center;
   // grid-auto-rows: minmax(450px, auto);
   // grid-auto-flow: row;
 }
