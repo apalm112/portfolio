@@ -79,7 +79,7 @@ exports.projects = [
 		img: 'proj-3.png',
 		repo_url: 'https://github.com/apalm112/FSJS-Interactive-Form',
 		deploy: 'https://apalm112.github.io/FSJS-Interactive-Form/',
-		description: 'Project provides user interactivity to a form by adding JavaScript to it.'
+		description: 'Project provides user interactivity to a form by adding JavaScript to it and validates the input fields .'
 	},
 	{
 		name: 'Pagination & Content Filter',
@@ -87,7 +87,7 @@ exports.projects = [
 		img: 'proj-2.png',
 		repo_url: 'https://github.com/apalm112/FSJS-Pagination',
 		deploy: 'https://apalm112.github.io/FSJS-Pagination/',
-		description: 'Project dynamically adds pagination & search features.'
+		description: 'Project dynamically adds pagination & search features to web page for a student directory.'
 	},
 	{
 		name: 'Random Quote Generator',
