@@ -11,5 +11,9 @@ public/css/app.css.map
 dist/
 
 digital-ocean.md
+notes.md
 
-Portfolio.code-workspace
+# VS Code
+portfolio-dashboard-combo.code-workspace
+Portfolio-Jobs.code-workspace
+Portfolio*.code-workspace

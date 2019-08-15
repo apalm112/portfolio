@@ -323,7 +323,7 @@ html {
 body {
   line-height: 1.5;
   font-family: "Droid Sans";
-  background-color: #f6f5f5;
+  background-color: var(--bg-color);
   position: relative;
   min-height: 100%;
   overflow-y: scroll; }
@@ -583,16 +583,11 @@ h2 {
     margin: 0 auto;
     background: #3498db; }
 
-.wrapper {
-  margin: 0 45px;
-  padding: 20px;
-  max-width: 100%; }
-
 .card {
   background-color: inherit;
   border: 0;
   text-align: center;
-  margin-bottom: 45px;
+  margin-bottom: 15px;
   /* Slider style */
   scroll-snap-align: center; }
 
@@ -604,8 +599,12 @@ h2 {
 .card-text {
   display: block;
   orphans: 2;
-  padding: 0 4rem;
+  padding: 0 2rem;
   margin-top: 15px; }
+
+.card.item {
+  max-width: 80%;
+  justify-self: center; }
 
 .size {
   max-height: 100%;
@@ -641,12 +640,12 @@ h2 {
 ======================================== */
 .grid {
   border-radius: 0.285em;
-  margin: 45px auto;
   max-width: 1400px;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(425px, 1fr));
   grid-column-gap: 15px;
-  grid-row-gap: 15px; }
+  grid-row-gap: 15px;
+  place-content: center; }
 
 .item {
   border: solid 2px rgba(51, 59, 66, 0.15); }
@@ -1037,6 +1036,69 @@ footer {
 .icon-footer:hover {
   color: #3498db; }
 
+:root {
+  --primary-color: $primary;
+  --secondary-color: $secondary;
+  --font-color: $white;
+  --bg-color: $gray-300;
+  --heading-color: $my-base-color; }
+
+[data-theme="dark"] {
+  --primary-color: #222;
+  --secondary-color: #444
+  --font-color: #888;
+  --bg-color: #111;
+  --heading-color: #777; }
+
+/*Simple css to style it like a toggle switch*/
+.theme-switch-wrapper {
+  display: flex;
+  align-items: center; }
+  .theme-switch-wrapper em {
+    margin-left: 10px;
+    font-size: 1rem; }
+
+.theme-switch {
+  display: inline-block;
+  height: 34px;
+  position: relative;
+  width: 60px; }
+
+.theme-switch input {
+  display: none; }
+
+.slider {
+  background-color: #ccc;
+  bottom: 0;
+  cursor: pointer;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: .4s; }
+
+.slider:before {
+  background-color: #fff;
+  bottom: 4px;
+  content: "";
+  height: 26px;
+  left: 4px;
+  position: absolute;
+  transition: .4s;
+  width: 26px; }
+
+input:checked + .slider {
+  background-color: #06570a; }
+
+input:checked + .slider:before {
+  transform: translateX(26px); }
+
+.slider.round {
+  border-radius: 34px; }
+
+.slider.round:before {
+  border-radius: 50%; }
+
 /***********************************************************
 Media Queries
 ***********************************************************/
@@ -1050,7 +1112,7 @@ Media Queries
     margin: 0 10px; }
 
   .title-job {
-    left: -97%; } }
+    left: -98%; } }
 @media only screen and (max-width: 575px) {
   footer span {
     margin: 0 auto; }
@@ -1092,19 +1154,25 @@ Media Queries
   .btn-resume {
     left: -107%;
     top: 290px; } }
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 994px) {
   /* Large viewport sizes and up **********************************************/
   /*                            **********************************************/
   .header {
     padding: 13% 0; }
 
   .grid {
-    max-width: 1600px;
+    max-width: 1200px;
     grid-row-gap: 0;
-    grid-column-gap: 25px; }
+    grid-column-gap: 0; }
+
+  .card.item {
+    max-width: 90%;
+    justify-self: center;
+    padding: 0 20px;
+    margin: 25px auto; }
 
   .card-text {
-    padding: 0 7rem; }
+    padding: 0 1rem; }
 
   .nav {
     padding-right: 45px; }
