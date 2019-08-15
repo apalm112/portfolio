@@ -625,6 +625,7 @@ h2 {
   align-content: flex-end; }
 
 .demo {
+  padding: 0rem .75rem;
   width: auto;
   height: 30px;
   margin: 10px 5px;
@@ -1137,9 +1138,6 @@ Media Queries
     padding-right: 10px; }
     .nav li a {
       font-size: 110%; } }
-@media only screen and (min-width: 811px) and (max-width: 816px) {
-  .nav {
-    height: 16vh; } }
 @media only screen and (min-width: 934px) {
   .card-text {
     padding: 0 12rem; } }
@@ -1184,9 +1182,6 @@ Media Queries
   .nav {
     height: 5vh; } }
 @media only screen and (min-width: 1100px) {
-  .card-text {
-    padding: 0 6rem; }
-
   .btn-resume {
     left: -106%; }
 
