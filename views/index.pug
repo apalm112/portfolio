@@ -12,6 +12,8 @@ html(lang='en')
 		title Adam Palmer
 		meta(name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no')
 		//- link( rel='stylesheet' type='text/css' href='https://fonts.googleapis.com/css?family=Droid+Sans')
+		//- link(rel='stylesheet' href='./libs/font-awesome/css/augmented.css')
+		link(rel='stylesheet' type='text/css' href='https://unpkg.com/augmented-ui/augmented.css')
 		link(rel='shortcut icon' href='../favicon.ico' type='image/x-icon')
 		link(rel='icon' href='../favicon.ico' type='image/x-icon')
 		link(rel='stylesheet' href='./css/bootstrap.min.css')
@@ -34,4 +36,7 @@ html(lang='en')
 		script(type='text/javascript' src='./js/portfolio.js' )
 		script(type='text/javascript' src='./js/dark-mode.js')
 		script(type='text/javascript' src='./js/ascii-art.js')
+		script(type='module').
+		import "https://unpkg.com/aug-attr-spliced/aug-attr-spliced.js"
+
 		
