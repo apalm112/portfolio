@@ -75,3 +75,118 @@ input:checked + .slider:before {
 .slider.round:before {
   border-radius: 50%;
 }
+
+/****************************************************************************
+* AUGMENTED-UI DARK MODE
+* WORKS, LOOKS GOOD
+*
+**/
+/* Glitch CSS (modified and masked), from css-tricks: https://css-tricks.com/glitch-effect-text-images-svg/ */
+// .glitch {
+//   display: inline-block;
+//   color: #fefcfe;
+//   font-style: normal;
+//   position: relative;
+//   margin: 0 auto;
+//   -webkit-mask-image: repeating-linear-gradient(black, black 2px, transparent 3px);
+//   mask-image: repeating-linear-gradient(black, black 2px, transparent 3px);
+// }
+
+// .glitch::after {
+//   content: attr(data-text);
+//   display: inline-block;
+//   position: absolute;
+//   left: 2px;
+//   text-shadow: -1px 0 #fbe806;
+//   top: 0;
+//   color: #fefcfe;
+//   background: #13242c;
+//   pointer-events: none;
+//   overflow: hidden;
+//   animation: noise-anim 5.25s infinite linear alternate-reverse;
+// }
+
+// .glitch::before {
+//   content: attr(data-text);
+//   display: inline-block;
+//   position: absolute;
+//   left: -2px;
+//   text-shadow: 1px 0 #5da1c6;
+//   top: 0;
+//   color: #fefcfe;
+//   background: #13242c;
+//   overflow: hidden;
+//   pointer-events: none;
+//   animation: noise-anim-2 2s infinite linear alternate-reverse;
+// }
+// /* end glitch css from css-tricks.com */
+
+// .plugin-available-container {
+//   grid-area: s2-plugin;
+//   padding: 5px;
+//   height: 80px;
+//   font-weight: bold;
+//   color: #fefcfe;
+//   filter: drop-shadow(0px 0px 3px #fefcfe);
+//   -webkit-mask-image: repeating-linear-gradient(black, black 2px, transparent 3px);
+//   mask-image: repeating-linear-gradient(black, black 2px, transparent 3px);
+// }
+
+
+// .plugin-available-container {
+//   grid-area: s2-plugin;
+//   padding: 5px;
+//   height: 80px;
+//   font-weight: bold;
+//   color: #fefcfe;
+//   filter: drop-shadow(0px 0px 3px #fefcfe);
+//   -webkit-mask-image: repeating-linear-gradient(black, black 2px, transparent 3px);
+//   mask-image: repeating-linear-gradient(black, black 2px, transparent 3px);
+// }
+// .beta-label {
+//   position: absolute;
+//   top: 10px;
+//   left: 90px;
+//   font-size: 12px;
+//   line-height: 12px;
+// }
+
+// .hex-indicator {
+//   position: absolute;
+//   left: 5px;
+//   top: -10px;
+//   width: 60px;
+//   height: 90px;
+//   transform: scaleY(0.75);
+//   background: #5da1c6;
+//   --aug-border: 5px;
+//   --aug-border-bg: #fefcfe;
+//   --aug-inset: 10px;
+//   --aug-inset-bg: radial-gradient(#13242c, transparent 50%);
+//   --aug-tl: 30px;
+//   --aug-tr: 30px;
+//   --aug-bl: 30px;
+//   --aug-br: 30px;
+// }
+// .plugin-header {
+//   position: absolute;
+//   left: 70px;
+//   width: 320px;
+//   height: 100px;
+//   padding: 15px;
+//   font-size: 25px;
+//   padding-left: 27px;
+//   white-space: nowrap;
+//   background: #13242c;
+//   --aug-border: 3px;
+//   --aug-border-bg: #5da1c6;
+//   --aug-l: 10px;
+//   --aug-l-height: 42px;
+//   text-shadow: 0 0 20px #fefcfe;
+// }
+// @media (max-width: 425px) {
+//   .plugin-header {
+//     font-size: 1rem;
+//     width: auto;
+//   }
+// }
